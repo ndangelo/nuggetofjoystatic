@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Common CSS Flexbox Layout Patterns with Example Code &ndash; Communication, Art, Design &amp; Instruction</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="//cpwebassets.codepen.io">
+<link rel="alternate" type="application/rss+xml" title="Communication, Art, Design &amp; Instruction &raquo; Feed" href="/nuggetofjoystatic/feed/">
+<link rel="alternate" type="application/rss+xml" title="Communication, Art, Design &amp; Instruction &raquo; Comments Feed" href="/nuggetofjoystatic/comments/feed/">
+		
+	<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<link rel="stylesheet" id="embedpress-css-css" href="/nuggetofjoystatic/wp-content/plugins/embedpress/assets/css/embedpress.css?ver=1790948058" media="all">
+<link rel="stylesheet" id="embedpress-blocks-style-css" href="/nuggetofjoystatic/wp-content/plugins/embedpress/assets/css/blocks.build.css?ver=1790948058" media="all">
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="wp-block-heading-inline-css">
+h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-background,h3:where(.wp-block-heading).has-background,h4:where(.wp-block-heading).has-background,h5:where(.wp-block-heading).has-background,h6:where(.wp-block-heading).has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+/*# sourceURL=/wp-includes/blocks/heading/style.min.css */
+</style>
+<style id="wp-block-image-inline-css">
+.wp-block-image>a,.wp-block-image>figure>a{display:inline-block}.wp-block-image img{box-sizing:border-box;height:auto;max-width:100%;vertical-align:bottom}@media not (prefers-reduced-motion){.wp-block-image img.hide{visibility:hidden}.wp-block-image img.show{animation:show-content-image .4s}}.wp-block-image[style*=border-radius] img,.wp-block-image[style*=border-radius]>a{border-radius:inherit}.wp-block-image.has-custom-border img{box-sizing:border-box}.wp-block-image.aligncenter{text-align:center}.wp-block-image.alignfull>a,.wp-block-image.alignwide>a{width:100%}.wp-block-image.alignfull img,.wp-block-image.alignwide img{height:auto;width:100%}.wp-block-image .aligncenter,.wp-block-image .alignleft,.wp-block-image .alignright,.wp-block-image.aligncenter,.wp-block-image.alignleft,.wp-block-image.alignright{display:table}.wp-block-image .aligncenter>figcaption,.wp-block-image .alignleft>figcaption,.wp-block-image .alignright>figcaption,.wp-block-image.aligncenter>figcaption,.wp-block-image.alignleft>figcaption,.wp-block-image.alignright>figcaption{caption-side:bottom;display:table-caption}.wp-block-image .alignleft{float:left;margin:.5em 1em .5em 0}.wp-block-image .alignright{float:right;margin:.5em 0 .5em 1em}.wp-block-image .aligncenter{margin-left:auto;margin-right:auto}.wp-block-image :where(figcaption){margin-bottom:1em;margin-top:.5em}.wp-block-image.is-style-circle-mask img{border-radius:9999px}@supports ((-webkit-mask-image:none) or (mask-image:none)) or (-webkit-mask-image:none){.wp-block-image.is-style-circle-mask img{border-radius:0;-webkit-mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/>');mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/>');mask-mode:alpha;-webkit-mask-position:center;mask-position:center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain}}:root :where(.wp-block-image.is-style-rounded img,.wp-block-image .is-style-rounded img){border-radius:9999px}.wp-block-image figure{margin:0}.wp-lightbox-container{display:flex;flex-direction:column;position:relative}.wp-lightbox-container img{cursor:zoom-in}.wp-lightbox-container img:hover+button{opacity:1}.wp-lightbox-container button{align-items:center;backdrop-filter:blur(16px) saturate(180%);background-color:rgba(90,90,90,.25);border:none;border-radius:4px;cursor:zoom-in;display:flex;height:20px;justify-content:center;opacity:0;padding:0;position:absolute;right:16px;text-align:center;top:16px;width:20px;z-index:100}@media not (prefers-reduced-motion){.wp-lightbox-container button{transition:opacity .2s ease}}.wp-lightbox-container button:focus-visible{outline:3px auto rgba(90,90,90,.25);outline:3px auto -webkit-focus-ring-color;outline-offset:3px}.wp-lightbox-container button:hover{cursor:pointer;opacity:1}.wp-lightbox-container button:focus{opacity:1}.wp-lightbox-container button:focus,.wp-lightbox-container button:hover,.wp-lightbox-container button:not(:hover):not(:active):not(.has-background){background-color:rgba(90,90,90,.25);border:none}.wp-lightbox-overlay{box-sizing:border-box;cursor:zoom-out;height:100vh;left:0;overflow:hidden;position:fixed;top:0;visibility:hidden;width:100%;z-index:100000}.wp-lightbox-overlay .wp-lightbox-close-button{align-items:center;cursor:pointer;display:flex;font-family:inherit;gap:8px;justify-content:center;line-height:1;min-height:40px;min-width:40px;padding:0 4px;position:absolute;right:calc(env(safe-area-inset-right) + 16px);top:calc(env(safe-area-inset-top) + 16px);z-index:5000000}.wp-lightbox-overlay .wp-lightbox-close-button:focus,.wp-lightbox-overlay .wp-lightbox-close-button:hover,.wp-lightbox-overlay .wp-lightbox-close-button:not(:hover):not(:active):not(.has-background){background:none;border:none}.wp-lightbox-overlay .wp-lightbox-close-button:has(.wp-lightbox-close-text:not([hidden])) .wp-lightbox-close-icon svg{height:1em;width:1em}.wp-lightbox-overlay .wp-lightbox-close-icon svg{display:block}.wp-lightbox-overlay .wp-lightbox-navigation-button-next,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev{align-items:center;bottom:16px;cursor:pointer;display:flex;font-family:inherit;gap:4px;justify-content:center;line-height:1;min-height:40px;min-width:40px;padding:0 8px;position:absolute;z-index:2000002}.wp-lightbox-overlay .wp-lightbox-navigation-button-next[hidden],.wp-lightbox-overlay .wp-lightbox-navigation-button-prev[hidden]{display:none}@media (min-width:960px){.wp-lightbox-overlay .wp-lightbox-navigation-button-next,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev{bottom:50%;transform:translateY(-50%)}}.wp-lightbox-overlay .wp-lightbox-navigation-button-next:focus,.wp-lightbox-overlay .wp-lightbox-navigation-button-next:hover,.wp-lightbox-overlay .wp-lightbox-navigation-button-next:not(:hover):not(:active):not(.has-background),.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:focus,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:hover,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:not(:hover):not(:active):not(.has-background){background:none;border:none;padding:0 8px}.wp-lightbox-overlay .wp-lightbox-navigation-button-next:has(.wp-lightbox-navigation-text:not([hidden])) .wp-lightbox-navigation-icon svg,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:has(.wp-lightbox-navigation-text:not([hidden])) .wp-lightbox-navigation-icon svg{display:block;height:1.5em;width:1.5em}.wp-lightbox-overlay .wp-lightbox-navigation-button-prev{left:calc(env(safe-area-inset-left) + 16px)}.wp-lightbox-overlay .wp-lightbox-navigation-button-next{right:calc(env(safe-area-inset-right) + 16px)}.wp-lightbox-overlay .wp-lightbox-navigation-icon svg{vertical-align:middle}.wp-lightbox-overlay .lightbox-image-container{height:var(--wp--lightbox-container-height);left:50%;overflow:hidden;position:absolute;top:50%;transform:translate(-50%,-50%);transform-origin:top left;width:var(--wp--lightbox-container-width);z-index:2000001}.wp-lightbox-overlay .wp-block-image{align-items:center;box-sizing:border-box;display:flex;height:100%;justify-content:center;margin:0;position:relative;transform-origin:0 0;width:100%;z-index:3000000}.wp-lightbox-overlay .wp-block-image img{height:var(--wp--lightbox-image-height);min-height:var(--wp--lightbox-image-height);min-width:var(--wp--lightbox-image-width);width:var(--wp--lightbox-image-width)}.wp-lightbox-overlay .wp-block-image figcaption{display:none}.wp-lightbox-overlay button{background:none;border:none}.wp-lightbox-overlay .scrim{background-color:#fff;height:100%;opacity:.9;position:absolute;width:100%;z-index:2000000}.wp-lightbox-overlay.active{visibility:visible}@media not (prefers-reduced-motion){.wp-lightbox-overlay.active{animation:turn-on-visibility .25s both}.wp-lightbox-overlay.active img{animation:turn-on-visibility .35s both}.wp-lightbox-overlay.show-closing-animation:not(.active){animation:turn-off-visibility .35s both}.wp-lightbox-overlay.show-closing-animation:not(.active) img{animation:turn-off-visibility .25s both}.wp-lightbox-overlay.zoom.active{animation:none;opacity:1;visibility:visible}.wp-lightbox-overlay.zoom.active .lightbox-image-container{animation:lightbox-zoom-in .4s}.wp-lightbox-overlay.zoom.active .lightbox-image-container img{animation:none}.wp-lightbox-overlay.zoom.active .scrim{animation:turn-on-visibility .4s forwards}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active){animation:none}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .lightbox-image-container{animation:lightbox-zoom-out .4s}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .lightbox-image-container img{animation:none}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .scrim{animation:turn-off-visibility .4s forwards}}@keyframes show-content-image{0%{visibility:hidden}99%{visibility:hidden}to{visibility:visible}}@keyframes turn-on-visibility{0%{opacity:0}to{opacity:1}}@keyframes turn-off-visibility{0%{opacity:1;visibility:visible}99%{opacity:0;visibility:visible}to{opacity:0;visibility:hidden}}@keyframes lightbox-zoom-in{0%{transform:translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)),calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale))}to{transform:translate(-50%,-50%) scale(1)}}@keyframes lightbox-zoom-out{0%{transform:translate(-50%,-50%) scale(1);visibility:visible}99%{visibility:visible}to{transform:translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)),calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale));visibility:hidden}}
+/*# sourceURL=/wp-includes/blocks/image/style.min.css */
+</style>
+<style id="wp-block-list-inline-css">
+ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:1.25em 2.375em}
+/*# sourceURL=/wp-includes/blocks/list/style.min.css */
+</style>
+<style id="wp-block-paragraph-inline-css">
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+/*# sourceURL=/wp-includes/blocks/paragraph/style.min.css */
+</style>
+<style id="wp-block-code-inline-css">
+.wp-block-code{box-sizing:border-box}.wp-block-code code{direction:ltr;display:block;font-family:inherit;overflow-wrap:break-word;text-align:initial;white-space:break-spaces}
+/*# sourceURL=/wp-includes/blocks/code/style.min.css */
+</style>
+<style id="wp-block-table-inline-css">
+.wp-block-table{overflow-x:auto}.wp-block-table table{border-collapse:collapse;width:100%}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{border:1px solid;padding:.5em}.wp-block-table .has-fixed-layout{table-layout:fixed;width:100%}.wp-block-table .has-fixed-layout td,.wp-block-table .has-fixed-layout th{word-break:break-word}.wp-block-table.aligncenter,.wp-block-table.alignleft,.wp-block-table.alignright{display:table;width:auto}.wp-block-table.aligncenter td,.wp-block-table.aligncenter th,.wp-block-table.alignleft td,.wp-block-table.alignleft th,.wp-block-table.alignright td,.wp-block-table.alignright th{word-break:break-word}.wp-block-table .has-subtle-light-gray-background-color{background-color:#f3f4f5}.wp-block-table .has-subtle-pale-green-background-color{background-color:#e9fbe5}.wp-block-table .has-subtle-pale-blue-background-color{background-color:#e7f5fe}.wp-block-table .has-subtle-pale-pink-background-color{background-color:#fcf0ef}.wp-block-table.is-style-stripes{background-color:transparent;border-collapse:inherit;border-spacing:0}.wp-block-table.is-style-stripes tbody tr:nth-child(odd){background-color:#f0f0f0}.wp-block-table.is-style-stripes.has-subtle-light-gray-background-color tbody tr:nth-child(odd){background-color:#f3f4f5}.wp-block-table.is-style-stripes.has-subtle-pale-green-background-color tbody tr:nth-child(odd){background-color:#e9fbe5}.wp-block-table.is-style-stripes.has-subtle-pale-blue-background-color tbody tr:nth-child(odd){background-color:#e7f5fe}.wp-block-table.is-style-stripes.has-subtle-pale-pink-background-color tbody tr:nth-child(odd){background-color:#fcf0ef}.wp-block-table.is-style-stripes td,.wp-block-table.is-style-stripes th{border-color:transparent}.wp-block-table.is-style-stripes{border-bottom:1px solid #f0f0f0}.wp-block-table .has-border-color td,.wp-block-table .has-border-color th,.wp-block-table .has-border-color tr,.wp-block-table .has-border-color>*{border-color:inherit}.wp-block-table table[style*=border-top-color] tr:first-child,.wp-block-table table[style*=border-top-color] tr:first-child td,.wp-block-table table[style*=border-top-color] tr:first-child th,.wp-block-table table[style*=border-top-color]>*,.wp-block-table table[style*=border-top-color]>* td,.wp-block-table table[style*=border-top-color]>* th{border-top-color:inherit}.wp-block-table table[style*=border-top-color] tr:not(:first-child){border-top-color:currentColor}.wp-block-table table[style*=border-right-color] td:last-child,.wp-block-table table[style*=border-right-color] th,.wp-block-table table[style*=border-right-color] tr,.wp-block-table table[style*=border-right-color]>*{border-right-color:inherit}.wp-block-table table[style*=border-bottom-color] tr:last-child,.wp-block-table table[style*=border-bottom-color] tr:last-child td,.wp-block-table table[style*=border-bottom-color] tr:last-child th,.wp-block-table table[style*=border-bottom-color]>*,.wp-block-table table[style*=border-bottom-color]>* td,.wp-block-table table[style*=border-bottom-color]>* th{border-bottom-color:inherit}.wp-block-table table[style*=border-bottom-color] tr:not(:last-child){border-bottom-color:currentColor}.wp-block-table table[style*=border-left-color] td:first-child,.wp-block-table table[style*=border-left-color] th,.wp-block-table table[style*=border-left-color] tr,.wp-block-table table[style*=border-left-color]>*{border-left-color:inherit}.wp-block-table table[style*=border-style] td,.wp-block-table table[style*=border-style] th,.wp-block-table table[style*=border-style] tr,.wp-block-table table[style*=border-style]>*{border-style:inherit}.wp-block-table table[style*=border-width] td,.wp-block-table table[style*=border-width] th,.wp-block-table table[style*=border-width] tr,.wp-block-table table[style*=border-width]>*{border-style:inherit;border-width:inherit}
+/*# sourceURL=/wp-includes/blocks/table/style.min.css */
+</style>
+
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel="stylesheet" id="mkaz-code-syntax-prism-css-css" href="/nuggetofjoystatic/wp-content/plugins/code-syntax-block/assets/prism-onedark.css?ver=1720452603" media="all">
+<link rel="stylesheet" id="nuggetofjoy-archive-style-css" href="/nuggetofjoystatic/wp-content/themes/nuggetofjoy-home-theme-v6-fixed/style.css?ver=6.0.0" media="all">
+<link rel="stylesheet" id="wp-paginate-css" href="/nuggetofjoystatic/wp-content/plugins/wp-paginate/css/wp-paginate.css?ver=2.2.6" media="screen">
+<link rel="https://api.w.org/" href="/nuggetofjoystatic/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="/nuggetofjoystatic/wp-json/wp/v2/posts/66597"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="/nuggetofjoystatic/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 7.1.3">
+<link rel="canonical" href="/nuggetofjoystatic/common-css-flexbox-layout-patterns-with-example-code/">
+<link rel="shortlink" href="/nuggetofjoystatic/?p=66597">
+<link rel="icon" href="https://image-control-storage.s3.amazonaws.com/blog-images/2017/09/27184050/cropped-favicon.jpg" sizes="32x32">
+<link rel="icon" href="https://image-control-storage.s3.amazonaws.com/blog-images/2017/09/27184050/cropped-favicon.jpg" sizes="192x192">
+<link rel="apple-touch-icon" href="https://image-control-storage.s3.amazonaws.com/blog-images/2017/09/27184050/cropped-favicon.jpg">
+<meta name="msapplication-TileImage" content="https://image-control-storage.s3.amazonaws.com/blog-images/2017/09/27184050/cropped-favicon.jpg">
+	<!-- Fonts Plugin CSS - https://fontsplugin.com/ -->
+	<style>
+			</style>
+	<!-- Fonts Plugin CSS -->
+	</head>
+<body class="wp-singular post-template-default single single-post postid-66597 single-format-standard wp-embed-responsive wp-theme-nuggetofjoy-home-theme-v6-fixed"><a class="noj-skip" href="#main">Skip to content</a>
+<header class="noj-header"><div class="noj-wrap noj-header-inner">
+<a class="noj-brand" href="/nuggetofjoystatic/"><span class="noj-brand-orange">nugget</span><span class="noj-brand-blue">of joy</span></a>
+<nav class="noj-nav" aria-label="Main navigation">
+<ul id="menu-main-2" class="noj-menu"><li id="menu-item-68087" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68087"><a href="/nuggetofjoystatic/category/ui-ux/">UI/UX</a></li>
+<li id="menu-item-68088" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68088"><a href="/nuggetofjoystatic/category/ia/">IA</a></li>
+<li id="menu-item-68089" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68089"><a href="/nuggetofjoystatic/category/dmet-155-introduction-to-web-design/">DMET 155 Introduction to Web Design</a></li>
+<li id="menu-item-68090" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68090"><a href="/nuggetofjoystatic/category/interactive-social-media/">Interactive and Social Media</a></li>
+<li id="menu-item-68091" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68091"><a href="/nuggetofjoystatic/category/dmet-375-imaging-technology/">DMET 375 IMAGING TECHNOLOGY</a></li>
+<li id="menu-item-68092" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68092"><a href="/nuggetofjoystatic/category/social-design/">Social Design</a></li>
+<li id="menu-item-68093" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68093"><a href="/nuggetofjoystatic/category/dmet-350-media-graphics-and-design/">DMET 350 MEDIA GRAPHICS AND DESIGN</a></li>
+<li id="menu-item-68094" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68094"><a href="/nuggetofjoystatic/category/dmet-355-advanced-web-design/">DMET 355 ADVANCED WEB DESIGN</a></li>
+<li id="menu-item-68095" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68095"><a href="/nuggetofjoystatic/category/color-theory/">Color Theory</a></li>
+<li id="menu-item-68096" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68096"><a href="/nuggetofjoystatic/category/social_media/">Social Media</a></li>
+<li id="menu-item-68097" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68097"><a href="/nuggetofjoystatic/category/visual-information-theory/">Visual Information Theory</a></li>
+<li id="menu-item-68098" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68098"><a href="/nuggetofjoystatic/category/media-graphics-design-assignments/">Media Graphics &amp; Design Assignments</a></li>
+<li id="menu-item-68099" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68099"><a href="/nuggetofjoystatic/category/gestalt-principles/">Gestalt Principles</a></li>
+</ul></nav>
+<form class="noj-search" role="search" method="get" action="/nuggetofjoystatic/"><label class="screen-reader-text" for="noja-search-header">Search all content</label><input id="noja-search-header" type="search" name="s" value="" placeholder="Search the archive&hellip;"><button type="submit">Search</button></form></div></header>
+<main id="main" class="noj-search-results"><div class="noj-wrap"><article class="noj-entry post-66597 post type-post status-publish format-standard hentry category-projects"><p class="noj-kicker">Post &middot; September 26, 2024</p><h1>Common CSS Flexbox Layout Patterns with Example Code</h1><div class="noj-entry-content">
+<p class="has-small-font-size wp-block-paragraph">Source: <a href="https://tobiasahlin.com/blog/common-flexbox-patterns">https://tobiasahlin.com/blog/common-flexbox-patterns</a></p>
+
+
+
+<p class="wp-block-paragraph">In theory, using flexbox (Flexible Box Module) to build complex layouts is pretty straightforward. Still, they have often found themselves adding `display: flex` to an element and spending an eternity trying to figure out how to make anything behave as expected. If you&rsquo;re anything like them, here&rsquo;s a list of 10 example flexbox layouts with CSS that you can copy and paste to get started with your layouts. They will walk through these basic layout patterns (click to jump to an example).</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img fetchpriority="high" decoding="async" width="1024" height="375" src="https://image-control-storage.s3.amazonaws.com/2024/09/26125210/image-172-1024x375.png" alt="Flex Layout" class="wp-image-66606" srcset="https://image-control-storage.s3.amazonaws.com/2024/09/26125210/image-172-1024x375.png 1024w, https://image-control-storage.s3.amazonaws.com/2024/09/26125210/image-172-768x281.png 768w, https://image-control-storage.s3.amazonaws.com/2024/09/26125210/image-172.png 1467w" sizes="(max-width: 1024px) 100vw, 1024px"></figure>
+</div>
+
+
+<p class="wp-block-paragraph">Every example assumes that your HTML contains an element with a class of&nbsp;<code>container</code>&nbsp;, which then contains several children that all have a class of&nbsp;<code>item</code>&nbsp;(the number of children varies per example):</p>
+
+
+
+<pre class="wp-block-code"><code lang="markup" class="language-markup line-numbers">&lt;div class="container"&gt;
+  &lt;div class="item"&gt;&lt;/div&gt;
+  &lt;div class="item"&gt;&lt;/div&gt;
+  &lt;div class="item"&gt;&lt;/div&gt;
+  ...
+&lt;/div&gt;
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="stretch-all-fixed-spacing">Stretch all fixed spacing</h2>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img decoding="async" width="1024" height="270" src="https://image-control-storage.s3.amazonaws.com/2024/09/26125351/image-173-1024x270.png" alt="Stretch all, fixed spacing" class="wp-image-66607" srcset="https://image-control-storage.s3.amazonaws.com/2024/09/26125351/image-173-1024x270.png 1024w, https://image-control-storage.s3.amazonaws.com/2024/09/26125351/image-173-768x203.png 768w, https://image-control-storage.s3.amazonaws.com/2024/09/26125351/image-173-1536x406.png 1536w, https://image-control-storage.s3.amazonaws.com/2024/09/26125351/image-173.png 1685w" sizes="(max-width: 1024px) 100vw, 1024px"></figure>
+</div>
+
+<p class="codepen" data-height="300" data-theme-id="0" data-slug-hash="ZEgbmOg" data-default-tab="html,result" data-animations="run" data-editable="" data-embed-version="2">
+See the Pen 
+Stretch all fixed spacing: Flexbox by Nicholas D&rsquo;Angelo (@ndangelo)
+on CodePen.</p>
+
+
+
+
+<p class="wp-block-paragraph">The most basic flexbox pattern is getting a few boxes to stretch and fill the full width of their parent element. All you need to do is to set&nbsp;<code>display: flex</code>&nbsp;on the container, and a&nbsp;<code>flex-grow</code>&nbsp;value above&nbsp;<code>0</code>&nbsp;on the children:</p>
+
+
+
+<pre class="wp-block-code"><code lang="css" class="language-css line-numbers">.container {
+  display: flex;
+}
+
+.item {
+  flex-grow: 1;
+  height: 100px;
+}
+
+.item + .item {
+  margin-left: 2%;
+}
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">We use a&nbsp;<code>+</code>&nbsp;selector to only add gaps between pairs of items (essentially just skipping the left margin for the first item in the list).</p>
+
+
+
+<p class="wp-block-paragraph">Increasing&nbsp;<code>flex-grow</code>&nbsp;will increase&nbsp;<em>the amount of space</em>&nbsp;that an element is allowed to stretch to compared to any other element. If we set&nbsp;<code>flex-grow</code>to&nbsp;<code>2</code>&nbsp;on the middle element here, we would basically divide up the available space into 6 chunks (1 chunk for each item plus 1 extra for the middle item, 1+1+2+1+1). The middle item gets two chunks (<code>flex-grow: 2</code>) worth of space, and all other elements get one chunk (<code>flex-grow: 1</code>).</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img decoding="async" width="1024" height="242" src="https://image-control-storage.s3.amazonaws.com/2024/09/26125547/image-175-1024x242.png" alt="flex grow" class="wp-image-66609" srcset="https://image-control-storage.s3.amazonaws.com/2024/09/26125547/image-175-1024x242.png 1024w, https://image-control-storage.s3.amazonaws.com/2024/09/26125547/image-175-768x181.png 768w, https://image-control-storage.s3.amazonaws.com/2024/09/26125547/image-175-1536x363.png 1536w, https://image-control-storage.s3.amazonaws.com/2024/09/26125547/image-175.png 1681w" sizes="(max-width: 1024px) 100vw, 1024px"></figure>
+</div>
+
+
+<h2 class="wp-block-heading" id="stretch-middle-fixed-spacing">Stretch middle, fixed spacing</h2>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img loading="lazy" decoding="async" width="1024" height="262" src="https://image-control-storage.s3.amazonaws.com/2024/09/26125701/image-177-1024x262.png" alt="Stretch middle, fixed spacing" class="wp-image-66611" srcset="https://image-control-storage.s3.amazonaws.com/2024/09/26125701/image-177-1024x262.png 1024w, https://image-control-storage.s3.amazonaws.com/2024/09/26125701/image-177-768x197.png 768w, https://image-control-storage.s3.amazonaws.com/2024/09/26125701/image-177-1536x393.png 1536w, https://image-control-storage.s3.amazonaws.com/2024/09/26125701/image-177.png 1715w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
+</div>
+
+<p class="codepen" data-height="300" data-theme-id="0" data-slug-hash="jOgWLON" data-default-tab="html,result" data-animations="run" data-editable="" data-embed-version="2">
+See the Pen 
+  Stretch all fixed spacing: Flexbox by Nicholas D&rsquo;Angelo (@ndangelo)
+  on CodePen.</p>
+
+
+
+
+<p class="wp-block-paragraph">A common app and web pattern is to create a top bar where we want to stretch only the middle element, but keep the right most and left most elements fixed. If we just want one element to stretch, we can set a fixed width (e.g.&nbsp;<code>100px</code>) on an element that should stay static, and&nbsp;<code>flex-grow: 1</code>&nbsp;on the element that should stretch:</p>
+
+
+
+<pre class="wp-block-code"><code lang="css" class="language-css line-numbers">.container {
+  display: flex;
+}
+
+.item {
+  height: 100px;
+  width: 100px; <em>/* A fixed width as the default */</em>
+}
+
+.item-center { 
+  flex-grow: 1; <em>/* Set the middle element to grow and stretch */</em>
+}
+
+.item + .item { 
+  margin-left: 2%; 
+}
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">Even if the middle element here has a defined&nbsp;<code>width</code>&nbsp;of&nbsp;<code>100px</code>,&nbsp;<code>flex-grow</code>&nbsp;will make it stretch to take up all the available space.</p>
+
+
+
+<h2 class="wp-block-heading" id="alternating-grid">Alternating grid</h2>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img loading="lazy" decoding="async" width="1024" height="549" src="https://image-control-storage.s3.amazonaws.com/2024/09/26125808/image-179-1024x549.png" alt="Alternating grid" class="wp-image-66613" srcset="https://image-control-storage.s3.amazonaws.com/2024/09/26125808/image-179-1024x549.png 1024w, https://image-control-storage.s3.amazonaws.com/2024/09/26125808/image-179-768x412.png 768w, https://image-control-storage.s3.amazonaws.com/2024/09/26125808/image-179-1536x823.png 1536w, https://image-control-storage.s3.amazonaws.com/2024/09/26125808/image-179.png 1681w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
+</div>
+
+
+<p class="wp-block-paragraph">This layout pattern is used on the following site&nbsp;<a href="https://tobiasahlin.com/blog/">https://tobiasahlin.com/blog/</a> The goal&nbsp;is to create a grid with some variation: after every row of two equally sized items there&rsquo;s one item that takes up an entire row:</p>
+
+
+
+<p class="wp-block-paragraph">To accomplish this we need to:</p>
+
+
+
+<ol class="wp-block-list">
+<li>Set&nbsp;<code>flex-wrap: wrap</code>&nbsp;on the container (or all&nbsp;<code>items</code>&nbsp;would be rendered on a single row)</li>
+
+
+
+<li>Set&nbsp;<code>justify-content: space-between</code>&nbsp;on the container, to only create space between the elements (and not between the edge of the parent element and items)</li>
+
+
+
+<li>Set every item&rsquo;s&nbsp;<code>width</code>&nbsp;to&nbsp;<code>49%</code>&nbsp;(or something similar that is equal to or less than&nbsp;<code>50%</code>)</li>
+
+
+
+<li>Set every third item&rsquo;s&nbsp;<code>width</code>&nbsp;to&nbsp;<code>100%</code>&nbsp;so that it fills that entire row. We can target every third item in the list with the&nbsp;<code>nth-child()</code>&nbsp;selector.</li>
+</ol>
+
+
+
+<pre class="wp-block-code"><code lang="css" class="language-css line-numbers">.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item {
+  width: 48%;
+  height: 100px;
+  margin-bottom: 2%;
+}
+
+.item:nth-child(3n) {
+  width: 100%;
+}
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">If you want the first row to be full-width and the two following items to share a row, note that you can&rsquo;t write&nbsp;<code>.item:nth-child(1n) { width: 100% }</code>&mdash;that would target all items. You have to target the first item by selecting every third element, and then stepping back two items:&nbsp;<code>.item:nth-child(3n-2) { width: 100% }</code>.</p>
+
+
+<p class="codepen" data-height="300" data-theme-id="0" data-slug-hash="dyxGwBw" data-default-tab="html,result" data-animations="run" data-editable="" data-embed-version="2">
+See the Pen 
+  Stretch middle, fixed spacing: Flexbox by Nicholas D&rsquo;Angelo (@ndangelo)
+  on CodePen.</p>
+
+
+
+
+<h2 class="wp-block-heading" id="3x3-grid">3&times;3 grid</h2>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img loading="lazy" decoding="async" width="1024" height="545" src="https://image-control-storage.s3.amazonaws.com/2024/09/30171800/image-207-1024x545.png" alt="3x3" class="wp-image-66646" srcset="https://image-control-storage.s3.amazonaws.com/2024/09/30171800/image-207-1024x545.png 1024w, https://image-control-storage.s3.amazonaws.com/2024/09/30171800/image-207-768x408.png 768w, https://image-control-storage.s3.amazonaws.com/2024/09/30171800/image-207-1536x817.png 1536w, https://image-control-storage.s3.amazonaws.com/2024/09/30171800/image-207.png 1679w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
+</div>
+
+<p class="codepen" data-height="300" data-theme-id="0" data-slug-hash="jOgWdEy" data-default-tab="html,result" data-animations="run" data-editable="" data-embed-version="2">
+See the Pen 
+  Alternating grid: Flexbox by Nicholas D&rsquo;Angelo (@ndangelo)
+  on CodePen.</p>
+
+
+
+
+<p class="wp-block-paragraph">We can create a 3&times;3 grid by setting&nbsp;<code>flex-grow</code>&nbsp;to&nbsp;<code>0</code>&nbsp;and&nbsp;<code>flex-basis</code>&nbsp;to the preferred width for all children (here done using the&nbsp;<code>flex</code>&nbsp;short-hand:&nbsp;<code>flex: 0 32%</code>). The margins between the items are the leftovers from every row, i.e. (100%-32&times;3)/2=2%. I&rsquo;ve matched the margin (<code>margin-bottom: 2%</code>) to achieve even spacing between all elements:</p>
+
+
+
+<pre class="wp-block-code"><code lang="css" class="language-css line-numbers">.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item {
+  flex: 0 32%;
+  height: 100px;
+  margin-bottom: 2%; <em>/* (100-32*3)/2 */</em>
+}
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">You can change the&nbsp;<code>flex-basis</code>&nbsp;to increase or decrease the number of items on each row.&nbsp;<code>flex: 0 24%</code>&nbsp;would put 4 items on every row,&nbsp;<code>flex: 0 19%</code>&nbsp;would put 5 items on every row, and so on so forth.</p>
+
+
+
+<h2 class="wp-block-heading" id="3x3-grid-constrained-proportions-11">3&times;3 grid, constrained proportions (1:1)</h2>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img loading="lazy" decoding="async" width="998" height="1024" src="https://image-control-storage.s3.amazonaws.com/2024/09/30171944/image-209-998x1024.png" alt="3x3 grid, constrained proportions (1:1)" class="wp-image-66649" srcset="https://image-control-storage.s3.amazonaws.com/2024/09/30171944/image-209-998x1024.png 998w, https://image-control-storage.s3.amazonaws.com/2024/09/30171944/image-209-768x788.png 768w, https://image-control-storage.s3.amazonaws.com/2024/09/30171944/image-209-1496x1536.png 1496w, https://image-control-storage.s3.amazonaws.com/2024/09/30171944/image-209.png 1663w" sizes="auto, (max-width: 998px) 100vw, 998px"></figure>
+</div>
+
+<p class="codepen" data-height="300" data-theme-id="0" data-slug-hash="PoMZVPw" data-default-tab="html,result" data-animations="run" data-editable="" data-embed-version="2">
+See the Pen 
+  3&times;3 Grid: Flexbox by Nicholas D&rsquo;Angelo (@ndangelo)
+  on CodePen.</p>
+
+
+
+
+<p class="wp-block-paragraph">Using a somewhat hacky CSS trick, we can create a grid full of items with constrained proportions. If we use padding-bottom when setting width on an element, the width is set relative to that item&rsquo;s parent&rsquo;s width. We can use that effect to create a square by setting an item&rsquo;s padding-bottom and width to the same value (and effectively setting the height of that element through padding).</p>
+
+
+
+<pre class="wp-block-code"><code class="">.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item {
+  width: 32%;
+  padding-bottom: 32%; <em>/* Same as width, sets height */</em>
+  margin-bottom: 2%; <em>/* (100-32*3)/2 */</em>
+  position: relative;
+}
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">Since we&rsquo;ve created an element that is effectively made up of only padding, and there&rsquo;s no place left for content, we need to set&nbsp;<code>position: relative</code>&nbsp;on the&nbsp;<code>.item</code>&nbsp;in this example and add a child element with&nbsp;<code>position: absolute</code>, and use that element to &ldquo;reset&rdquo; the canvas and add content.</p>
+
+
+
+<h2 class="wp-block-heading" id="3x3-grid-constrained-proportions-169">3&times;3 grid, constrained proportions (16:9)</h2>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img loading="lazy" decoding="async" width="1024" height="675" src="https://image-control-storage.s3.amazonaws.com/2024/09/30172102/image-211-1024x675.png" alt="3x3 grid, constrained proportions (16:9)" class="wp-image-66652" srcset="https://image-control-storage.s3.amazonaws.com/2024/09/30172102/image-211-1024x675.png 1024w, https://image-control-storage.s3.amazonaws.com/2024/09/30172102/image-211-768x506.png 768w, https://image-control-storage.s3.amazonaws.com/2024/09/30172102/image-211-1536x1012.png 1536w, https://image-control-storage.s3.amazonaws.com/2024/09/30172102/image-211.png 1677w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
+</div>
+
+<p class="codepen" data-height="300" data-theme-id="0" data-slug-hash="jOgWdEy" data-default-tab="html,result" data-animations="run" data-editable="" data-embed-version="2">
+See the Pen 
+  3&times;3 Grid: Flexbox by Nicholas D&rsquo;Angelo (@ndangelo)
+  on CodePen.</p>
+
+
+
+
+<p class="wp-block-paragraph">To change the proportions of the items all you need to do is change the proportions of the&nbsp;<code>width</code>&nbsp;and&nbsp;<code>padding-bottom</code>&nbsp;on the&nbsp;<code>.item</code>. Changing the&nbsp;<code>width</code>&nbsp;would affect the number of items on each row, so as to not affect the grid structure we can for example change&nbsp;<code>padding-bottom</code>&nbsp;to&nbsp;<code>18%</code>&nbsp;to create 16:9 (equivalent to 32:18) rectangles.</p>
+
+
+
+<pre class="wp-block-code"><code lang="css" class="language-css line-numbers">.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item {
+  width: 32%;
+  padding-bottom: 18%; <em>/* 32:18, i.e. 16:9 */</em>
+  margin-bottom: 2%; <em>/* (100-32*3)/2 */</em>
+}
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="graph-vertical-bars">Graph: vertical bars</h2>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img loading="lazy" decoding="async" width="1024" height="495" src="https://image-control-storage.s3.amazonaws.com/2024/09/30172247/image-213-1024x495.png" alt="Graph: vertical bars" class="wp-image-66655" srcset="https://image-control-storage.s3.amazonaws.com/2024/09/30172247/image-213-1024x495.png 1024w, https://image-control-storage.s3.amazonaws.com/2024/09/30172247/image-213-768x371.png 768w, https://image-control-storage.s3.amazonaws.com/2024/09/30172247/image-213-1536x742.png 1536w, https://image-control-storage.s3.amazonaws.com/2024/09/30172247/image-213.png 1653w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
+</div>
+
+
+<p class="wp-block-paragraph">If you want to use Flexbox to create a simple graph visualization, all you need to do is to set&nbsp;<code>align-items</code>&nbsp;of the container to&nbsp;<code>flex-end</code>&nbsp;and define a&nbsp;<code>height</code>&nbsp;for each bar.&nbsp;<code>flex-end</code>&nbsp;will ensure that the bars are anchored to the bottom of the graph.</p>
+
+
+
+<pre class="wp-block-code"><code lang="css" class="language-css line-numbers">.container {
+  display: flex;
+  height: 300px;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.item { width: 14%; }
+.item-1 { height: 40%; }
+.item-2 { height: 50%; }
+.item-3 { height: 60%; }
+.item-4 { height: 20%; }
+.item-5 { height: 30%; }
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="graph-horizontal-bars">Graph: horizontal bars</h2>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img loading="lazy" decoding="async" width="1024" height="496" src="https://image-control-storage.s3.amazonaws.com/2024/09/01124957/image-215-1024x496.png" alt="Graph: horizontal bars" class="wp-image-66666" srcset="https://image-control-storage.s3.amazonaws.com/2024/09/01124957/image-215-1024x496.png 1024w, https://image-control-storage.s3.amazonaws.com/2024/09/01124957/image-215-768x372.png 768w, https://image-control-storage.s3.amazonaws.com/2024/09/01124957/image-215-1536x744.png 1536w, https://image-control-storage.s3.amazonaws.com/2024/09/01124957/image-215.png 1683w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
+</div>
+
+
+<p class="wp-block-paragraph">Using the same technique as for vertical bars, one can add on the with a value of to create a set of horizontal bars. can have a value of (default) or , where runs horizontally (&rarr;) and runs vertically (&darr;). One can also reverse the direction of both by using (&larr;) and (&uarr;), respectively.</p>
+
+
+
+<pre class="wp-block-code"><code lang="css" class="language-css line-numbers">.container {
+  display: flex;
+  height: 300px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.item { height: 14%; }
+.item-1 { width: 40%; }
+.item-2 { width: 50%; }
+.item-3 { width: 60%; }
+.item-4 { width: 20%; }
+.item-5 { width: 30%; }
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="vertical-stack-centered">Vertical stack (centered)</h2>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img loading="lazy" decoding="async" width="1024" height="469" src="https://image-control-storage.s3.amazonaws.com/2024/09/01125045/image-217-1024x469.png" alt="Vertical stack (centered)" class="wp-image-66668" srcset="https://image-control-storage.s3.amazonaws.com/2024/09/01125045/image-217-1024x469.png 1024w, https://image-control-storage.s3.amazonaws.com/2024/09/01125045/image-217-768x352.png 768w, https://image-control-storage.s3.amazonaws.com/2024/09/01125045/image-217-1536x704.png 1536w, https://image-control-storage.s3.amazonaws.com/2024/09/01125045/image-217.png 1679w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
+</div>
+
+<p class="codepen" data-height="300" data-theme-id="0" data-slug-hash="rNXxPrq" data-default-tab="html,result" data-animations="run" data-editable="" data-embed-version="2">
+See the Pen 
+  3&times;3 grid, constrained proportions (16:9): Flexbox by Nicholas D&rsquo;Angelo (@ndangelo)
+  on CodePen.</p>
+
+
+
+
+<p class="wp-block-paragraph">To create a vertical stack and make the items run from top to bottom all we need to do is to change the&nbsp;<code>flex-direction</code>&nbsp;from the default value of&nbsp;<code>row</code>&nbsp;to&nbsp;<code>column</code>:</p>
+
+
+
+<pre class="wp-block-code"><code lang="css" class="language-css line-numbers">.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item {
+  height: 40px;
+  margin-bottom: 10px;
+}
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="masonry-or-mosaic">Masonry (or mosaic)</h2>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img loading="lazy" decoding="async" width="1024" height="833" src="https://image-control-storage.s3.amazonaws.com/2024/09/01125208/image-219-1024x833.png" alt="Masonry (or mosaic)" class="wp-image-66670" srcset="https://image-control-storage.s3.amazonaws.com/2024/09/01125208/image-219-1024x833.png 1024w, https://image-control-storage.s3.amazonaws.com/2024/09/01125208/image-219-768x625.png 768w, https://image-control-storage.s3.amazonaws.com/2024/09/01125208/image-219-1536x1250.png 1536w, https://image-control-storage.s3.amazonaws.com/2024/09/01125208/image-219.png 1687w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
+</div>
+
+
+<p class="wp-block-paragraph">You&rsquo;ve probably seen masonry (or mosaic) layouts all over the internet, but it&rsquo;s likely that they were all powered by&nbsp;<a href="https://masonry.desandro.com/">Masonry</a>&nbsp;or a similar JavaScript library. Flexbox might seem like a great candidate to create this layout with CSS only finally, and it&rsquo;s certainly possible, but it&rsquo;s surprisingly hacky.</p>
+
+
+
+<p class="wp-block-paragraph">One of the main challenges of creating a masonry layout with flexbox is that to make an item affect the positioning of an item above and below it we need to change the&nbsp;<code>flex-direction</code>&nbsp;of the container to&nbsp;<code>column</code>, which makes items run from top to bottom. This creates a layout that looks great, and similar to the masonry effect, but it could be confusing for users; it creates an unexpected ordering of elements. If you read from left to right the elements would seem to be shuffled and appear in a seemingly random order, for example 1, 3, 6, 2, 4, 7, 8, etc.</p>
+
+
+
+<p class="wp-block-paragraph">Luckily, we can use the&nbsp;<code>order</code>&nbsp;property to change in which order elements are rendered. We can combine that property with some clever use of the&nbsp;<code>nth-child()</code>&nbsp;selector to order items dynamically depending on their original order. If we want to create a masonry layout with three columns we can divide all the items into three &ldquo;groups&rdquo;, like so:</p>
+
+
+
+<pre class="wp-block-code"><code class=""><em>/* Re-order items into rows */</em>
+.item:nth-child(3n+1) { order: 1; }
+.item:nth-child(3n+2) { order: 2; }
+.item:nth-child(3n)   { order: 3; }
+
+<em>/* Force new columns */</em>
+.container::before,
+.container::after {
+  content: "";
+  flex-basis: 100%;
+  width: 0;
+  order: 2;
+}
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">I&rsquo;ve written&nbsp;<a href="https://tobiasahlin.com/blog/masonry-with-css/">another post that explains in detail how this works and why</a>. This will set the&nbsp;<code>order</code>&nbsp;to&nbsp;<code>1</code>&nbsp;for the 1st element, 4th element, 7th element, etc. Elements with the same&nbsp;<code>order</code>&nbsp;value will be ordered on ascending order according to the source code order, or which value was&nbsp;<em>set</em>&nbsp;first, so in this example we&rsquo;re producing three sets ordered like so:&nbsp;<code>1, 4, 7, 10</code>&nbsp;(3n+1) with&nbsp;<code>order: 1</code>,&nbsp;<code>2, 5, 8</code>&nbsp;(3n+2) with&nbsp;<code>order: 2</code>, and&nbsp;<code>3, 6, 9</code>&nbsp;(3n) with&nbsp;<code>order: 3</code>. These three groups represent our three columns. Put together the order becomes&nbsp;<code>1, 4, 7, 10, 2, 5, 8, 3, 6, 9</code>.</p>
+
+
+
+<p class="wp-block-paragraph">If we make sure to render each of those groups as one column (no more, no less), it&rsquo;ll create the illusion that the items have returned to their original order when you read from left to right. If we visually parse the grid as rows, the first row will contain the first element from every group (<code>1, 2, 3</code>), the second row will contain the second element from every group (<code>4, 5, 6</code>), and so on so forth. We then insert elements between the columns that take up 100% of the parent&rsquo;s height,&nbsp;<a href="https://tobiasahlin.com/blog/flexbox-break-to-new-row/">which force the columns to line break</a>&nbsp;and not accidentally merge with adjacent columns. Here&rsquo;s the full CSS snippet:</p>
+
+
+
+<pre class="wp-block-code"><code class="">.container {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-between;
+  height: 580px;
+}
+
+.item {
+  width: 32%;
+  margin-bottom: 2%; <em>/* (100-32*3)/2 */</em>
+}
+
+<em>/* Re-order items into rows */</em>
+.item:nth-child(3n+1) { order: 1; }
+.item:nth-child(3n+2) { order: 2; }
+.item:nth-child(3n)   { order: 3; }
+
+<em>/* Force new columns */</em>
+.container::before,
+.container::after {
+  content: "";
+  flex-basis: 100%;
+  width: 0;
+  order: 2;
+}
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">Visually this achieves something that is very close to the masonry effect. How is the tab order affected? Luckily, not at all.&nbsp;<code>order</code>&nbsp;only changes the visual representation of objects, not the tab order, so tabbing through the grid will work as intended.</p>
+
+
+
+<p class="wp-block-paragraph">If you want to make a masonry layout with more than three columns (or want a better understanding of how this works) I recommend reading&nbsp;<a href="https://tobiasahlin.com/blog/masonry-with-css/">the dedicated post on how to create masonry layouts with CSS</a>.</p>
+
+
+
+<h1 class="wp-block-heading">CSS masonry with flexbox, :nth-child(), and order</h1>
+
+
+
+<p class="has-small-font-size wp-block-paragraph">Source: <a href="https://tobiasahlin.com/blog/masonry-with-css/">https://tobiasahlin.com/blog/masonry-with-css/</a></p>
+
+
+
+<p class="wp-block-paragraph">On the surface it seems fairly easy to create a masonry layout with&nbsp;<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">flexbox</a>; all you need to do is set&nbsp;<code>flex-flow</code>&nbsp;to&nbsp;<code>column wrap</code>&nbsp;and voil&agrave;, you have a masonry layout. Sort of. The problem with this approach is that it produces a grid with a seemingly shuffled and obscure order. Items will be (unbeknownst to the user) rendered from top to bottom and someone parsing the grid from left to right will read the boxes in a somewhat arbitrary order, for example 1, 3, 6, 2, 4, 7, 8, 5, and so on so forth.</p>
+
+
+
+<p class="wp-block-paragraph">Flexbox has no easy way of rendering items with a&nbsp;<code>column</code>&nbsp;layout while using a&nbsp;<code>row</code>&nbsp;order, but we can build a masonry layout with CSS only&mdash;no JavaScript needed&mdash;by using&nbsp;<code>:nth-child()</code>&nbsp;and the&nbsp;<code>order</code>&nbsp;property. In a gist, here&rsquo;s the trick to create a&nbsp;<code>row</code>&nbsp;order while using&nbsp;<code>flex-direction: column</code>, given that you&rsquo;re rendering three columns:</p>
+
+
+
+<pre class="wp-block-code"><code lang="css" class="language-css line-numbers"><em>/* Render items as columns */</em>
+.container {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+<em>/* Re-order items into rows */</em>
+.item:nth-child(3n+1) { order: 1; }
+.item:nth-child(3n+2) { order: 2; }
+.item:nth-child(3n)   { order: 3; }
+
+<em>/* Force new columns */</em>
+.container::before,
+.container::after {
+  content: "";
+  flex-basis: 100%;
+  width: 0;
+  order: 2;
+}
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">This will create a masonry layout with items rendered as columns but ordered as rows (the gray vertical lines represent the pseudo elements that&nbsp;<a href="https://tobiasahlin.com/blog/flexbox-break-to-new-row/">force line breaks</a>:</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img loading="lazy" decoding="async" width="1024" height="831" src="https://image-control-storage.s3.amazonaws.com/2024/09/01125450/image-221-1024x831.png" alt="masonry layout" class="wp-image-66673" srcset="https://image-control-storage.s3.amazonaws.com/2024/09/01125450/image-221-1024x831.png 1024w, https://image-control-storage.s3.amazonaws.com/2024/09/01125450/image-221-768x623.png 768w, https://image-control-storage.s3.amazonaws.com/2024/09/01125450/image-221-1536x1246.png 1536w, https://image-control-storage.s3.amazonaws.com/2024/09/01125450/image-221.png 1665w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
+</div>
+
+
+<p class="wp-block-paragraph">Let&rsquo;s break down the implementation (or&nbsp;<a href="https://tobiasahlin.com/blog/masonry-with-css/#the-solution">jump to the solution</a>, or&nbsp;<a href="https://codepen.io/collection/XPjvPP/">see the codepen collection</a>).</p>
+
+
+
+<h2 class="wp-block-heading" id="pick-your-poison-a-shuffled-order-or-weird-gaps">Pick your poison: a shuffled order, or weird gaps</h2>
+
+
+
+<p class="wp-block-paragraph">Flexbox is not built for masonry&mdash;if you set a fixed height on a flex container (so that items can wrap when they overflow) and&nbsp;<code>flex-flow</code>&nbsp;to&nbsp;<code>column wrap</code>, you&rsquo;ll achieve something like this:</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img loading="lazy" decoding="async" width="1024" height="772" src="https://image-control-storage.s3.amazonaws.com/2024/09/01125625/image-223-1024x772.png" alt="shuffled order" class="wp-image-66676" srcset="https://image-control-storage.s3.amazonaws.com/2024/09/01125625/image-223-1024x772.png 1024w, https://image-control-storage.s3.amazonaws.com/2024/09/01125625/image-223-768x579.png 768w, https://image-control-storage.s3.amazonaws.com/2024/09/01125625/image-223-1536x1158.png 1536w, https://image-control-storage.s3.amazonaws.com/2024/09/01125625/image-223.png 1673w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
+</div>
+
+
+<p class="wp-block-paragraph">Items are rendered in columns from top to bottom, producing an arbitrary order when read from left to right. This is the expected outcome and desirable in many scenarios, but not when we&rsquo;re trying to create a masonry layout, and it becomes increasingly disorienting as a page grows taller.</p>
+
+
+
+<p class="wp-block-paragraph">If we instead change the&nbsp;<code>flex-direction</code>&nbsp;to&nbsp;<code>row</code>&nbsp;and have elements of varying heights we&rsquo;ll achieve the correct order but with weird and unexpected gaps all over our grid:</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img loading="lazy" decoding="async" width="1024" height="903" src="https://image-control-storage.s3.amazonaws.com/2024/09/01142019/image-225-1024x903.png" alt="flex-direction&nbsp;to&nbsp;row" class="wp-image-66679" srcset="https://image-control-storage.s3.amazonaws.com/2024/09/01142019/image-225-1024x903.png 1024w, https://image-control-storage.s3.amazonaws.com/2024/09/01142019/image-225-768x677.png 768w, https://image-control-storage.s3.amazonaws.com/2024/09/01142019/image-225-1536x1355.png 1536w, https://image-control-storage.s3.amazonaws.com/2024/09/01142019/image-225.png 1677w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
+</div>
+
+
+<p class="wp-block-paragraph">So it seems impossible to get the best of both worlds: items rendered as columns but ordered as rows. You might decide to use&nbsp;<code>flex-direction: column</code>&nbsp;<span style="box-sizing: border-box; margin: 0px; padding: 0px;">You can move around the elements in your HTML to achieve the right&nbsp;<em>visual</em>&nbsp;order, but this can be cumbersome and unnecessarily complex</span> and can<span style="box-sizing: border-box; margin: 0px; padding: 0px;">&nbsp;</span>mess up the tab order of the elements.</p>
+
+
+
+<h2 class="wp-block-heading" id="re-ordering-elements-with-order-and-nth-child">Re-ordering elements with&nbsp;<code>order</code>&nbsp;and&nbsp;<code>nth-child()</code></h2>
+
+
+
+<p class="wp-block-paragraph">The&nbsp;<code>order</code>&nbsp;property affects the order of items contained in a CSS flexbox or grid, and we can use it to re-order items for our soon-to-be masonry layout. The&nbsp;<code>order</code>&nbsp;property is pretty straight-forward to use: if you have two elements and one has&nbsp;<code>order: 1</code>&nbsp;and the other one has&nbsp;<code>order: 2</code>&nbsp;the element with&nbsp;<code>order: 1</code>&nbsp;will be rendered before the other element, independent of their HTML source code order.</p>
+
+
+
+<p class="wp-block-paragraph">The CSS masonry solution depends on a detail of the&nbsp;<code>order</code>&nbsp;specification: what happens if two or more elements have the same&nbsp;<code>order</code>&nbsp;value? Which comes first? Flexbox falls back on the source code order: the element that appears first in the source code will be rendered before other elements with the same order value. This fact gives us the possibility to easily re-group items in our grid so that we can change the ordering from columns to rows, while still rendering those rows as columns, using&nbsp;<code>nth-child()</code>.</p>
+
+
+
+<p class="wp-block-paragraph">Look at the table below. To achieve a sensible order using&nbsp;<code>flex-direction: row</code>&nbsp;we&rsquo;d just have to render elements in the default order:&nbsp;<code>1, 2, 3, 4, 5, 6</code>&nbsp;, etc.</p>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>&nbsp;</th><th>Column 1</th><th>Column 2</th><th>Column 3</th></tr></thead><tbody><tr><td>Row 1</td><td>1</td><td>2</td><td>3</td></tr><tr><td>Row 2</td><td>4</td><td>5</td><td>6</td></tr><tr><td>Row 3</td><td>7</td><td>8</td><td>9</td></tr><tr><td>Row 4</td><td>10</td><td>11</td><td>12</td></tr></tbody></table></figure>
+
+
+
+<p class="wp-block-paragraph">If we want to achieve the&nbsp;<em>same</em>&nbsp;order while using&nbsp;<code>flex-direction: column</code>&nbsp;we need to change the order of the elements to match the order of each column in the table (rather than each row):</p>
+
+
+
+<figure class="wp-block-table"><table class="has-fixed-layout"><thead><tr><th>&nbsp;</th><th>Column 1</th><th>Column 2</th><th>Column 3</th></tr></thead><tbody><tr><td>Row 1</td><td><strong>1</strong></td><td>2</td><td>3</td></tr><tr><td>Row 2</td><td><strong>4</strong></td><td>5</td><td>6</td></tr><tr><td>Row 3</td><td><strong>7</strong></td><td>8</td><td>9</td></tr><tr><td>Row 4</td><td><strong>10</strong></td><td>11</td><td>12</td></tr></tbody></table></figure>
+
+
+
+<p class="wp-block-paragraph">I.e. the first elements in our flexbox layout have to be&nbsp;<code>1, 4, 7, 10</code>. These items will fill up the first column, followed by&nbsp;<code>2, 5, 8, 11</code>&nbsp;for the 2nd column and&nbsp;<code>3, 6, 9, 12</code>&nbsp;for the 3rd and last column. This is where the&nbsp;<code>nth-child()</code>&nbsp;selector comes in. We can use it to select every third element (3n), starting with the first element (3n+1), and set all those elements to have the same&nbsp;<code>order</code>&nbsp;value:</p>
+
+
+
+<pre class="wp-block-code"><code lang="css" class="language-css line-numbers">.item:nth-child(3n+1) { order: 1; }
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">This selector sets&nbsp;<code>order: 1</code>&nbsp;for element&nbsp;<code>1, 4, 7, 10</code>&nbsp;in our container, i.e. the entire first column. In other words we&rsquo;re using a combination of&nbsp;<code>nth-child()</code>&nbsp;and&nbsp;<code>order</code>&nbsp;to re-order items depending on their original order. To create the 2nd and 3rd column we change the offset:</p>
+
+
+
+<pre class="wp-block-code"><code lang="css" class="language-css line-numbers">.item:nth-child(3n+1) { order: 1; }
+.item:nth-child(3n+2) { order: 2; }
+.item:nth-child(3n)   { order: 3; }
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">Here we&rsquo;re producing three sets:&nbsp;<code>1, 4, 7, 10</code>&nbsp;(3n+1) with&nbsp;<code>order: 1</code>,&nbsp;<code>2, 5, 8, 11</code>&nbsp;(3n+2) with&nbsp;<code>order: 2</code>, and&nbsp;<code>3, 6, 9, 12</code>&nbsp;(3n) with&nbsp;<code>order: 3</code>. All together the order becomes&nbsp;<code>1, 4, 7, 10, 2, 5, 8, 11, 3, 6, 9, 12</code>.</p>
+
+
+
+<p class="wp-block-paragraph">If we render each of those groups as one column (and no more), it&rsquo;ll create the illusion that the items have returned to their original order when you read from left to right. If we visually parse the grid as rows, the first row will contain the first element from every group (1, 2, 3), the second row will contain the second element from every group (4, 5, 6), and so on so forth. This technique allows us to create a masonry layout with items rendered as columns but ordered as rows.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img loading="lazy" decoding="async" width="1024" height="832" src="https://image-control-storage.s3.amazonaws.com/2024/09/01142217/image-227-1024x832.png" alt="Re-ordering elements with&nbsp;order&nbsp;and&nbsp;nth-child()" class="wp-image-66682" srcset="https://image-control-storage.s3.amazonaws.com/2024/09/01142217/image-227-1024x832.png 1024w, https://image-control-storage.s3.amazonaws.com/2024/09/01142217/image-227-768x624.png 768w, https://image-control-storage.s3.amazonaws.com/2024/09/01142217/image-227-1536x1248.png 1536w, https://image-control-storage.s3.amazonaws.com/2024/09/01142217/image-227.png 1665w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
+</div>
+
+
+<p class="wp-block-paragraph">How is the tab order affected by shuffling around elements like this? Luckily, not at all.&nbsp;<code>order</code>&nbsp;Tabbing through the grid will work as intended, as the change only affects the visual representation of objects, not the tab order.</p>
+
+
+
+<h2 class="wp-block-heading" id="preventing-columns-from-merging">Preventing columns from merging</h2>
+
+
+
+<p class="wp-block-paragraph">If you have many items in a masonry layout this technique will fairly certainly break down at some point. We&rsquo;re counting on that every &ldquo;group&rdquo; we&rsquo;ve created will be rendered as exactly one column, but in reality, items can have different heights, and columns can easily start to merge. The first column could be longer than the other two, for example, which could make the third column start at the end of the second column:</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img loading="lazy" decoding="async" width="1024" height="829" src="https://image-control-storage.s3.amazonaws.com/2024/09/01142320/image-229-1024x829.png" alt="Preventing columns from merging" class="wp-image-66684" srcset="https://image-control-storage.s3.amazonaws.com/2024/09/01142320/image-229-1024x829.png 1024w, https://image-control-storage.s3.amazonaws.com/2024/09/01142320/image-229-768x621.png 768w, https://image-control-storage.s3.amazonaws.com/2024/09/01142320/image-229-1536x1243.png 1536w, https://image-control-storage.s3.amazonaws.com/2024/09/01142320/image-229.png 1677w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
+</div>
+
+
+<p class="wp-block-paragraph">The highlighted box here (3) has to be rendered at the start of the third column or the ordering algorithm will break, but if there&rsquo;s space for another element at the end of the 2nd column it will naturally be rendered there.</p>
+
+
+
+<p class="wp-block-paragraph">We can fix this wrapping issue by forcing columns to restart at certain points. There&rsquo;s no easy way of saying &ldquo;this element should line break&rdquo; with flexbox, but&nbsp;<a href="https://tobiasahlin.com/blog/flexbox-break-to-new-row/">we can achieve this effect by adding invisible elements that take up 100% of the container&rsquo;s height</a>. As they require 100% of the parent&rsquo;s height to be rendered they won&rsquo;t fit in a column together with any other element, so they&rsquo;ll essentially force line breaks by creating collapsed columns.</p>
+
+
+
+<p class="wp-block-paragraph">We have to insert these line break elements into our grid and array of elements, so what we&rsquo;re looking for is to create this sequence of elements:&nbsp;<code>1, 4, 7, 10, &lt;break&gt;, 2, 5, 8, 11, &lt;break&gt;, 3, 6, 9, 12</code>. We can use pseudo-elements on the container to add these, and we can set the&nbsp;<code>order</code>&nbsp;to&nbsp;<code>2</code>&nbsp;on both of them. Adding a pseudo-element with&nbsp;<code>:before</code>&nbsp;will make it the first child of the container and adding a pseudo-element with&nbsp;<code>:after</code>&nbsp;will make it the last child of the container, so if we set&nbsp;<code>order: 2</code>&nbsp;on both of them they will become the first and the last element of the&nbsp;<code>order: 2</code>&nbsp;&ldquo;group&rdquo; (as they appear before and after the other elements):&nbsp;<code>:before, 2, 5, 8, 11, :after</code>.</p>
+
+
+
+<pre class="wp-block-code"><code lang="css" class="language-css line-numbers"><em>/* Force new columns */</em>
+.container::before,
+.container::after {
+  content: "";
+  flex-basis: 100%;
+  width: 0;
+  order: 2;
+}
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">I&rsquo;ve highlighted the pseudo-elements below to show their effect. Notice that despite that box 3 would fit in the 2nd column it&rsquo;s rendered as the first element in the last column:</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img loading="lazy" decoding="async" width="1024" height="837" src="https://image-control-storage.s3.amazonaws.com/2024/09/01142825/image-231-1024x837.png" alt="last column" class="wp-image-66687" srcset="https://image-control-storage.s3.amazonaws.com/2024/09/01142825/image-231-1024x837.png 1024w, https://image-control-storage.s3.amazonaws.com/2024/09/01142825/image-231-768x627.png 768w, https://image-control-storage.s3.amazonaws.com/2024/09/01142825/image-231-1536x1255.png 1536w, https://image-control-storage.s3.amazonaws.com/2024/09/01142825/image-231.png 1683w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
+</div>
+
+
+<h2 class="wp-block-heading" id="the-solution">The solution</h2>
+
+
+
+<p class="wp-block-paragraph">As a final step, you need to make sure that your flex container has a set height that makes it taller than your tallest column (so that all columns will fit). Put together, this will produce a CSS masonry layout with three columns (<a href="https://codepen.io/tobiasahlin/pen/JVmLRa">also available as a codepen</a>):</p>
+
+
+<p class="codepen" data-height="300" data-theme-id="0" data-slug-hash="JVmLRa" data-default-tab="html,result" data-animations="run" data-editable="" data-embed-version="2">
+See the Pen 
+  CSS flexbox masonry, 3 columns by Tobias Ahlin (@tobiasahlin)
+  on CodePen.</p>
+
+
+
+
+<pre class="wp-block-code"><code lang="css" class="language-css line-numbers">.container {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-between;
+  <em>/* Your container needs a fixed height, and it 
+   * needs to be taller than your tallest column. */</em>
+  height: 600px; 
+}
+
+.item {
+  width: 32%;
+  margin-bottom: 2%; <em>/* Optional */</em>
+}
+
+<em>/* Re-order items into 3 rows */</em>
+.item:nth-child(3n+1) { order: 1; }
+.item:nth-child(3n+2) { order: 2; }
+.item:nth-child(3n)   { order: 3; }
+
+<em>/* Force new columns */</em>
+.container::before,
+.container::after {
+  content: "";
+  flex-basis: 100%;
+  width: 0;
+  order: 2;
+}
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">Your HTML should look like this, with one&nbsp;<code>&lt;div /&gt;</code>&nbsp;for every item in your grid:</p>
+
+
+
+<pre class="wp-block-code"><code lang="markup" class="language-markup line-numbers">&lt;div class="container"&gt;
+  &lt;div class="item"&gt;&lt;/div&gt;
+  &lt;div class="item"&gt;&lt;/div&gt;
+  &lt;div class="item"&gt;&lt;/div&gt;
+  ...
+&lt;/div&gt;
+</code></pre>
+
+
+
+<h2 class="wp-block-heading" id="working-with-more-than-three-columns">Working with more than three columns</h2>
+
+
+
+<p class="wp-block-paragraph">To create a masonry layout with more than three columns<span style="box-sizing: border-box; margin: 0px; padding: 0px;">, we need to adapt our sorting algorithm, update the width of the items, and insert line break elements manually (instead of using pseudo-elements). For quick access to the final result, I&rsquo;ve compiled&nbsp;<a href="https://codepen.io/collection/XPjvPP/" target="_blank" rel="noopener">a list of code pens showcasing flexbox masonry with 3, 4, 5,</a></span><a href="https://codepen.io/collection/XPjvPP/"> and 6 columns</a>.</p>
+
+
+
+<p class="wp-block-paragraph">Since we&rsquo;re limited to creating just two pseudo-elements with&nbsp;<code>:before</code>&nbsp;and&nbsp;<code>:after</code>&nbsp;we need to manually add break elements into our container (you need one less break element than the number of columns in your layout). You can append them to the end of your container, they&rsquo;ll be sorted into their respective columns:</p>
+
+
+
+<pre class="wp-block-code"><code lang="markup" class="language-markup line-numbers">&lt;div class="container"&gt;
+  &lt;div class="item"&gt;&lt;/div&gt;
+  &lt;div class="item"&gt;&lt;/div&gt;
+  &lt;div class="item"&gt;&lt;/div&gt;
+  &lt;div class="item"&gt;&lt;/div&gt;
+  ...
+  &lt;span class="item break"&gt;&lt;/span&gt;
+  &lt;span class="item break"&gt;&lt;/span&gt;
+  &lt;span class="item break"&gt;&lt;/span&gt;
+&lt;/div&gt;
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">We&rsquo;re inserting column breaks as&nbsp;<code>span</code>s in order to sort them independently from the content items. We need a way to &ldquo;restart&rdquo; the counting once we reach the break elements, or an uneven number of content items could make the first break element start after the 3rd column, for example. The&nbsp;<code>:nth-of-type</code>&nbsp;selector targets elements of different types independently, so we can decouple the order of the content items and the column breaks like so:</p>
+
+
+
+<pre class="wp-block-code"><code lang="css" class="language-css line-numbers">.item:nth-of-type(4n+1) { order: 1; }
+.item:nth-of-type(4n+2) { order: 2; }
+.item:nth-of-type(4n+3) { order: 3; }
+.item:nth-of-type(4n)   { order: 4; }
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">The break elements, like previously, take up the full height of the container:</p>
+
+
+
+<pre class="wp-block-code"><code lang="css" class="language-css line-numbers"><em>/* Force new columns */</em>
+.break {
+  flex-basis: 100%;
+  width: 0;
+  margin: 0;
+}
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">This will create a masonry layout with four columns (<a href="https://codepen.io/tobiasahlin/pen/OGBvqW">view codepen</a>):</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter size-large"><img loading="lazy" decoding="async" width="1024" height="764" src="https://image-control-storage.s3.amazonaws.com/2024/09/01143023/image-233-1024x764.png" alt="masonry layout" class="wp-image-66690" srcset="https://image-control-storage.s3.amazonaws.com/2024/09/01143023/image-233-1024x764.png 1024w, https://image-control-storage.s3.amazonaws.com/2024/09/01143023/image-233-768x573.png 768w, https://image-control-storage.s3.amazonaws.com/2024/09/01143023/image-233-1536x1146.png 1536w, https://image-control-storage.s3.amazonaws.com/2024/09/01143023/image-233.png 1677w" sizes="auto, (max-width: 1024px) 100vw, 1024px"></figure>
+</div>
+
+<p class="codepen" data-height="300" data-theme-id="0" data-slug-hash="OGBvqW" data-default-tab="html,result" data-animations="run" data-editable="" data-embed-version="2">
+See the Pen 
+  CSS flexbox masonry, 4 columns by Tobias Ahlin (@tobiasahlin)
+  on CodePen.</p>
+
+
+
+
+<p class="wp-block-paragraph">Here&rsquo;s the full solution for a CSS masonry layout with four columns:</p>
+
+
+
+<pre class="wp-block-code"><code lang="css" class="language-css line-numbers">.container {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-between;
+  <em>/* Your container needs a fixed height, and it 
+   * needs to be taller than your tallest column. */</em>
+  height: 600px; 
+}
+
+.item {
+  width:24%;
+  margin-bottom: 2%; <em>/* Optional */</em>
+}
+
+<em>/* Re-order items into 4 rows */</em>
+.item:nth-of-type(4n+1) { order: 1; }
+.item:nth-of-type(4n+2) { order: 2; }
+.item:nth-of-type(4n+3) { order: 3; }
+.item:nth-of-type(4n)   { order: 4; }
+
+<em>/* Force new columns */</em>
+.break {
+  flex-basis: 100%;
+  width: 0;
+  margin: 0;
+}
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">This CSS-only way of creating a masonry (or mosaic) layout is surely not as robust, flexible, and foolproof as a JavaScript implementation (like&nbsp;<a href="https://masonry.desandro.com/">Masonry</a>) but if you don&rsquo;t want to rely on a third-party library just to create a masonry layout I hope that these layouts tricks can come in handy.</p>
+
+
+
+<p class="wp-block-paragraph">For help with more common CSS flexbox patterns,&nbsp;<a href="https://tobiasahlin.com/blog/common-flexbox-patterns/">I&rsquo;ve compiled a list of flexbox examples that you can copy and paste into your projects</a>&nbsp;and&nbsp;<a href="https://tobiasahlin.com/blog/flexbox-break-to-new-row/">written in-depth about the line-breaking flexbox item technique</a>.</p>
+
+
+
+<h2 class="wp-block-heading" id="further-reading">Further reading</h2>
+
+
+
+<ul class="wp-block-list">
+<li><a href="https://twitter.com/gilbitron">Gilbert Pellegrom</a>&nbsp;has created&nbsp;<a href="https://flexmasonry.now.sh/">FlexMasonry</a>, a lightweight JavaScript masonry library inspired by the technique outlined in this article</li>
+
+
+
+<li>October, 2020: the CSS Working Group has now published a&nbsp;<a href="https://drafts.csswg.org/css-grid-3/">draft specification for masonry layouts</a>, as part of CSS grid</li>
+
+
+
+<li>CSS masonry&nbsp;<a href="https://css-houdini.rocks/masonry/">can also be implemented</a>&nbsp;with&nbsp;<a href="https://developer.mozilla.org/en-US/docs/Web/Houdini">Houdini</a>&nbsp;(requires flag)</li>
+</ul>
+</div></article></div></main><footer class="noj-footer"><div class="noj-wrap noj-footer-inner">
+<a class="noj-brand" href="/nuggetofjoystatic/"><span class="noj-brand-orange">nugget</span><span class="noj-brand-blue">of joy</span></a>
+<p>Communication, Art, Design &amp; Instruction</p>
+<p>&copy; 2026 Communication, Art, Design &amp; Instruction</p>
+</div></footer><script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/nuggetofjoy-home-theme-v6-fixed/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id="codepen-embed-script-js" src="https://cpwebassets.codepen.io/assets/embed/ei.js?ver=1.0.1"></script>
+<script id="mkaz-code-syntax-prism-js-js-extra">
+var prism_settings = {"pluginUrl":"/wp-content/plugins/code-syntax-block/"};
+//# sourceURL=mkaz-code-syntax-prism-js-js-extra
+</script>
+<script id="mkaz-code-syntax-prism-js-js" src="/nuggetofjoystatic/wp-content/plugins/code-syntax-block/assets/prism/prism.js?ver=1720452604"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"/wp-includes/js/wp-emoji-release.min.js?ver=7.1.3"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=/wp-includes/js/wp-emoji-loader.min.js
+</script>
+</body></html>
+<!-- Powered by Staatic (https://staatic.com/) -->

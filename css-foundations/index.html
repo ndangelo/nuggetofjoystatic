@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>7. CSS Foundations &ndash; Communication, Art, Design &amp; Instruction</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="//cpwebassets.codepen.io">
+<link rel="alternate" type="application/rss+xml" title="Communication, Art, Design &amp; Instruction &raquo; Feed" href="/nuggetofjoystatic/feed/">
+<link rel="alternate" type="application/rss+xml" title="Communication, Art, Design &amp; Instruction &raquo; Comments Feed" href="/nuggetofjoystatic/comments/feed/">
+		
+	<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<link rel="stylesheet" id="embedpress-css-css" href="/nuggetofjoystatic/wp-content/plugins/embedpress/assets/css/embedpress.css?ver=1790948058" media="all">
+<link rel="stylesheet" id="embedpress-blocks-style-css" href="/nuggetofjoystatic/wp-content/plugins/embedpress/assets/css/blocks.build.css?ver=1790948058" media="all">
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="wp-block-heading-inline-css">
+h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-background,h3:where(.wp-block-heading).has-background,h4:where(.wp-block-heading).has-background,h5:where(.wp-block-heading).has-background,h6:where(.wp-block-heading).has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+/*# sourceURL=/wp-includes/blocks/heading/style.min.css */
+</style>
+<style id="wp-block-image-inline-css">
+.wp-block-image>a,.wp-block-image>figure>a{display:inline-block}.wp-block-image img{box-sizing:border-box;height:auto;max-width:100%;vertical-align:bottom}@media not (prefers-reduced-motion){.wp-block-image img.hide{visibility:hidden}.wp-block-image img.show{animation:show-content-image .4s}}.wp-block-image[style*=border-radius] img,.wp-block-image[style*=border-radius]>a{border-radius:inherit}.wp-block-image.has-custom-border img{box-sizing:border-box}.wp-block-image.aligncenter{text-align:center}.wp-block-image.alignfull>a,.wp-block-image.alignwide>a{width:100%}.wp-block-image.alignfull img,.wp-block-image.alignwide img{height:auto;width:100%}.wp-block-image .aligncenter,.wp-block-image .alignleft,.wp-block-image .alignright,.wp-block-image.aligncenter,.wp-block-image.alignleft,.wp-block-image.alignright{display:table}.wp-block-image .aligncenter>figcaption,.wp-block-image .alignleft>figcaption,.wp-block-image .alignright>figcaption,.wp-block-image.aligncenter>figcaption,.wp-block-image.alignleft>figcaption,.wp-block-image.alignright>figcaption{caption-side:bottom;display:table-caption}.wp-block-image .alignleft{float:left;margin:.5em 1em .5em 0}.wp-block-image .alignright{float:right;margin:.5em 0 .5em 1em}.wp-block-image .aligncenter{margin-left:auto;margin-right:auto}.wp-block-image :where(figcaption){margin-bottom:1em;margin-top:.5em}.wp-block-image.is-style-circle-mask img{border-radius:9999px}@supports ((-webkit-mask-image:none) or (mask-image:none)) or (-webkit-mask-image:none){.wp-block-image.is-style-circle-mask img{border-radius:0;-webkit-mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/>');mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/>');mask-mode:alpha;-webkit-mask-position:center;mask-position:center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain}}:root :where(.wp-block-image.is-style-rounded img,.wp-block-image .is-style-rounded img){border-radius:9999px}.wp-block-image figure{margin:0}.wp-lightbox-container{display:flex;flex-direction:column;position:relative}.wp-lightbox-container img{cursor:zoom-in}.wp-lightbox-container img:hover+button{opacity:1}.wp-lightbox-container button{align-items:center;backdrop-filter:blur(16px) saturate(180%);background-color:rgba(90,90,90,.25);border:none;border-radius:4px;cursor:zoom-in;display:flex;height:20px;justify-content:center;opacity:0;padding:0;position:absolute;right:16px;text-align:center;top:16px;width:20px;z-index:100}@media not (prefers-reduced-motion){.wp-lightbox-container button{transition:opacity .2s ease}}.wp-lightbox-container button:focus-visible{outline:3px auto rgba(90,90,90,.25);outline:3px auto -webkit-focus-ring-color;outline-offset:3px}.wp-lightbox-container button:hover{cursor:pointer;opacity:1}.wp-lightbox-container button:focus{opacity:1}.wp-lightbox-container button:focus,.wp-lightbox-container button:hover,.wp-lightbox-container button:not(:hover):not(:active):not(.has-background){background-color:rgba(90,90,90,.25);border:none}.wp-lightbox-overlay{box-sizing:border-box;cursor:zoom-out;height:100vh;left:0;overflow:hidden;position:fixed;top:0;visibility:hidden;width:100%;z-index:100000}.wp-lightbox-overlay .wp-lightbox-close-button{align-items:center;cursor:pointer;display:flex;font-family:inherit;gap:8px;justify-content:center;line-height:1;min-height:40px;min-width:40px;padding:0 4px;position:absolute;right:calc(env(safe-area-inset-right) + 16px);top:calc(env(safe-area-inset-top) + 16px);z-index:5000000}.wp-lightbox-overlay .wp-lightbox-close-button:focus,.wp-lightbox-overlay .wp-lightbox-close-button:hover,.wp-lightbox-overlay .wp-lightbox-close-button:not(:hover):not(:active):not(.has-background){background:none;border:none}.wp-lightbox-overlay .wp-lightbox-close-button:has(.wp-lightbox-close-text:not([hidden])) .wp-lightbox-close-icon svg{height:1em;width:1em}.wp-lightbox-overlay .wp-lightbox-close-icon svg{display:block}.wp-lightbox-overlay .wp-lightbox-navigation-button-next,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev{align-items:center;bottom:16px;cursor:pointer;display:flex;font-family:inherit;gap:4px;justify-content:center;line-height:1;min-height:40px;min-width:40px;padding:0 8px;position:absolute;z-index:2000002}.wp-lightbox-overlay .wp-lightbox-navigation-button-next[hidden],.wp-lightbox-overlay .wp-lightbox-navigation-button-prev[hidden]{display:none}@media (min-width:960px){.wp-lightbox-overlay .wp-lightbox-navigation-button-next,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev{bottom:50%;transform:translateY(-50%)}}.wp-lightbox-overlay .wp-lightbox-navigation-button-next:focus,.wp-lightbox-overlay .wp-lightbox-navigation-button-next:hover,.wp-lightbox-overlay .wp-lightbox-navigation-button-next:not(:hover):not(:active):not(.has-background),.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:focus,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:hover,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:not(:hover):not(:active):not(.has-background){background:none;border:none;padding:0 8px}.wp-lightbox-overlay .wp-lightbox-navigation-button-next:has(.wp-lightbox-navigation-text:not([hidden])) .wp-lightbox-navigation-icon svg,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:has(.wp-lightbox-navigation-text:not([hidden])) .wp-lightbox-navigation-icon svg{display:block;height:1.5em;width:1.5em}.wp-lightbox-overlay .wp-lightbox-navigation-button-prev{left:calc(env(safe-area-inset-left) + 16px)}.wp-lightbox-overlay .wp-lightbox-navigation-button-next{right:calc(env(safe-area-inset-right) + 16px)}.wp-lightbox-overlay .wp-lightbox-navigation-icon svg{vertical-align:middle}.wp-lightbox-overlay .lightbox-image-container{height:var(--wp--lightbox-container-height);left:50%;overflow:hidden;position:absolute;top:50%;transform:translate(-50%,-50%);transform-origin:top left;width:var(--wp--lightbox-container-width);z-index:2000001}.wp-lightbox-overlay .wp-block-image{align-items:center;box-sizing:border-box;display:flex;height:100%;justify-content:center;margin:0;position:relative;transform-origin:0 0;width:100%;z-index:3000000}.wp-lightbox-overlay .wp-block-image img{height:var(--wp--lightbox-image-height);min-height:var(--wp--lightbox-image-height);min-width:var(--wp--lightbox-image-width);width:var(--wp--lightbox-image-width)}.wp-lightbox-overlay .wp-block-image figcaption{display:none}.wp-lightbox-overlay button{background:none;border:none}.wp-lightbox-overlay .scrim{background-color:#fff;height:100%;opacity:.9;position:absolute;width:100%;z-index:2000000}.wp-lightbox-overlay.active{visibility:visible}@media not (prefers-reduced-motion){.wp-lightbox-overlay.active{animation:turn-on-visibility .25s both}.wp-lightbox-overlay.active img{animation:turn-on-visibility .35s both}.wp-lightbox-overlay.show-closing-animation:not(.active){animation:turn-off-visibility .35s both}.wp-lightbox-overlay.show-closing-animation:not(.active) img{animation:turn-off-visibility .25s both}.wp-lightbox-overlay.zoom.active{animation:none;opacity:1;visibility:visible}.wp-lightbox-overlay.zoom.active .lightbox-image-container{animation:lightbox-zoom-in .4s}.wp-lightbox-overlay.zoom.active .lightbox-image-container img{animation:none}.wp-lightbox-overlay.zoom.active .scrim{animation:turn-on-visibility .4s forwards}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active){animation:none}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .lightbox-image-container{animation:lightbox-zoom-out .4s}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .lightbox-image-container img{animation:none}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .scrim{animation:turn-off-visibility .4s forwards}}@keyframes show-content-image{0%{visibility:hidden}99%{visibility:hidden}to{visibility:visible}}@keyframes turn-on-visibility{0%{opacity:0}to{opacity:1}}@keyframes turn-off-visibility{0%{opacity:1;visibility:visible}99%{opacity:0;visibility:visible}to{opacity:0;visibility:hidden}}@keyframes lightbox-zoom-in{0%{transform:translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)),calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale))}to{transform:translate(-50%,-50%) scale(1)}}@keyframes lightbox-zoom-out{0%{transform:translate(-50%,-50%) scale(1);visibility:visible}99%{visibility:visible}to{transform:translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)),calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale));visibility:hidden}}
+/*# sourceURL=/wp-includes/blocks/image/style.min.css */
+</style>
+<style id="wp-block-list-inline-css">
+ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:1.25em 2.375em}
+/*# sourceURL=/wp-includes/blocks/list/style.min.css */
+</style>
+<style id="wp-block-paragraph-inline-css">
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+/*# sourceURL=/wp-includes/blocks/paragraph/style.min.css */
+</style>
+<style id="wp-block-code-inline-css">
+.wp-block-code{box-sizing:border-box}.wp-block-code code{direction:ltr;display:block;font-family:inherit;overflow-wrap:break-word;text-align:initial;white-space:break-spaces}
+/*# sourceURL=/wp-includes/blocks/code/style.min.css */
+</style>
+
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel="stylesheet" id="mkaz-code-syntax-prism-css-css" href="/nuggetofjoystatic/wp-content/plugins/code-syntax-block/assets/prism-onedark.css?ver=1720452603" media="all">
+<link rel="stylesheet" id="nuggetofjoy-archive-style-css" href="/nuggetofjoystatic/wp-content/themes/nuggetofjoy-home-theme-v6-fixed/style.css?ver=6.0.0" media="all">
+<link rel="stylesheet" id="wp-paginate-css" href="/nuggetofjoystatic/wp-content/plugins/wp-paginate/css/wp-paginate.css?ver=2.2.6" media="screen">
+<link rel="https://api.w.org/" href="/nuggetofjoystatic/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="/nuggetofjoystatic/wp-json/wp/v2/posts/58426"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="/nuggetofjoystatic/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 7.1.3">
+<link rel="canonical" href="/nuggetofjoystatic/css-foundations/">
+<link rel="shortlink" href="/nuggetofjoystatic/?p=58426">
+<link rel="icon" href="https://image-control-storage.s3.amazonaws.com/blog-images/2017/09/27184050/cropped-favicon.jpg" sizes="32x32">
+<link rel="icon" href="https://image-control-storage.s3.amazonaws.com/blog-images/2017/09/27184050/cropped-favicon.jpg" sizes="192x192">
+<link rel="apple-touch-icon" href="https://image-control-storage.s3.amazonaws.com/blog-images/2017/09/27184050/cropped-favicon.jpg">
+<meta name="msapplication-TileImage" content="https://image-control-storage.s3.amazonaws.com/blog-images/2017/09/27184050/cropped-favicon.jpg">
+	<!-- Fonts Plugin CSS - https://fontsplugin.com/ -->
+	<style>
+			</style>
+	<!-- Fonts Plugin CSS -->
+	</head>
+<body class="wp-singular post-template-default single single-post postid-58426 single-format-standard wp-embed-responsive wp-theme-nuggetofjoy-home-theme-v6-fixed"><a class="noj-skip" href="#main">Skip to content</a>
+<header class="noj-header"><div class="noj-wrap noj-header-inner">
+<a class="noj-brand" href="/nuggetofjoystatic/"><span class="noj-brand-orange">nugget</span><span class="noj-brand-blue">of joy</span></a>
+<nav class="noj-nav" aria-label="Main navigation">
+<ul id="menu-main-2" class="noj-menu"><li id="menu-item-68087" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68087"><a href="/nuggetofjoystatic/category/ui-ux/">UI/UX</a></li>
+<li id="menu-item-68088" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68088"><a href="/nuggetofjoystatic/category/ia/">IA</a></li>
+<li id="menu-item-68089" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-68089"><a href="/nuggetofjoystatic/category/dmet-155-introduction-to-web-design/">DMET 155 Introduction to Web Design</a></li>
+<li id="menu-item-68090" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68090"><a href="/nuggetofjoystatic/category/interactive-social-media/">Interactive and Social Media</a></li>
+<li id="menu-item-68091" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68091"><a href="/nuggetofjoystatic/category/dmet-375-imaging-technology/">DMET 375 IMAGING TECHNOLOGY</a></li>
+<li id="menu-item-68092" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68092"><a href="/nuggetofjoystatic/category/social-design/">Social Design</a></li>
+<li id="menu-item-68093" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68093"><a href="/nuggetofjoystatic/category/dmet-350-media-graphics-and-design/">DMET 350 MEDIA GRAPHICS AND DESIGN</a></li>
+<li id="menu-item-68094" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68094"><a href="/nuggetofjoystatic/category/dmet-355-advanced-web-design/">DMET 355 ADVANCED WEB DESIGN</a></li>
+<li id="menu-item-68095" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68095"><a href="/nuggetofjoystatic/category/color-theory/">Color Theory</a></li>
+<li id="menu-item-68096" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68096"><a href="/nuggetofjoystatic/category/social_media/">Social Media</a></li>
+<li id="menu-item-68097" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68097"><a href="/nuggetofjoystatic/category/visual-information-theory/">Visual Information Theory</a></li>
+<li id="menu-item-68098" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68098"><a href="/nuggetofjoystatic/category/media-graphics-design-assignments/">Media Graphics &amp; Design Assignments</a></li>
+<li id="menu-item-68099" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68099"><a href="/nuggetofjoystatic/category/gestalt-principles/">Gestalt Principles</a></li>
+</ul></nav>
+<form class="noj-search" role="search" method="get" action="/nuggetofjoystatic/"><label class="screen-reader-text" for="noja-search-header">Search all content</label><input id="noja-search-header" type="search" name="s" value="" placeholder="Search the archive&hellip;"><button type="submit">Search</button></form></div></header>
+<main id="main" class="noj-search-results"><div class="noj-wrap"><article class="noj-entry post-58426 post type-post status-publish format-standard hentry category-dmet-155-introduction-to-web-design category-odin-project"><p class="noj-kicker">Post &middot; January 9, 2023</p><h1>7. CSS Foundations</h1><div class="noj-entry-content">
+<p class="wp-block-paragraph">In the previous lesson, you learned how to write the HTML that determines how a web page is structured. The next step is to make that structure look good with some&nbsp;<em>style</em>, which is exactly what CSS is for. In this lesson, we&rsquo;re going to focus on what we believe are some foundational CSS concepts, things that everyone should know from the beginning &mdash; whether they are just starting out or simply need a refresher.</p>
+
+
+
+<h3 class="wp-block-heading"><a href="https://www.theodinproject.com/lessons/foundations-css-foundations#lesson-overview">Lesson Overview</a></h3>
+
+
+
+<p class="wp-block-paragraph">This section contains a general overview of topics that you will learn in this lesson.</p>
+
+
+
+<ul class="wp-block-list">
+<li>Add styles to HTML with CSS.</li>
+
+
+
+<li>Understand how to use the class and ID attributes.</li>
+
+
+
+<li>Add styles to specific elements using the correct selectors.</li>
+
+
+
+<li>Understand what the cascade does.</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading"><a href="https://www.theodinproject.com/lessons/foundations-css-foundations#basic-syntax">Basic Syntax</a></h3>
+
+
+
+<p class="wp-block-paragraph">At the most basic level, CSS is made up of various rules. These rules are made up of a selector (more on this in a bit) and a semi-colon separated list of declarations, with each of those declarations being made up of a property:value pair.</p>
+
+
+
+<figure class="wp-block-image"><a href="https://cdn.statically.io/gh/TheOdinProject/curriculum/05ce472eabf8e04eeb2cc9139e66db884074fd7d/foundations/html_css/css-foundations/imgs/00.jpg" target="_blank" rel="noreferrer noopener"><img decoding="async" src="https://image-control-storage.s3.amazonaws.com/2023/01/12172719/00-5.jpg" alt="Basic CSS syntax"></a></figure>
+
+
+
+<h4 class="wp-block-heading" id="note">Note</h4>
+
+
+
+<p class="wp-block-paragraph">A&nbsp;<code>&lt;div&gt;</code>&nbsp;is one of the basic HTML elements. It is simply an empty container. In general, it is best to use other tags such as&nbsp;<code>&lt;h1&gt;</code>&nbsp;or&nbsp;<code>&lt;p&gt;</code>&nbsp;for content in your projects, but as we learn more about CSS you&rsquo;ll find that there are many cases where the thing you need is just a container for other elements. Many of our exercises use plain&nbsp;<code>&lt;div&gt;</code>s for simplicity. Later lessons will go into much more depth about when it is appropriate to use the various HTML elements.</p>
+
+
+
+<h3 class="wp-block-heading"><a href="https://www.theodinproject.com/lessons/foundations-css-foundations#selectors">Selectors</a></h3>
+
+
+
+<p class="wp-block-paragraph">Selectors simply refer to the HTML elements to which CSS rules apply; they&rsquo;re what is actually being &ldquo;selected&rdquo; for each rule. The following subsections don&rsquo;t cover every selector available, but they&rsquo;re by far the most common and the ones you should get comfortable using first.</p>
+
+
+
+<h4 class="wp-block-heading" id="universal-selector">Universal Selector</h4>
+
+
+
+<p class="wp-block-paragraph">The universal selector will select elements of any type, hence the name &ldquo;universal&rdquo;, and the syntax for it is a simple asterisk. In the example below, every element would have the&nbsp;<code>color: purple;</code>&nbsp;style applied to it.</p>
+
+
+
+<pre class="wp-block-code"><code class="">* {
+  color: purple;
+}
+</code></pre>
+
+
+
+<h4 class="wp-block-heading" id="type-selectors">Type Selectors</h4>
+
+
+
+<p class="wp-block-paragraph">A type selector (or element selector) will select all elements of the given element type, and the syntax is just the name of the element:</p>
+
+
+
+<pre class="wp-block-code has-text-color" style="color:#f5f5f5"><code lang="markup" class="language-markup line-numbers">&lt;!-- index.html --&gt;
+
+&lt;div&gt;Hello, World!&lt;/div&gt;
+&lt;div&gt;Hello again!&lt;/div&gt;
+&lt;p&gt;Hi...&lt;/p&gt;
+&lt;div&gt;Okay, bye.&lt;/div&gt;
+</code></pre>
+
+
+
+<pre class="wp-block-code"><code lang="css" class="language-css line-numbers">/* styles.css */
+
+div {
+  color: white;
+}
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">Here, all three&nbsp;<code>&lt;div&gt;</code>&nbsp;elements would be selected, while the&nbsp;<code>&lt;p&gt;</code>&nbsp;element wouldn&rsquo;t be.</p>
+
+
+
+<h4 class="wp-block-heading" id="class-selectors">Class Selectors</h4>
+
+
+
+<p class="wp-block-paragraph">Class selectors will select all elements with the given class, which is just an attribute you place on an HTML element. Here&rsquo;s how you add a class to an HTML tag and select it in CSS:</p>
+
+
+
+<pre class="wp-block-code"><code lang="markup" class="language-markup">&lt;!-- index.html --&gt;
+
+&lt;div class="alert-text"&gt;
+  Please agree to our terms of service.
+&lt;/div&gt;
+</code></pre>
+
+
+
+<pre class="wp-block-code"><code lang="css" class="language-css line-numbers">/* styles.css */
+
+.alert-text {
+  color: red;
+}
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">Note the syntax for class selectors: a period immediately followed by the case-sensitive value of the class attribute. Classes aren&rsquo;t required to be unique, so you can use the same class on as many elements as you want.</p>
+
+
+
+<p class="wp-block-paragraph">Another thing you can do with the class attribute is to add multiple classes to a single element as a space-separated list, such as&nbsp;<code>class="alert-text severe-alert"</code>. Since whitespace is used to separate class names like this, you should never use spaces for multi-worded names and should use a hyphen instead.</p>
+
+
+
+<h4 class="wp-block-heading" id="id-selectors">ID Selectors</h4>
+
+
+
+<p class="wp-block-paragraph">ID selectors are similar to class selectors. They select an element with the given ID, which is another attribute you place on an HTML element:</p>
+
+
+
+<pre class="wp-block-code"><code lang="markup" class="language-markup line-numbers">&lt;!-- index.html --&gt;
+
+&lt;div id="title"&gt;My Awesome 90's Page&lt;/div&gt;
+</code></pre>
+
+
+
+<pre class="wp-block-code"><code lang="css" class="language-css line-numbers">/* styles.css */
+
+#title {
+  background-color: red;
+}
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">Instead of a period, we use a hashtag immediately followed by the case-sensitive value of the ID attribute. A common pitfall is people overusing the ID attribute when they don&rsquo;t necessarily need to, and when classes will suffice. While there are cases where using an ID makes sense or is needed, such as taking advantage of specificity or having links redirect to a section on the current page, you should use IDs&nbsp;<strong>sparingly</strong>&nbsp;(if at all).</p>
+
+
+
+<p class="wp-block-paragraph">The major difference between classes and IDs is that an element can only have&nbsp;<strong>one</strong>&nbsp;ID. An ID cannot be repeated on a single page, and the ID attribute should not contain any whitespace at all.</p>
+
+
+
+<h4 class="wp-block-heading" id="grouping-selector">Grouping Selector</h4>
+
+
+
+<p class="wp-block-paragraph">What if we have two groups of elements that share some of their style declarations?</p>
+
+
+
+<pre class="wp-block-code"><code lang="css" class="language-css line-numbers">.read {
+  color: white;
+  background-color: black;
+  /* several unique declarations */
+}
+
+.unread {
+  color: white;
+  background-color: black;
+  /* several unique declarations */
+}
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">Both our&nbsp;<code>.read</code>&nbsp;and&nbsp;<code>.unread</code>&nbsp;selectors share the&nbsp;<code>color: white;</code>&nbsp;and&nbsp;<code>background-color: black;</code>&nbsp;declarations, but otherwise have several of their own unique declarations. To cut down on the repetition, we can group these two selectors together as a comma-separated list:</p>
+
+
+
+<pre class="wp-block-code"><code lang="css" class="language-css line-numbers">.read,
+.unread {
+  color: white;
+  background-color: black;
+}
+
+.read {
+  /* several unique declarations */
+}
+
+.unread {
+  /* several unique declarations */
+}
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">Both of the examples above (with and without grouping) will have the same result, but the second example reduces the repetition of declarations and makes it easier to edit either the&nbsp;<code>color</code>&nbsp;or&nbsp;<code>background-color</code>&nbsp;for both classes at once.</p>
+
+
+
+<h4 class="wp-block-heading" id="chaining-selectors">Chaining Selectors</h4>
+
+
+
+<p class="wp-block-paragraph">Another way to use selectors is to chain them as a list without any separation. Let&rsquo;s say we had the following HTML:</p>
+
+
+
+<pre class="wp-block-code"><code lang="markup" class="language-markup line-numbers">&lt;div&gt;
+  &lt;div class="subsection header"&gt;Latest Posts&lt;/div&gt;
+  &lt;p class="subsection preview"&gt;This is where a preview for a post might go.&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">We have two elements with the&nbsp;<code>subsection</code>&nbsp;class that have some sort of unique styles, but what if we only want to apply a separate rule to the element that also has&nbsp;<code>header</code>&nbsp;as a second class? Well, we could chain both the class selectors together in our CSS like so:</p>
+
+
+
+<pre class="wp-block-code"><code lang="css" class="language-css line-numbers">.subsection.header {
+  color: red;
+}
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">What&nbsp;<code>.subsection.header</code>&nbsp;does is it selects any element that has both the&nbsp;<code>subsection</code>&nbsp;<em>and</em>&nbsp;<code>header</code>&nbsp;classes. Notice how there isn&rsquo;t any space between the&nbsp;<code>.subsection</code>&nbsp;and&nbsp;<code>.header</code>&nbsp;class selectors. This syntax basically works for chaining any combination of selectors, except for chaining more than one&nbsp;<a href="https://www.theodinproject.com/lessons/foundations-css-foundations#type-selectors">type selector</a>.</p>
+
+
+
+<p class="wp-block-paragraph">This can also be used to chain a class and an ID, as shown below:</p>
+
+
+
+<pre class="wp-block-code"><code lang="markup" class="language-markup line-numbers">&lt;div&gt;
+  &lt;div class="subsection header"&gt;Latest Posts&lt;/div&gt;
+  &lt;p class="subsection" id="preview"&gt;This is where a preview for a post might go.&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">You can take the two elements above and combine them with the following:</p>
+
+
+
+<pre class="wp-block-code"><code lang="css" class="language-css line-numbers">.subsection.header {
+  color: red;
+}
+
+.subsection#preview {
+  color: blue;
+}
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">In general, you can&rsquo;t chain more than one type selector since an element can&rsquo;t be two different types at once. For example, chaining two type selectors like&nbsp;<code>div</code>&nbsp;and&nbsp;<code>p</code>&nbsp;would give us the selector&nbsp;<code>divp</code>, which wouldn&rsquo;t work since the selector would try to find a literal&nbsp;<code>&lt;divp&gt;</code>&nbsp;element, which doesn&rsquo;t exist.</p>
+
+
+
+<h4 class="wp-block-heading" id="descendant-combinator">Descendant Combinator</h4>
+
+
+
+<p class="wp-block-paragraph">Combinators allow us to combine multiple selectors differently than either grouping or chaining them, as they show a relationship between the selectors. There are four types of combinators in total, but for right now we&rsquo;re going to only show you the&nbsp;<strong>descendant combinator</strong>, which is represented in CSS by a single space between selectors.&nbsp;A descendant combinator will only cause elements that match the last selector to be selected if they also have an ancestor (parent, grandparent, etc) that matches the previous selector.</p>
+
+
+
+<p class="wp-block-paragraph">So something like&nbsp;<code>.ancestor .child</code>&nbsp;would select an element with the class&nbsp;<code>child</code>&nbsp;if it has an ancestor with the class&nbsp;<code>ancestor</code>. Another way to think of it is&nbsp;<code>child</code>&nbsp;will only be selected if it is nested inside of&nbsp;<code>ancestor</code>, no matter how deep. Take a quick look at the example below and see if you can tell which elements would be selected based on the CSS rule provided:</p>
+
+
+
+<pre class="wp-block-code"><code lang="markup" class="language-markup line-numbers">&lt;!-- index.html --&gt;
+
+&lt;div class="ancestor"&gt; &lt;!-- A --&gt;
+  &lt;div class="contents"&gt; &lt;!-- B --&gt;
+    &lt;div class="contents"&gt; &lt;!-- C --&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="contents"&gt;&lt;/div&gt; &lt;!-- D --&gt;
+</code></pre>
+
+
+
+<pre class="wp-block-code"><code lang="css" class="language-css">/* styles.css */
+
+.ancestor .contents {
+  /* some declarations */
+}
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">In the above example, the first two elements with the&nbsp;<code>contents</code>&nbsp;class (B and C) would be selected, but that last element (D) won&rsquo;t be. Was your guess correct?</p>
+
+
+
+<p class="wp-block-paragraph">There&rsquo;s really no limit to how many combinators you can add to a rule, so&nbsp;<code>.one .two .three .four</code>&nbsp;would be totally valid. This would just select an element that has a class of&nbsp;<code>four</code>&nbsp;if it has an ancestor with a class of&nbsp;<code>three</code>, and if that ancestor has its own ancestor with a class of&nbsp;<code>two</code>, and so on. You generally want to avoid trying to select elements that need this level of nesting, though, as it can get pretty confusing and long, and it can cause issues when it comes to specificity.</p>
+
+
+
+<h3 class="wp-block-heading"><a href="https://www.theodinproject.com/lessons/foundations-css-foundations#properties-to-get-started-with">Properties to Get Started With</a></h3>
+
+
+
+<p class="wp-block-paragraph">There are some CSS properties that you&rsquo;re going to be using all the time, or at the very least more often than not. We&rsquo;re going to introduce you to several of these properties, though this is by no means a complete list. Learning the following properties will simply be enough to help get you started.</p>
+
+
+
+<h4 class="wp-block-heading" id="color-and-background-color">Color and Background-Color</h4>
+
+
+
+<p class="wp-block-paragraph">The&nbsp;<code>color</code>&nbsp;property sets an element&rsquo;s text color, while&nbsp;<code>background-color</code>&nbsp;sets, well, the background color of an element. I guess we&rsquo;re done here?</p>
+
+
+
+<p class="wp-block-paragraph">Almost. Both of these properties can accept one of several kinds of values. A common one is a keyword, such as an actual color name like&nbsp;<code>red</code>&nbsp;or the&nbsp;<code>transparent</code>&nbsp;keyword. They also accept HEX, RGB, and HSL values, which you may be familiar with if you&rsquo;ve ever used a photoshop program or a site where you could customize your profile colors.</p>
+
+
+
+<pre class="wp-block-code"><code lang="css" class="language-css line-numbers">p {
+  /* hex example: */
+  color: #1100ff;
+  /* rgb example: */
+  color: rgb(100, 0, 127);
+  /* hsl example: */
+  color: hsl(15, 82%, 56%);
+}
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">Take a quick look at&nbsp;<a href="https://www.w3schools.com/cssref/css_colors_legal.asp" target="_blank" rel="noreferrer noopener">CSS Legal Color Values</a>&nbsp;to see how you can adjust the opacity of these colors by adding an alpha value.</p>
+
+
+
+<h4 class="wp-block-heading" id="typography-basics-and-text-align">Typography Basics and Text-Align</h4>
+
+
+
+<p class="wp-block-paragraph"><code>font-family</code>&nbsp;can be a single value or a comma-separated list of values that determine what font an element uses. Each font will fall into one of two categories, either a &ldquo;font family name&rdquo; like&nbsp;<code>"Times New Roman"</code>&nbsp;(we use quotes due to the whitespace between words) or a &ldquo;generic family name&rdquo; like&nbsp;<code>sans-serif</code>&nbsp;(generic family names never use quotes).</p>
+
+
+
+<p class="wp-block-paragraph">If a browser cannot find or does not support the first font in a list, it will use the next one, then the next one and so on until it finds a supported and valid font. This is why it&rsquo;s best practice to include a list of values for this property, starting with the font you want to be used most and ending with a generic font family as a fallback, e.g.&nbsp;<code>font-family: "Times New Roman", sans-serif;</code></p>
+
+
+
+<p class="wp-block-paragraph"><code>font-size</code>&nbsp;will, as the property name suggests, set the size of the font. When giving a value to this property, the value should not contain any whitespace, e.g.&nbsp;<code>font-size: 22px</code>&nbsp;has no space between &ldquo;22&rdquo; and &ldquo;px&rdquo;.</p>
+
+
+
+<p class="wp-block-paragraph"><code>font-weight</code>&nbsp;affects the boldness of text, assuming the font supports the specified weight. This value can be a keyword, e.g.&nbsp;<code>font-weight: bold</code>, or a number between 1 and 1000, e.g.&nbsp;<code>font-weight: 700</code>&nbsp;(the equivalent of&nbsp;<code>bold</code>). Usually, the numeric values will be in increments of 100 up to 900, though this will depend on the font.</p>
+
+
+
+<p class="wp-block-paragraph"><code>text-align</code>&nbsp;will align text horizontally within an element, and you can use the common keywords you may have come across in word processors as the value for this property, e.g.&nbsp;<code>text-align: center</code>.</p>
+
+
+
+<h4 class="wp-block-heading" id="image-height-and-width">Image Height and Width</h4>
+
+
+
+<p class="wp-block-paragraph">Images aren&rsquo;t the only elements that we can adjust the height and width on, but we want to focus on them specifically in this case.</p>
+
+
+
+<p class="wp-block-paragraph">By default, an&nbsp;<code>&lt;img&gt;</code>&nbsp;element&rsquo;s&nbsp;<code>height</code>&nbsp;and&nbsp;<code>width</code>&nbsp;values will be the same as the actual image file&rsquo;s height and width. If you wanted to adjust the size of the image without causing it to lose its proportions, you would use a value of &ldquo;auto&rdquo; for the&nbsp;<code>height</code>&nbsp;property and adjust the&nbsp;<code>width</code>&nbsp;value:</p>
+
+
+
+<pre class="wp-block-code"><code lang="css" class="language-css line-numbers">img {
+  height: auto;
+  width: 500px;
+}
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">For example, if an image&rsquo;s original size was 500px height and 1000px width, using the above CSS would result in a height of 250px.</p>
+
+
+
+<p class="wp-block-paragraph">It&rsquo;s best to include both of these properties for&nbsp;<code>&lt;img&gt;</code>&nbsp;elements, even if you don&rsquo;t plan on adjusting the values from the image file&rsquo;s original ones. When these values aren&rsquo;t included, if an image takes longer to load than the rest of the page contents, the image won&rsquo;t take up any space on the page at first, but will suddenly cause a drastic shift of the other page contents once it does load in. Explicitly stating a&nbsp;<code>height</code>&nbsp;and&nbsp;<code>width</code>&nbsp;prevents this from happening, as space will be &ldquo;reserved&rdquo; on the page and will just appear as a blank space until the image loads.</p>
+
+
+
+<h3 class="wp-block-heading"><a href="https://www.theodinproject.com/lessons/foundations-css-foundations#the-cascade-of-css">The Cascade of CSS</a></h3>
+
+
+
+<p class="wp-block-paragraph">Sometimes we may have rules that conflict with one another, and we end up with some unexpected results. &ldquo;But I wanted&nbsp;<em>these</em>&nbsp;paragraphs to be blue, why are they red like these other paragraphs?!&rdquo; As frustrating as this can be, it&rsquo;s important to understand that CSS doesn&rsquo;t just&nbsp;<em>do</em>&nbsp;things against our wishes. CSS only does what we tell it to do. One exception to this is the default styles that are provided by a browser. These default styles vary from browser to browser, and they are why some elements create a large &ldquo;gap&rdquo; between themselves and other elements, or why buttons look the way they do, despite us not writing any CSS rules to style them that way.</p>
+
+
+
+<p class="wp-block-paragraph">So if you end up with some unexpected behavior like this it&rsquo;s either because of these default styles or due to not understanding how a property works or not understanding this little thing called the cascade.</p>
+
+
+
+<p class="wp-block-paragraph">The cascade is what determines which rules actually get applied to our HTML. There are different factors that the cascade uses to determine this, three of which we&rsquo;ll go over to hopefully help you avoid (as many of) those frustrating &ldquo;I hate CSS&rdquo; moments.</p>
+
+
+
+<h4 class="wp-block-heading" id="specificity">Specificity</h4>
+
+
+
+<p class="wp-block-paragraph">A CSS declaration that is more specific will take precedence over less specific ones. Inline styles, which we will go over more in the Adding CSS to HTML section towards the end of the lesson, have the highest specificity compared to selectors, while each type of selector has its own specificity level that contributes to how specific a declaration is. Other selectors contribute to specificity, but we&rsquo;re focusing only on the ones mentioned in this lesson:</p>
+
+
+
+<ol class="wp-block-list">
+<li>ID selectors (most specific selector)</li>
+
+
+
+<li>Class selectors</li>
+
+
+
+<li>Type selectors</li>
+</ol>
+
+
+
+<p class="wp-block-paragraph">Specificity will only be taken into account when an element has multiple, conflicting declarations targeting it, sort of like a tie-breaker. An ID selector will always beat any number of class selectors,&nbsp;a class selector will always beat any number of type selectors, and a type selector will always beat any number of anything less specific than it. When no declaration has a selector with a higher specificity, a larger amount of a single selector will beat a smaller amount of that same selector.</p>
+
+
+
+<p class="wp-block-paragraph">Let&rsquo;s take a look at a few quick examples to visualize how specificity works. Consider the following HTML and CSS code:</p>
+
+
+
+<pre class="wp-block-code"><code lang="markup" class="language-markup line-numbers">&lt;!-- index.html --&gt;
+
+&lt;div class="main"&gt;
+  &lt;div class="list subsection"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+
+
+<pre class="wp-block-code"><code lang="css" class="language-css line-numbers">/* rule 1 */
+.subsection {
+  color: blue;
+}
+
+/* rule 2 */
+.main .list {
+  color: red;
+}
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">In the example above, both rules are using only class selectors, but rule 2 is more specific because it is using more class selectors, so the&nbsp;<code>color: red;</code>&nbsp;declaration would take precedence.</p>
+
+
+
+<p class="wp-block-paragraph">Now, let&rsquo;s change things a little bit:</p>
+
+
+
+<pre class="wp-block-code"><code lang="markup" class="language-markup line-numbers">&lt;!-- index.html --&gt;
+
+&lt;div class="main"&gt;
+  &lt;div class="list" id="subsection"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+
+
+<pre class="wp-block-code"><code lang="css" class="language-css line-numbers">/* rule 1 */
+#subsection {
+  color: blue;
+}
+
+/* rule 2 */
+.main .list {
+  color: red;
+}
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">In the example above, despite rule 2 having more class selectors than ID selectors, rule 1 is more specific because ID beats class. In this case, the&nbsp;<code>color: blue;</code>&nbsp;declaration would take precedence.</p>
+
+
+
+<pre class="wp-block-code"><code lang="css" class="language-css line-numbers">/* rule 1 */
+#subsection .list {
+  background-color: yellow;
+  color: blue;
+}
+
+/* rule 2 */
+#subsection .main .list {
+  color: red;
+}
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">In this final example, both rules are using ID and class selectors, so neither rule is using a more specific selector than the other. The cascade then checks the amounts of each selector type. Both rules only have one ID selector, but rule 2 has more class selectors, so rule 2 has a higher specificity!</p>
+
+
+
+<p class="wp-block-paragraph">While the&nbsp;<code>color: red</code>&nbsp;declaration would take precedence, the&nbsp;<code>background-color: yellow</code>&nbsp;declaration would still be applied since there&rsquo;s no conflicting declaration for it.</p>
+
+
+
+<p class="wp-block-paragraph">Note: When comparing selectors, you may come across special symbols for the universal selector (<code>*</code>) as well as combinators (<code>+</code>,&nbsp;<code>~</code>,&nbsp;<code>&gt;</code>, and an empty space). These symbols do not add any specificity in and of themselves.</p>
+
+
+
+<pre class="wp-block-code"><code lang="css" class="language-css line-numbers">/* rule 1 */
+.class.second-class {
+  font-size: 12px;
+}
+
+/* rule 2 */
+.class .second-class {
+  font-size: 24px;
+}
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">Here both rule 1 and rule 2 have the same specificity. Rule 1 uses a chaining selector (no space) and rule 2 uses a descendant combinator (the empty space). But both rules have two classes and the combinator symbol itself does not add to the specificity.</p>
+
+
+
+<pre class="wp-block-code"><code lang="css" class="language-css line-numbers">/* rule 1 */
+.class.second-class {
+  font-size: 12px;
+}
+
+/* rule 2 */
+.class &gt; .second-class {
+  font-size: 24px;
+}
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">This example shows the same thing. Even though rule 2 is using a child combinator (<code>&gt;</code>), this does not change the specificity value. Both rules still have two classes so they have the same specificity values.</p>
+
+
+
+<pre class="wp-block-code"><code lang="css" class="language-css line-numbers">/* rule 1 */
+* {
+  color: black;
+}
+
+/* rule 2 */
+h1 {
+  color: orange;
+}
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">In this example, rule 2 would have higher specificity and the&nbsp;<code>orange</code>&nbsp;value would take precedence for this element. Rule 2 uses a type selector, which has the lowest specificity value. But rule 1 uses the universal selector (<code>*</code>) which has no specificity value.</p>
+
+
+
+<h4 class="wp-block-heading" id="inheritance">Inheritance</h4>
+
+
+
+<p class="wp-block-paragraph">Inheritance refers to certain CSS properties that, when applied to an element, are inherited by that element&rsquo;s descendants, even if we don&rsquo;t explicitly write a rule for those descendants. Typography based properties (<code>color</code>,&nbsp;<code>font-size</code>,&nbsp;<code>font-family</code>, etc.) are usually inherited, while most other properties aren&rsquo;t.</p>
+
+
+
+<p class="wp-block-paragraph">The exception to this is when directly targeting an element, as this always beats inheritance:</p>
+
+
+
+<pre class="wp-block-code"><code lang="markup" class="language-markup line-numbers">&lt;!-- index.html --&gt;
+
+&lt;div id="parent"&gt;
+  &lt;div class="child"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+
+
+<pre class="wp-block-code"><code lang="markup" class="language-markup line-numbers">/* styles.css */
+
+#parent {
+  color: red;
+}
+
+.child {
+  color: blue;
+}
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">Despite the&nbsp;<code>parent</code>&nbsp;element having a higher specificity with an ID, the&nbsp;<code>child</code>&nbsp;element would have the&nbsp;<code>color: blue</code>&nbsp;style applied since that declaration directly targets it, while&nbsp;<code>color: red</code>&nbsp;from the parent is only inherited.</p>
+
+
+
+<h4 class="wp-block-heading" id="rule-order">Rule Order</h4>
+
+
+
+<p class="wp-block-paragraph">The final factor, the end of the line, the tie-breaker of the tie-breaker. Let&rsquo;s say that after every other factor has been taken into account, there are still multiple conflicting rules targeting an element. How does the cascade determine which rule to apply?</p>
+
+
+
+<p class="wp-block-paragraph">Really simply, actually. Whichever rule was the&nbsp;<em>last</em>&nbsp;defined is the winner.</p>
+
+
+
+<pre class="wp-block-code"><code lang="css" class="language-css line-numbers">/* styles.css */
+
+.alert {
+  color: red;
+}
+
+.warning {
+  color: yellow;
+}
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">For an element that has both the&nbsp;<code>alert</code>&nbsp;and&nbsp;<code>warning</code>&nbsp;classes, the cascade would run through every other factor, including inheritance (none here) and specificity (neither rule is more specific than the other). Since the&nbsp;<code>.warning</code>&nbsp;rule was the last one defined, and no other factor was able to determine which rule to apply, it&rsquo;s the one that gets applied to the element.</p>
+
+
+
+<h3 class="wp-block-heading"><a href="https://www.theodinproject.com/lessons/foundations-css-foundations#adding-css-to-html">Adding CSS to HTML</a></h3>
+
+
+
+<p class="wp-block-paragraph">Okay, we went over quite a bit so far. The only thing left for now is to go over&nbsp;<em>how</em>&nbsp;to add all this CSS to our HTML. There are three methods to do so.</p>
+
+
+
+<h4 class="wp-block-heading" id="external-css">External CSS</h4>
+
+
+
+<p class="wp-block-paragraph">External CSS is the most common method you will come across, and it involves creating a separate file for the CSS and linking it inside of an HTML&rsquo;s opening and closing&nbsp;<code>&lt;head&gt;</code>&nbsp;tags with a self-closing&nbsp;<code>&lt;link&gt;</code>&nbsp;element:</p>
+
+
+
+<pre class="wp-block-code"><code lang="markup" class="language-markup line-numbers">&lt;!-- index.html --&gt;
+
+&lt;head&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+</code></pre>
+
+
+
+<pre class="wp-block-code"><code lang="css" class="language-css line-numbers">/* styles.css */
+
+div {
+  color: white;
+  background-color: black;
+}
+
+p {
+  color: red;
+}
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">First, we add a self-closing&nbsp;<code>&lt;link&gt;</code>&nbsp;element inside of the opening and closing&nbsp;<code>&lt;head&gt;</code>&nbsp;tags of the HTML file. The&nbsp;<code>href</code>&nbsp;attribute is the location of the CSS file, either an absolute URL or, what you&rsquo;ll be utilizing, a URL relative to the location of the HTML file. In our example above, we are assuming both files are located in the same directory. The&nbsp;<code>rel</code>&nbsp;attribute is required, and it specifies the relationship between the HTML file and the linked file.</p>
+
+
+
+<p class="wp-block-paragraph">Then inside of the newly created&nbsp;<code>styles.css</code>&nbsp;file, we have the selector (the&nbsp;<code>div</code>&nbsp;and&nbsp;<code>p</code>), followed by a pair of opening and closing curly braces, which create a &ldquo;declaration block&rdquo;. Finally, we place any declarations inside of the declaration block.&nbsp;<code>color: white;</code>&nbsp;is one declaration, with&nbsp;<code>color</code>&nbsp;being the property and&nbsp;<code>white</code>&nbsp;being the value, and&nbsp;<code>background-color: black;</code>&nbsp;is another declaration.</p>
+
+
+
+<p class="wp-block-paragraph">A note on file names:&nbsp;<code>styles.css</code>&nbsp;is just what we went with as the file name here. You can name the file whatever you want as long as the file type is&nbsp;<code>.css</code>, though &ldquo;style&rdquo; or &ldquo;styles&rdquo; is most commonly used.</p>
+
+
+
+<p class="wp-block-paragraph">A couple of the pros to this method are:</p>
+
+
+
+<ol class="wp-block-list">
+<li>It keeps our HTML and CSS separated, which results in the HTML file being smaller and making things look cleaner.</li>
+
+
+
+<li>We only need to edit the CSS in&nbsp;<em>one</em>&nbsp;place, which is especially handy for websites with many pages that all share similar styles.</li>
+</ol>
+
+
+
+<h4 class="wp-block-heading" id="internal-css">Internal CSS</h4>
+
+
+
+<p class="wp-block-paragraph">Internal CSS (or embedded CSS) involves adding the CSS within the HTML file itself instead of creating a completely separate file. With the internal method, you place all the rules inside of a pair of opening and closing&nbsp;<code>&lt;style&gt;</code>&nbsp;tags, which are then placed inside of the opening and closing&nbsp;<code>&lt;head&gt;</code>&nbsp;tags of your HTML file. Since the styles are being placed directly inside of the&nbsp;<code>&lt;head&gt;</code>&nbsp;tags, we no longer need a&nbsp;<code>&lt;link&gt;</code>&nbsp;element that the external method requires.</p>
+
+
+
+<p class="wp-block-paragraph">Besides these differences, the syntax is exactly the same as the external method (selector, curly braces, declarations):</p>
+
+
+
+<pre class="wp-block-code"><code lang="markup" class="language-markup line-numbers">&lt;head&gt;
+  &lt;style&gt;
+    div {
+      color: white;
+      background-color: black;
+    }
+
+    p {
+      color: red;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;...&lt;/body&gt;
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">This method can be useful for adding unique styles to a&nbsp;<em>single page</em>&nbsp;of a website, but it doesn&rsquo;t keep things separate like the external method, and depending on how many rules and declarations there are it can cause the HTML file to get pretty big.</p>
+
+
+
+<h4 class="wp-block-heading" id="inline-css">Inline CSS</h4>
+
+
+
+<p class="wp-block-paragraph">Inline CSS makes it possible to add styles directly to HTML elements, though this method isn&rsquo;t as recommended:</p>
+
+
+
+<pre class="wp-block-code"><code lang="markup" class="language-markup line-numbers">&lt;body&gt;
+  &lt;div style="color: white; background-color: black;"&gt;...&lt;/div&gt;
+&lt;/body&gt;
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">The first thing to note is that we don&rsquo;t actually use any selectors here, since the styles are being added directly to the opening&nbsp;<code>&lt;div&gt;</code>&nbsp;tag itself. Next, we have the&nbsp;<code>style=</code>&nbsp;attribute, with its value within the pair of quotation marks being the declarations.</p>
+
+
+
+<p class="wp-block-paragraph">If you need to add a&nbsp;<em>unique</em>&nbsp;style for a&nbsp;<em>single</em>&nbsp;element, this method can work just fine. Generally, though, this isn&rsquo;t exactly a recommended way for adding CSS to HTML for a few reasons:</p>
+
+
+
+<ul class="wp-block-list">
+<li>It can quickly become pretty messy once you start adding a&nbsp;<em>lot</em>&nbsp;of declarations to a single element, causing your HTML file to become unnecessarily bloated.</li>
+
+
+
+<li>If you want many elements to have the same style, you would have to copy + paste the same style to each individual element, causing lots of unnecessary repetition and more bloat.</li>
+
+
+
+<li>Any inline CSS will override the other two methods, which can cause unexpected results. (While we won&rsquo;t dive into it here, this can actually be taken advantage of).</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading"><a href="https://www.theodinproject.com/lessons/foundations-css-foundations#assignment">Assignment</a></h3>
+
+
+
+<ol class="wp-block-list">
+<li>Go to our&nbsp;<a href="https://github.com/TheOdinProject/css-exercises" target="_blank" rel="noreferrer noopener">CSS exercises repository</a>, read the README, and only do the exercises in the&nbsp;<code>foundations</code>&nbsp;directory in the order they&rsquo;re listed, starting with&nbsp;<code>01-css-methods</code>&nbsp;and ending with&nbsp;<code>06-cascade-fix</code>.</li>
+
+
+
+<li>Remember the Recipe page you created as practice from the previous lesson? Well, it&rsquo;s rather&nbsp;<em>plain</em>&nbsp;looking, isn&rsquo;t it? Let&rsquo;s fix that by adding some CSS to it!</li>
+</ol>
+
+
+
+<ul class="wp-block-list">
+<li>How you actually style it is completely open, but you should use the external CSS method (for this practice and moving forward). You should also try to use several of the properties mentioned in the section above (color, background color, typography properties, etc). Take some time to play around with the various properties to get a feel for what they do. For now, don&rsquo;t worry at all about making it look&nbsp;<em>good</em>. This is just to practice and get used to writing CSS, not to make something to show off on your resume, so feel free to go a little crazy for now.</li>
+
+
+
+<li>We haven&rsquo;t covered how to use a custom font for the&nbsp;<code>font-family</code>&nbsp;property yet, so for now take a look at&nbsp;<a href="https://www.w3schools.com/Css/css_font.asp" target="_blank" rel="noreferrer noopener">CSS Fonts</a>&nbsp;for a list of generic font families to use, and&nbsp;<a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp" target="_blank" rel="noreferrer noopener">CSS Web Safe Fonts</a>&nbsp;for a list of fonts that are web safe. Web safe means that these are fonts that are installed on basically every computer or device (but be sure to still include a generic font family as a fallback).</li>
+</ul>
+
+
+
+<h3 class="wp-block-heading"><a href="https://www.theodinproject.com/lessons/foundations-css-foundations#knowledge-check">Knowledge Check</a></h3>
+
+
+
+<p class="wp-block-paragraph">This section contains questions for you to check your understanding of this lesson on your own. If you&rsquo;re having trouble answering a question, click it and review the material it links to.</p>
+
+
+
+<ul class="wp-block-list">
+<li><a href="https://www.theodinproject.com/lessons/foundations-css-foundations#external-css">What are the main differences between external, internal, and inline CSS?</a></li>
+
+
+
+<li><a href="https://www.theodinproject.com/lessons/foundations-css-foundations#class-selectors">What is the syntax for class and ID selectors?</a></li>
+
+
+
+<li><a href="https://www.theodinproject.com/lessons/foundations-css-foundations#grouping-selector">How would you apply a single rule to two different selectors?</a></li>
+
+
+
+<li><a href="https://www.theodinproject.com/lessons/foundations-css-foundations#chaining-selectors">Given an element that has an id of&nbsp;<code>title</code>&nbsp;and a class of&nbsp;<code>primary</code>, how would you use both attributes for a single rule?</a></li>
+
+
+
+<li><a href="https://www.theodinproject.com/lessons/foundations-css-foundations#descendant-combinator-description">What does the descendant combinator do?</a></li>
+
+
+
+<li><a href="https://www.theodinproject.com/lessons/foundations-css-foundations#high-specificity-class-type">Between a rule that uses one class selector and a rule that uses three type selectors, which rule has the higher specificity?</a></li>
+</ul>
+
+
+
+<h3 class="wp-block-heading"><a href="https://www.theodinproject.com/lessons/foundations-css-foundations#additional-resources">Additional Resources</a></h3>
+
+
+
+<p class="wp-block-paragraph">This section contains helpful links to related content. It isn&rsquo;t required, so consider it supplemental.</p>
+
+
+
+<ul class="wp-block-list">
+<li><a href="https://wattenberger.com/blog/css-cascade" target="_blank" rel="noreferrer noopener">The CSS Cascade</a>&nbsp;is a great, interactive read that goes a little more in detail about other factors that affect what CSS rules actually end up being applied.</li>
+
+
+
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-load-and-use-custom-fonts-with-css#finding-and-loading-a-font-file-from-a-hosted-service" target="_blank" rel="noreferrer noopener">Changing the Font Family</a>&nbsp;describes a few different approaches to using custom fonts.</li>
+
+
+
+<li><a href="https://www.w3schools.com/css/css_specificity.asp" target="_blank" rel="noreferrer noopener">CSS Specificity</a>&nbsp;from W3Schools goes over how you can calculate the specificity of rules. This page mentions some selectors that we will go over in a later lesson, so don&rsquo;t worry about what they are or how to use them right now.</li>
+
+
+
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference" target="_blank" rel="noreferrer noopener">Mozilla CSS Properties Reference</a>&nbsp;can be used to learn if a particular CSS property is inherited or not; simply look for the&nbsp;<strong>Inherited</strong>&nbsp;field inside the&nbsp;<strong>Formal Definition</strong>&nbsp;section.&nbsp;<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color#formal_definition" target="_blank" rel="noreferrer noopener">Here&rsquo;s an example</a>&nbsp;for the CSS&nbsp;<code>color</code>&nbsp;property.</li>
+
+
+
+<li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units" target="_blank" rel="noreferrer noopener">Mozilla CSS values and units</a>&nbsp;can be used to learn the various types of values possible in absolute or relative terms.</li>
+</ul>
+</div></article></div></main><footer class="noj-footer"><div class="noj-wrap noj-footer-inner">
+<a class="noj-brand" href="/nuggetofjoystatic/"><span class="noj-brand-orange">nugget</span><span class="noj-brand-blue">of joy</span></a>
+<p>Communication, Art, Design &amp; Instruction</p>
+<p>&copy; 2026 Communication, Art, Design &amp; Instruction</p>
+</div></footer><script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/nuggetofjoy-home-theme-v6-fixed/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id="codepen-embed-script-js" src="https://cpwebassets.codepen.io/assets/embed/ei.js?ver=1.0.1"></script>
+<script id="mkaz-code-syntax-prism-js-js-extra">
+var prism_settings = {"pluginUrl":"/wp-content/plugins/code-syntax-block/"};
+//# sourceURL=mkaz-code-syntax-prism-js-js-extra
+</script>
+<script id="mkaz-code-syntax-prism-js-js" src="/nuggetofjoystatic/wp-content/plugins/code-syntax-block/assets/prism/prism.js?ver=1720452604"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"/wp-includes/js/wp-emoji-release.min.js?ver=7.1.3"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=/wp-includes/js/wp-emoji-loader.min.js
+</script>
+</body></html>
+<!-- Powered by Staatic (https://staatic.com/) -->

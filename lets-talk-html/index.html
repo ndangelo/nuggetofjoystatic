@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>3. Let&rsquo;s Talk HTML, Heading, Blocks and inline, Links, Images, White space + indentation &ndash; Communication, Art, Design &amp; Instruction</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="//cpwebassets.codepen.io">
+<link rel="alternate" type="application/rss+xml" title="Communication, Art, Design &amp; Instruction &raquo; Feed" href="/nuggetofjoystatic/feed/">
+<link rel="alternate" type="application/rss+xml" title="Communication, Art, Design &amp; Instruction &raquo; Comments Feed" href="/nuggetofjoystatic/comments/feed/">
+		
+	<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<link rel="stylesheet" id="embedpress-css-css" href="/nuggetofjoystatic/wp-content/plugins/embedpress/assets/css/embedpress.css?ver=1790948058" media="all">
+<link rel="stylesheet" id="embedpress-blocks-style-css" href="/nuggetofjoystatic/wp-content/plugins/embedpress/assets/css/blocks.build.css?ver=1790948058" media="all">
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="wp-block-heading-inline-css">
+h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-background,h3:where(.wp-block-heading).has-background,h4:where(.wp-block-heading).has-background,h5:where(.wp-block-heading).has-background,h6:where(.wp-block-heading).has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+/*# sourceURL=/wp-includes/blocks/heading/style.min.css */
+</style>
+<style id="wp-block-paragraph-inline-css">
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+/*# sourceURL=/wp-includes/blocks/paragraph/style.min.css */
+</style>
+<style id="wp-block-code-inline-css">
+.wp-block-code{box-sizing:border-box}.wp-block-code code{direction:ltr;display:block;font-family:inherit;overflow-wrap:break-word;text-align:initial;white-space:break-spaces}
+/*# sourceURL=/wp-includes/blocks/code/style.min.css */
+</style>
+<style id="wp-block-table-inline-css">
+.wp-block-table{overflow-x:auto}.wp-block-table table{border-collapse:collapse;width:100%}.wp-block-table thead{border-bottom:3px solid}.wp-block-table tfoot{border-top:3px solid}.wp-block-table td,.wp-block-table th{border:1px solid;padding:.5em}.wp-block-table .has-fixed-layout{table-layout:fixed;width:100%}.wp-block-table .has-fixed-layout td,.wp-block-table .has-fixed-layout th{word-break:break-word}.wp-block-table.aligncenter,.wp-block-table.alignleft,.wp-block-table.alignright{display:table;width:auto}.wp-block-table.aligncenter td,.wp-block-table.aligncenter th,.wp-block-table.alignleft td,.wp-block-table.alignleft th,.wp-block-table.alignright td,.wp-block-table.alignright th{word-break:break-word}.wp-block-table .has-subtle-light-gray-background-color{background-color:#f3f4f5}.wp-block-table .has-subtle-pale-green-background-color{background-color:#e9fbe5}.wp-block-table .has-subtle-pale-blue-background-color{background-color:#e7f5fe}.wp-block-table .has-subtle-pale-pink-background-color{background-color:#fcf0ef}.wp-block-table.is-style-stripes{background-color:transparent;border-collapse:inherit;border-spacing:0}.wp-block-table.is-style-stripes tbody tr:nth-child(odd){background-color:#f0f0f0}.wp-block-table.is-style-stripes.has-subtle-light-gray-background-color tbody tr:nth-child(odd){background-color:#f3f4f5}.wp-block-table.is-style-stripes.has-subtle-pale-green-background-color tbody tr:nth-child(odd){background-color:#e9fbe5}.wp-block-table.is-style-stripes.has-subtle-pale-blue-background-color tbody tr:nth-child(odd){background-color:#e7f5fe}.wp-block-table.is-style-stripes.has-subtle-pale-pink-background-color tbody tr:nth-child(odd){background-color:#fcf0ef}.wp-block-table.is-style-stripes td,.wp-block-table.is-style-stripes th{border-color:transparent}.wp-block-table.is-style-stripes{border-bottom:1px solid #f0f0f0}.wp-block-table .has-border-color td,.wp-block-table .has-border-color th,.wp-block-table .has-border-color tr,.wp-block-table .has-border-color>*{border-color:inherit}.wp-block-table table[style*=border-top-color] tr:first-child,.wp-block-table table[style*=border-top-color] tr:first-child td,.wp-block-table table[style*=border-top-color] tr:first-child th,.wp-block-table table[style*=border-top-color]>*,.wp-block-table table[style*=border-top-color]>* td,.wp-block-table table[style*=border-top-color]>* th{border-top-color:inherit}.wp-block-table table[style*=border-top-color] tr:not(:first-child){border-top-color:currentColor}.wp-block-table table[style*=border-right-color] td:last-child,.wp-block-table table[style*=border-right-color] th,.wp-block-table table[style*=border-right-color] tr,.wp-block-table table[style*=border-right-color]>*{border-right-color:inherit}.wp-block-table table[style*=border-bottom-color] tr:last-child,.wp-block-table table[style*=border-bottom-color] tr:last-child td,.wp-block-table table[style*=border-bottom-color] tr:last-child th,.wp-block-table table[style*=border-bottom-color]>*,.wp-block-table table[style*=border-bottom-color]>* td,.wp-block-table table[style*=border-bottom-color]>* th{border-bottom-color:inherit}.wp-block-table table[style*=border-bottom-color] tr:not(:last-child){border-bottom-color:currentColor}.wp-block-table table[style*=border-left-color] td:first-child,.wp-block-table table[style*=border-left-color] th,.wp-block-table table[style*=border-left-color] tr,.wp-block-table table[style*=border-left-color]>*{border-left-color:inherit}.wp-block-table table[style*=border-style] td,.wp-block-table table[style*=border-style] th,.wp-block-table table[style*=border-style] tr,.wp-block-table table[style*=border-style]>*{border-style:inherit}.wp-block-table table[style*=border-width] td,.wp-block-table table[style*=border-width] th,.wp-block-table table[style*=border-width] tr,.wp-block-table table[style*=border-width]>*{border-style:inherit;border-width:inherit}
+/*# sourceURL=/wp-includes/blocks/table/style.min.css */
+</style>
+
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel="stylesheet" id="mkaz-code-syntax-prism-css-css" href="/nuggetofjoystatic/wp-content/plugins/code-syntax-block/assets/prism-onedark.css?ver=1720452603" media="all">
+<link rel="stylesheet" id="nuggetofjoy-archive-style-css" href="/nuggetofjoystatic/wp-content/themes/nuggetofjoy-home-theme-v6-fixed/style.css?ver=6.0.0" media="all">
+<link rel="stylesheet" id="wp-paginate-css" href="/nuggetofjoystatic/wp-content/plugins/wp-paginate/css/wp-paginate.css?ver=2.2.6" media="screen">
+<link rel="https://api.w.org/" href="/nuggetofjoystatic/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="/nuggetofjoystatic/wp-json/wp/v2/posts/59609"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="/nuggetofjoystatic/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 7.1.3">
+<link rel="canonical" href="/nuggetofjoystatic/lets-talk-html/">
+<link rel="shortlink" href="/nuggetofjoystatic/?p=59609">
+<link rel="icon" href="https://image-control-storage.s3.amazonaws.com/blog-images/2017/09/27184050/cropped-favicon.jpg" sizes="32x32">
+<link rel="icon" href="https://image-control-storage.s3.amazonaws.com/blog-images/2017/09/27184050/cropped-favicon.jpg" sizes="192x192">
+<link rel="apple-touch-icon" href="https://image-control-storage.s3.amazonaws.com/blog-images/2017/09/27184050/cropped-favicon.jpg">
+<meta name="msapplication-TileImage" content="https://image-control-storage.s3.amazonaws.com/blog-images/2017/09/27184050/cropped-favicon.jpg">
+	<!-- Fonts Plugin CSS - https://fontsplugin.com/ -->
+	<style>
+			</style>
+	<!-- Fonts Plugin CSS -->
+	</head>
+<body class="wp-singular post-template-default single single-post postid-59609 single-format-standard wp-embed-responsive wp-theme-nuggetofjoy-home-theme-v6-fixed"><a class="noj-skip" href="#main">Skip to content</a>
+<header class="noj-header"><div class="noj-wrap noj-header-inner">
+<a class="noj-brand" href="/nuggetofjoystatic/"><span class="noj-brand-orange">nugget</span><span class="noj-brand-blue">of joy</span></a>
+<nav class="noj-nav" aria-label="Main navigation">
+<ul id="menu-main-2" class="noj-menu"><li id="menu-item-68087" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68087"><a href="/nuggetofjoystatic/category/ui-ux/">UI/UX</a></li>
+<li id="menu-item-68088" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68088"><a href="/nuggetofjoystatic/category/ia/">IA</a></li>
+<li id="menu-item-68089" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-68089"><a href="/nuggetofjoystatic/category/dmet-155-introduction-to-web-design/">DMET 155 Introduction to Web Design</a></li>
+<li id="menu-item-68090" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68090"><a href="/nuggetofjoystatic/category/interactive-social-media/">Interactive and Social Media</a></li>
+<li id="menu-item-68091" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68091"><a href="/nuggetofjoystatic/category/dmet-375-imaging-technology/">DMET 375 IMAGING TECHNOLOGY</a></li>
+<li id="menu-item-68092" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68092"><a href="/nuggetofjoystatic/category/social-design/">Social Design</a></li>
+<li id="menu-item-68093" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68093"><a href="/nuggetofjoystatic/category/dmet-350-media-graphics-and-design/">DMET 350 MEDIA GRAPHICS AND DESIGN</a></li>
+<li id="menu-item-68094" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68094"><a href="/nuggetofjoystatic/category/dmet-355-advanced-web-design/">DMET 355 ADVANCED WEB DESIGN</a></li>
+<li id="menu-item-68095" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68095"><a href="/nuggetofjoystatic/category/color-theory/">Color Theory</a></li>
+<li id="menu-item-68096" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68096"><a href="/nuggetofjoystatic/category/social_media/">Social Media</a></li>
+<li id="menu-item-68097" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68097"><a href="/nuggetofjoystatic/category/visual-information-theory/">Visual Information Theory</a></li>
+<li id="menu-item-68098" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68098"><a href="/nuggetofjoystatic/category/media-graphics-design-assignments/">Media Graphics &amp; Design Assignments</a></li>
+<li id="menu-item-68099" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68099"><a href="/nuggetofjoystatic/category/gestalt-principles/">Gestalt Principles</a></li>
+</ul></nav>
+<form class="noj-search" role="search" method="get" action="/nuggetofjoystatic/"><label class="screen-reader-text" for="noja-search-header">Search all content</label><input id="noja-search-header" type="search" name="s" value="" placeholder="Search the archive&hellip;"><button type="submit">Search</button></form></div></header>
+<main id="main" class="noj-search-results"><div class="noj-wrap"><article class="noj-entry post-59609 post type-post status-publish format-standard hentry category-dmet-155-introduction-to-web-design category-learn-to-code-now"><p class="noj-kicker">Post &middot; January 13, 2023</p><h1>3. Let&rsquo;s Talk HTML, Heading, Blocks and inline, Links, Images, White space + indentation</h1><div class="noj-entry-content">
+<p class="wp-block-paragraph">Why talk about HTML first? Well, we need to have&nbsp;<strong>some content which we can style and interact with.</strong></p>
+
+
+
+<p class="wp-block-paragraph">HTML stands for <strong>HyperText Markup Language</strong>.</p>
+
+
+
+<p class="wp-block-paragraph">Remember, the user doesn&rsquo;t see the actual code that the author writes. The user sees the final version of the website &mdash; the browser turns the HTML code into a web page, just like Spotify turns a music data file into an audio of Smashmouth&rsquo;s All Star.</p>
+
+
+
+<p class="wp-block-paragraph">The first thing we&rsquo;d do is create a new file and name it something related to the page, then with the HTML extension. For example, about.html is a good file name for the about page on a website. We then open it and start writing our content.</p>
+
+
+
+<p class="wp-block-paragraph">&ldquo;Isn&rsquo;t this scientific document cool?&rdquo;</p>
+
+
+
+<p class="wp-block-paragraph">We would start the sentence with a paragraph open tag, then finish it with a paragraph closing tag:</p>
+
+
+
+<pre class="wp-block-code"><code lang="css" class="language-css line-numbers">&lt;p&gt;Isn&rsquo;t this scientific document cool?&lt;/p&gt;</code></pre>
+
+
+
+<p class="wp-block-paragraph">Notice the slight difference between the two tags. The open tag doesn&rsquo;t have a slash in it and the closing tag does. When we have a slash in a tag, it means stop doing this tag now.</p>
+
+
+
+<p class="wp-block-paragraph">The name of the tag is a &ldquo;p&rdquo; tag &mdash; the p standing for paragraph. Tim liked to use shorter names for two reasons &mdash; it&rsquo;s easier to write and back in the 80s the Internet was a lot slower, so the less text the less time the page took to load.</p>
+
+
+
+<p class="wp-block-paragraph">There are around 100 types of HTML tags but on a day to day basis, most coders only use around 15 to 20 of them. Paragraph tags&nbsp;(&lt;p&gt;)&nbsp;are among the most common.</p>
+
+
+
+<p class="wp-block-paragraph">Tags can also be reused too. There&rsquo;s a high probability that there&rsquo;s more than one tag on your page, so to &ldquo;mark up&rdquo; or describe the text, we can just use another&nbsp;&lt;p&gt;&nbsp;tag.</p>
+
+
+
+<pre class="wp-block-code"><code lang="markup" class="language-markup line-numbers">&lt;p&gt;Isn&rsquo;t this scientific document cool?&lt;/p&gt;
+
+&lt;p&gt;I just discovered how to make lead into gold. I thought that wasn&rsquo;t possible?&lt;/p&gt;</code></pre>
+
+
+
+<p class="wp-block-paragraph">Oh hi, I&rsquo;m a heading</p>
+
+
+
+<p class="wp-block-paragraph">Of course, not everything is a paragraph. On any document, you&rsquo;re likely to have titles and sub-titles. Just like at the top of this section, where there&rsquo;s a heading saying hi to you.</p>
+
+
+
+<p class="wp-block-paragraph">As with paragraphs, we have to mark up our text with which bits are headings and sub-headings, and as with any document there&rsquo;s a hierarchy to our headings and titles.</p>
+
+
+
+<p class="wp-block-paragraph">We start with the main headings and work our way down to sub-headings and sub-sub-headings.</p>
+
+
+
+<p class="wp-block-paragraph">Let&rsquo;s take a r&eacute;sum&eacute;. The main heading on the page would be your name e.g. Rik Lomas. You&rsquo;d then have sub-headings such as Education,</p>
+
+
+
+<p class="wp-block-paragraph">Experience and References. Then within each of those you&rsquo;d have sub-sub-headings, so in Experience, you might have company names (e.g. SuperHi, Steer etc).</p>
+
+
+
+<p class="wp-block-paragraph">In HTML, there are tags to reflect these headings, sub-headings and sub-sub-headings (down to sub-sub-sub-sub-sub-headings!).</p>
+
+
+
+<p class="wp-block-paragraph">Your main heading would be a&nbsp;&lt;h1&gt;&nbsp;tag.</p>
+
+
+
+<pre class="wp-block-code"><code lang="markup" class="language-markup line-numbers">&lt;h1&gt;Rik Lomas&lt;/h1&gt;</code></pre>
+
+
+
+<p class="wp-block-paragraph">Your sub-heading would be a&nbsp;&lt;h2&gt;&nbsp;tag.</p>
+
+
+
+<pre class="wp-block-code"><code lang="markup" class="language-markup line-numbers">&lt;h2&gt;Education&lt;/h2&gt;</code></pre>
+
+
+
+<p class="wp-block-paragraph">Your sub-sub-heading would be a&nbsp;&lt;h3&gt;&nbsp;tag.</p>
+
+
+
+<pre class="wp-block-code"><code lang="markup" class="language-markup line-numbers">&lt;h3&gt;SuperHi Inc.&lt;/h3&gt;</code></pre>
+
+
+
+<p class="wp-block-paragraph">There are even&nbsp;&lt;h4&gt;,&nbsp;&lt;h5&gt;&nbsp;and&nbsp;&lt;h6&gt;&nbsp;tags too. Notice that it&rsquo;s not just in descending number, it&rsquo;s text of an equal importance. For instance, I might have a tag&nbsp;&lt;h3&gt;&nbsp;above another&nbsp;&lt;h2&gt;. I can continue to use paragraphs above and below my headings too.</p>
+
+
+
+<pre class="wp-block-code"><code lang="markup" class="language-markup line-numbers">&lt;h1&gt;Rik Lomas&lt;/h1&gt;
+
+&lt;h2&gt;Experience&lt;/h2&gt;
+
+&lt;h3&gt;SuperHi Inc&lt;/h3&gt;
+
+&lt;p&gt;I was the founder and coder for SuperHi...&lt;/p&gt;</code></pre>
+
+
+
+<p class="wp-block-paragraph">So very quickly, we&rsquo;ve covered six more tags, taking our total to seven. Remember, we said that most professional coders only use 15 to 20 tags, so we&rsquo;re 30 to 40 percent through all the tags you might ever need to make websites.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>index.html</strong></p>
+
+
+
+<p class="wp-block-paragraph">We talked earlier about naming our HTML files after the page they represent. An &ldquo;about&rdquo; page would be named &ldquo;about.html&rdquo;, a &ldquo;contact&rdquo; page would be named &ldquo;contact.html&rdquo; or &ldquo;contact-us.html&rdquo; (remember you can&rsquo;t use spaces in file names).</p>
+
+
+
+<p class="wp-block-paragraph">There is a special name however for the first page you expect your user to visit. We&rsquo;d call it the home page, but its file name is &ldquo;index.html&rdquo;.</p>
+
+
+
+<h3 class="wp-block-heading">Blocks and inline</h3>
+
+
+
+<p class="wp-block-paragraph">All the tags we&rsquo;ve talked about so far are kind of bigger boxes of content. Visually they&rsquo;d go across the whole page and the next tag would go below them. Your header is at the top, then a paragraph below, then another paragraph below that.</p>
+
+
+
+<p class="wp-block-paragraph">These tags are called block tags because they fill the width of the page and make the next tag go beneath them.</p>
+
+
+
+<p class="wp-block-paragraph">Most tags are block tags, but there are other tags where you don&rsquo;t want to fill up the whole width of the page. For example, you might just want to highlight one or two words in a paragraph.</p>
+
+
+
+<p class="wp-block-paragraph">There are a few tags that can work within a line of text, these are called inline tags.</p>
+
+
+
+<p class="wp-block-paragraph">An example is a bold tag, the &lt;b&gt; tag. You might only want to highlight one or two words in the paragraph.</p>
+
+
+
+<pre class="wp-block-code"><code lang="markup" class="language-markup line-numbers">&lt;p&gt;At my last job, conversions improved by &lt;b&gt;over 50%&lt;/b&gt; in just 4 months.&lt;/p&gt;</code></pre>
+
+
+
+<p class="wp-block-paragraph">To paraphrase Xzibit in Pimp My Ride: I heard you liked tags so I put tags inside your tags. We&rsquo;ll be putting more tags inside other tags later.</p>
+
+
+
+<p class="wp-block-paragraph">Other inline tags include for italics&nbsp;(&lt;i&gt;)&nbsp;and to underline something&nbsp;(&lt;u&gt;). In this paragraph, we&rsquo;re having &ldquo;over 50%&rdquo; as italic and &ldquo;just 4&rdquo; as underline. That&rsquo;s a&nbsp;&lt;p&gt;&nbsp;tag with two different tags inside.</p>
+
+
+
+<p class="wp-block-paragraph">Block tags and inline tags</p>
+
+
+
+<h3 class="wp-block-heading">BLOCK INLINE</h3>
+
+
+
+<pre class="wp-block-code"><code lang="markup" class="language-markup line-numbers">&lt;p&gt;At my last job, conversions improved by &lt;i&gt;over 50%&lt;/i&gt; in &lt;u&gt;just 4&lt;/u&gt; months.&lt;/p&gt;</code></pre>
+
+
+
+<p class="wp-block-paragraph">One thing to note is that an inline tag could go to multiple lines of text</p>
+
+
+
+<p class="wp-block-paragraph">&mdash; for instance in the previous example, the word &ldquo;over&rdquo; could be the last word of the first line and the &ldquo;50%&rdquo; could be the first word of the second line.</p>
+
+
+
+<p class="wp-block-paragraph">A good rule of thumb is that block tags go down the page and inline tags go across the page.</p>
+
+
+
+<h3 class="wp-block-heading">Links</h3>
+
+
+
+<p class="wp-block-paragraph">One important tag that made the web successful was the ability to link one page to another, so users could click between the pages of not only one author&rsquo;s website but to other author&rsquo;s sites. The original idea came from scholarly referencing and footnotes, but it massively helped the discoverability of other people&rsquo;s websites.</p>
+
+
+
+<p class="wp-block-paragraph">A link tag in HTML is called the&nbsp;&lt;a&gt;&nbsp;tag &mdash; the &ldquo;a&rdquo; stands for anchor because it might link to another site, another page or another section within the page so it doesn&rsquo;t always go away from the same place.</p>
+
+
+
+<p class="wp-block-paragraph">Just like the bold, italic and underline tags, a link tag is an inline tag, as you could just link one word in a paragraph to somewhere else.</p>
+
+
+
+<p class="wp-block-paragraph">The link is a little more complex than the other tags we&rsquo;ve covered. We need to introduce a new part of HTML called attributes.</p>
+
+
+
+<h3 class="wp-block-heading">Attributes</h3>
+
+
+
+<p class="wp-block-paragraph">Let&rsquo;s give an example of a link tag.</p>
+
+
+
+<pre class="wp-block-code"><code lang="markup" class="language-markup line-numbers">&lt;a&gt;Go to Facebook&lt;/a&gt;</code></pre>
+
+
+
+<p class="wp-block-paragraph">This is some text that says &ldquo;Go to Facebook&rdquo; and is surrounded by the</p>
+
+
+
+<p class="wp-block-paragraph">&lt;a&gt;&nbsp;link tags at the start and end. But if a user clicks the link, where should they go to? Should they go to the Facebook.com homepage? Should they go to the Wikipedia entry on Facebook? Should they go to the Google Finance page for Facebook&rsquo;s stock price? It depends.</p>
+
+
+
+<p class="wp-block-paragraph">We need to give this some more information.</p>
+
+
+
+<p class="wp-block-paragraph">We don&rsquo;t want to write out the URL for where the link is going to in the text, otherwise our user will see an ugly URL when they just want the words &ldquo;Go to Facebook&rdquo;.</p>
+
+
+
+<p class="wp-block-paragraph">To add this extra information, we need to add in an HTML attribute &mdash; an extra bit of information for this tag. To do this, we are going to add a special HTML attribute to the link called the &ldquo;href&rdquo; attribute (short for hypertext reference).</p>
+
+
+
+<pre class="wp-block-code"><code lang="markup" class="language-markup line-numbers"><a href="http://www.facebook.com/" target="_blank" rel="noreferrer noopener">&lt;a href="</a>http://www.facebook.com"&gt;Go to Facebook&lt;/a&gt;</code></pre>
+
+
+
+<p class="wp-block-paragraph">The way we add attributes is to add them to opening tags in HTML. We add a space after the name of the tag (e.g. &ldquo;a&rdquo;, &ldquo;h1&rdquo;), then the name of attribute (e.g. &ldquo;href&rdquo;) with an equals symbol, then something in quotation marks.</p>
+
+
+
+<p class="wp-block-paragraph">There are more attributes that we&rsquo;ll talk about later, but for now we&rsquo;ll only be using the &ldquo;href&rdquo; attribute on link tags.</p>
+
+
+
+<h3 class="wp-block-heading">Different types of links</h3>
+
+
+
+<p class="wp-block-paragraph">The link above goes to a different website completely. These links are called &ldquo;absolute&rdquo; links &mdash; basically something that isn&rsquo;t on your own site.</p>
+
+
+
+<p class="wp-block-paragraph">You can write the href attribute as a &ldquo;relative&rdquo; link if you&rsquo;re linking to another page on your own website.</p>
+
+
+
+<pre class="wp-block-code"><code lang="markup" class="language-markup line-numbers">&lt;a href="about.html"&gt;About page&lt;/a&gt;</code></pre>
+
+
+
+<p class="wp-block-paragraph">Notice you don&rsquo;t need the full URL, just the name of the file on your site.</p>
+
+
+
+<p class="wp-block-paragraph">Other links &mdash; email me&hellip;</p>
+
+
+
+<p class="wp-block-paragraph">You don&rsquo;t have to link to other HTML pages on a link. You can do other actions such as pop open a new email compose box.</p>
+
+
+
+<pre class="wp-block-code"><code lang="markup" class="language-markup line-numbers"><a href="mailto:rik@superhi.com" target="_blank" rel="noreferrer noopener">&lt;a href="</a>mailto:rik@superhi.com"&gt;Email me!&lt;/a&gt;</code></pre>
+
+
+
+<p class="wp-block-paragraph">Notice this href attribute starts with &ldquo;mailto:&rdquo; then the email address of where you want to send it.</p>
+
+
+
+<h3 class="wp-block-heading">Joining everything together</h3>
+
+
+
+<p class="wp-block-paragraph">So we&rsquo;ve covered paragraphs, titles, sub-titles, inline tags and links. We can combine them all together to get something like this.</p>
+
+
+
+<pre class="wp-block-code"><code lang="markup" class="language-markup line-numbers">&lt;h1&gt;Rik Lomas&lt;/h1&gt;
+
+&lt;h2&gt;Experience&lt;/h2&gt;
+
+&lt;h3&gt;SuperHi Inc&lt;/h3&gt;
+
+&lt;p&gt;I worked at &lt;a href="https://www.superhi.com"&gt; SuperHi&lt;/a&gt; from 2014-2017.&lt;/p&gt;
+
+&lt;p&gt;When I was there, I helped increase profits by
+
+&lt;b&gt;30%&lt;/b&gt; over the course of those years&lt;/p&gt;
+
+&lt;p&gt;You can &lt;a href="about.html"&gt;contact me here&lt;/a&gt;.&lt;/p&gt;</code></pre>
+
+
+
+<h3 class="wp-block-heading">Images</h3>
+
+
+
+<p class="wp-block-paragraph">How to use the &lt;img&gt; tag</p>
+
+
+
+<p class="wp-block-paragraph">Most tags have an open and a close tag. Images just have one open tag and no close tag.</p>
+
+
+
+<pre class="wp-block-code"><code lang="markup" class="language-markup line-numbers">&lt;img src="cat.jpg"&gt;</code></pre>
+
+
+
+<p class="wp-block-paragraph">No close tag there and a brand new attribute called &ldquo;src&rdquo;.</p>
+
+
+
+<p class="wp-block-paragraph">You can use multiple images together and put them inside other tags too.</p>
+
+
+
+<pre class="wp-block-code"><code lang="markup" class="language-markup line-numbers">&lt;p&gt;
+
+&lt;img src="cat.jpg"&gt;
+
+&lt;img src="dog.jpg"&gt;
+
+&lt;/p&gt;</code></pre>
+
+
+
+<p class="wp-block-paragraph">To put in two images inside a paragraph, one with a cat image and another with a dog image.</p>
+
+
+
+<p class="wp-block-paragraph">Note these &ldquo;src&rdquo; attributes are using &ldquo;relative&rdquo; sources, just like in the link tags being able to use &ldquo;about.html&rdquo;. You can also use &ldquo;absolute&rdquo; sources too.</p>
+
+
+
+<pre class="wp-block-code"><code lang="markup" class="language-markup line-numbers"><a rel="noreferrer noopener" href="http://i.imgur.com/5J5vJm8.jpg" target="_blank">&lt;img src="</a>https://www.esu.edu"&gt;</code></pre>
+
+
+
+<h3 class="wp-block-heading">Image file types</h3>
+
+
+
+<p class="wp-block-paragraph">There are only a few types of image file that we can use on the web. Certain image types are good for certain jobs. The file types are:</p>
+
+
+
+<figure class="wp-block-table"><table><tbody><tr><td>.jpg</td><td>JPG files are great for photographs and detailed color imagery.</td></tr><tr><td><br>.gif</td><td>Are they called &ldquo;giffs&rdquo; or &ldquo;jiffs&rdquo;? Who knows&hellip; but GIF files are good for animated images.</td></tr><tr><td><br>.png</td><td>PNG files are good for flatter color images and if you have any transparency in your image.</td></tr><tr><td><br>.svg</td><td>SVG stands for scalable vector graphics which means they don&rsquo;t pixelate when really large. Great for icons and logos.</td></tr></tbody></table></figure>
+
+
+
+<h3 class="wp-block-heading">White space + indentation</h3>
+
+
+
+<p class="wp-block-paragraph">We mentioned earlier that HTML is all about content and CSS is all about style. Because of this, HTML doesn&rsquo;t really care about how your code looks, it will ignore any white space you put in your code and make it look &ldquo;normal&rdquo;.</p>
+
+
+
+<p class="wp-block-paragraph">For instance, this code&hellip;</p>
+
+
+
+<pre class="wp-block-code"><code lang="markup" class="language-markup line-numbers">&lt;p&gt;Hi there, Rik!&lt;/p&gt;
+
+...would look exactly the same as...
+
+&lt;p&gt; Hi there, Rik!&lt;/p&gt;</code></pre>
+
+
+
+<p class="wp-block-paragraph">HTML ignores all the spacing and treats it as if it&rsquo;s one sentence. If we want to control how the website looks, we need to use CSS.</p>
+
+
+
+<h3 class="wp-block-heading">Indentation</h3>
+
+
+
+<p class="wp-block-paragraph">As HTML doesn&rsquo;t care about gaps, it means we can make our code cleaner to read so that when we come back to it in a few months, or if we&rsquo;re working with another coder, it can make more sense.</p>
+
+
+
+<p class="wp-block-paragraph">For instance, this is hard to read:</p>
+
+
+
+<pre class="wp-block-code"><code lang="markup" class="language-markup line-numbers">&lt;p&gt;&lt;a href="about.html"&gt;About&lt;/a&gt;&lt;/p&gt;</code></pre>
+
+
+
+<p class="wp-block-paragraph">So to make it easier, I would write it like:</p>
+
+
+
+<pre class="wp-block-code"><code lang="markup" class="language-markup line-numbers">&lt;p&gt;
+
+&lt;a href="about.html"&gt;About&lt;/a&gt;
+
+&lt;/p&gt;</code></pre>
+
+
+
+<p class="wp-block-paragraph">Notice that not only have I put the&nbsp;&lt;a&gt;&nbsp;tag with some space above and below, but I&rsquo;ve also indented the code so it goes into the page a little. I do this by pressing the tab key to push it further in.</p>
+
+
+
+<p class="wp-block-paragraph">This is just my personal preference. There&rsquo;s no right and wrong way to do HTML &mdash; both ways would look the same to a user.</p>
+
+
+
+<p class="wp-block-paragraph">Indentation is a powerful tool when you start getting more complex code.</p>
+
+
+
+<p class="wp-block-paragraph">One more example to make it more apparent. We could have code like this:</p>
+
+
+
+<pre class="wp-block-code"><code lang="markup" class="language-markup line-numbers">&lt;p&gt;&lt;a href=&rdquo;about.html&rdquo;&gt;About&lt;/a&gt; 
+
+&lt;a href=&rdquo;blog.html&rdquo;&gt; Blog&lt;/a&gt; 
+
+&lt;a href=&rdquo;contact.html&rdquo;&gt;Contact&lt;/a&gt;&lt;/p&gt;</code></pre>
+
+
+
+<p class="wp-block-paragraph">Simply one paragraph with three one-word links. We can clean it up like this:</p>
+
+
+
+<pre class="wp-block-code"><code lang="markup" class="language-markup line-numbers">&lt;p&gt;
+
+&lt;a href="about.html"&gt;About&lt;/a&gt;
+
+&lt;a href="blog.html"&gt;Blog&lt;/a&gt;
+
+&lt;a href="contact.html"&gt;Contact&lt;/a&gt;
+
+&lt;/p&gt;</code></pre>
+
+
+
+<p class="wp-block-paragraph">All I&rsquo;ve done is separate the links onto different lines, then indent (or tab) the contents of the paragraph. Nice, clean and looks the same.</p>
+</div></article></div></main><footer class="noj-footer"><div class="noj-wrap noj-footer-inner">
+<a class="noj-brand" href="/nuggetofjoystatic/"><span class="noj-brand-orange">nugget</span><span class="noj-brand-blue">of joy</span></a>
+<p>Communication, Art, Design &amp; Instruction</p>
+<p>&copy; 2026 Communication, Art, Design &amp; Instruction</p>
+</div></footer><script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/nuggetofjoy-home-theme-v6-fixed/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id="codepen-embed-script-js" src="https://cpwebassets.codepen.io/assets/embed/ei.js?ver=1.0.1"></script>
+<script id="mkaz-code-syntax-prism-js-js-extra">
+var prism_settings = {"pluginUrl":"/wp-content/plugins/code-syntax-block/"};
+//# sourceURL=mkaz-code-syntax-prism-js-js-extra
+</script>
+<script id="mkaz-code-syntax-prism-js-js" src="/nuggetofjoystatic/wp-content/plugins/code-syntax-block/assets/prism/prism.js?ver=1720452604"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"/wp-includes/js/wp-emoji-release.min.js?ver=7.1.3"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=/wp-includes/js/wp-emoji-loader.min.js
+</script>
+</body></html>
+<!-- Powered by Staatic (https://staatic.com/) -->

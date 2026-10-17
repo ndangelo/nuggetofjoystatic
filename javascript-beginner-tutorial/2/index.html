@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>JavaScript Beginner Tutorial &ndash; Page 2 &ndash; Communication, Art, Design &amp; Instruction</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="//cpwebassets.codepen.io">
+<link rel="alternate" type="application/rss+xml" title="Communication, Art, Design &amp; Instruction &raquo; Feed" href="/nuggetofjoystatic/feed/">
+<link rel="alternate" type="application/rss+xml" title="Communication, Art, Design &amp; Instruction &raquo; Comments Feed" href="/nuggetofjoystatic/comments/feed/">
+		
+	<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<link rel="stylesheet" id="embedpress-css-css" href="/nuggetofjoystatic/wp-content/plugins/embedpress/assets/css/embedpress.css?ver=1790948058" media="all">
+<link rel="stylesheet" id="embedpress-blocks-style-css" href="/nuggetofjoystatic/wp-content/plugins/embedpress/assets/css/blocks.build.css?ver=1790948058" media="all">
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="wp-block-heading-inline-css">
+h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-background,h3:where(.wp-block-heading).has-background,h4:where(.wp-block-heading).has-background,h5:where(.wp-block-heading).has-background,h6:where(.wp-block-heading).has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+/*# sourceURL=/wp-includes/blocks/heading/style.min.css */
+</style>
+<style id="wp-block-paragraph-inline-css">
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+/*# sourceURL=/wp-includes/blocks/paragraph/style.min.css */
+</style>
+<style id="wp-block-code-inline-css">
+.wp-block-code{box-sizing:border-box}.wp-block-code code{direction:ltr;display:block;font-family:inherit;overflow-wrap:break-word;text-align:initial;white-space:break-spaces}
+/*# sourceURL=/wp-includes/blocks/code/style.min.css */
+</style>
+
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel="stylesheet" id="mkaz-code-syntax-prism-css-css" href="/nuggetofjoystatic/wp-content/plugins/code-syntax-block/assets/prism-onedark.css?ver=1720452603" media="all">
+<link rel="stylesheet" id="nuggetofjoy-archive-style-css" href="/nuggetofjoystatic/wp-content/themes/nuggetofjoy-home-theme-v6-fixed/style.css?ver=6.0.0" media="all">
+<link rel="stylesheet" id="wp-paginate-css" href="/nuggetofjoystatic/wp-content/plugins/wp-paginate/css/wp-paginate.css?ver=2.2.6" media="screen">
+<link rel="https://api.w.org/" href="/nuggetofjoystatic/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="/nuggetofjoystatic/wp-json/wp/v2/posts/65201"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="/nuggetofjoystatic/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 7.1.3">
+<link rel="canonical" href="/nuggetofjoystatic/javascript-beginner-tutorial/2/">
+<link rel="shortlink" href="/nuggetofjoystatic/?p=65201">
+<link rel="icon" href="https://image-control-storage.s3.amazonaws.com/blog-images/2017/09/27184050/cropped-favicon.jpg" sizes="32x32">
+<link rel="icon" href="https://image-control-storage.s3.amazonaws.com/blog-images/2017/09/27184050/cropped-favicon.jpg" sizes="192x192">
+<link rel="apple-touch-icon" href="https://image-control-storage.s3.amazonaws.com/blog-images/2017/09/27184050/cropped-favicon.jpg">
+<meta name="msapplication-TileImage" content="https://image-control-storage.s3.amazonaws.com/blog-images/2017/09/27184050/cropped-favicon.jpg">
+	<!-- Fonts Plugin CSS - https://fontsplugin.com/ -->
+	<style>
+			</style>
+	<!-- Fonts Plugin CSS -->
+	<style id="core-block-supports-inline-css">
+.wp-elements-1 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--white);}.wp-elements-2 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--white);}.wp-elements-3 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--white);}.wp-elements-4 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--white);}.wp-elements-5 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--white);}.wp-elements-6 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--white);}.wp-elements-7 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--white);}.wp-elements-8 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--white);}.wp-elements-9 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--white);}.wp-elements-10 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--white);}.wp-elements-11 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--white);}.wp-elements-12 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--white);}.wp-elements-13 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--white);}.wp-elements-14 a:where(:not(.wp-element-button)){color:var(--wp--preset--color--white);}
+/*# sourceURL=core-block-supports-inline-css */
+</style>
+
+</head>
+<body class="wp-singular post-template-default single single-post postid-65201 single-format-standard wp-embed-responsive paged-2 single-paged-2 wp-theme-nuggetofjoy-home-theme-v6-fixed"><a class="noj-skip" href="#main">Skip to content</a>
+<header class="noj-header"><div class="noj-wrap noj-header-inner">
+<a class="noj-brand" href="/nuggetofjoystatic/"><span class="noj-brand-orange">nugget</span><span class="noj-brand-blue">of joy</span></a>
+<nav class="noj-nav" aria-label="Main navigation">
+<ul id="menu-main-2" class="noj-menu"><li id="menu-item-68087" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68087"><a href="/nuggetofjoystatic/category/ui-ux/">UI/UX</a></li>
+<li id="menu-item-68088" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68088"><a href="/nuggetofjoystatic/category/ia/">IA</a></li>
+<li id="menu-item-68089" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68089"><a href="/nuggetofjoystatic/category/dmet-155-introduction-to-web-design/">DMET 155 Introduction to Web Design</a></li>
+<li id="menu-item-68090" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68090"><a href="/nuggetofjoystatic/category/interactive-social-media/">Interactive and Social Media</a></li>
+<li id="menu-item-68091" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68091"><a href="/nuggetofjoystatic/category/dmet-375-imaging-technology/">DMET 375 IMAGING TECHNOLOGY</a></li>
+<li id="menu-item-68092" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68092"><a href="/nuggetofjoystatic/category/social-design/">Social Design</a></li>
+<li id="menu-item-68093" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68093"><a href="/nuggetofjoystatic/category/dmet-350-media-graphics-and-design/">DMET 350 MEDIA GRAPHICS AND DESIGN</a></li>
+<li id="menu-item-68094" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68094"><a href="/nuggetofjoystatic/category/dmet-355-advanced-web-design/">DMET 355 ADVANCED WEB DESIGN</a></li>
+<li id="menu-item-68095" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68095"><a href="/nuggetofjoystatic/category/color-theory/">Color Theory</a></li>
+<li id="menu-item-68096" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68096"><a href="/nuggetofjoystatic/category/social_media/">Social Media</a></li>
+<li id="menu-item-68097" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68097"><a href="/nuggetofjoystatic/category/visual-information-theory/">Visual Information Theory</a></li>
+<li id="menu-item-68098" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68098"><a href="/nuggetofjoystatic/category/media-graphics-design-assignments/">Media Graphics &amp; Design Assignments</a></li>
+<li id="menu-item-68099" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68099"><a href="/nuggetofjoystatic/category/gestalt-principles/">Gestalt Principles</a></li>
+</ul></nav>
+<form class="noj-search" role="search" method="get" action="/nuggetofjoystatic/"><label class="screen-reader-text" for="noja-search-header">Search all content</label><input id="noja-search-header" type="search" name="s" value="" placeholder="Search the archive&hellip;"><button type="submit">Search</button></form></div></header>
+<main id="main" class="noj-search-results"><div class="noj-wrap"><article class="noj-entry post-65201 post type-post status-publish format-standard hentry category-projects"><p class="noj-kicker">Post &middot; March 4, 2024</p><h1>JavaScript Beginner Tutorial</h1><div class="noj-entry-content">
+
+
+<h1 class="wp-block-heading has-pale-pink-background-color has-background">Making Stuff Happen</h1>
+
+
+
+<p class="wp-block-paragraph">There&rsquo;s a few ways to try out JavaScript, and when learning it&rsquo;s best to try them out to see what works for you. But first, how does JavaScript relate to HTML and CSS?</p>
+
+
+
+<h2 class="wp-block-heading">HTML, CSS and JavaScript</h2>
+
+
+
+<p class="wp-block-paragraph">Mostly, JavaScript runs in your web browser alongside HTML and CSS, and can be added to any web page using a&nbsp;<a href="https://www.htmldog.com/references/html/tags/script/"><code>script</code></a>&nbsp;tag. The&nbsp;<a href="https://www.htmldog.com/references/html/tags/script/"><code>script</code></a>&nbsp;element can either contain JavaScript directly (<strong>internal</strong>) or link to an external resource via a&nbsp;<code>src</code>&nbsp;attribute (<strong>external</strong>).</p>
+
+
+
+<p class="wp-block-paragraph">A browser then runs JavaScript line-by-line, starting at the top of the file or&nbsp;<a href="https://www.htmldog.com/references/html/tags/script/"><code>script</code></a>&nbsp;element and finishing at the bottom (unless you tell it to go elsewhere).</p>
+
+
+
+<h2 class="wp-block-heading">Internal</h2>
+
+
+
+<p class="wp-block-paragraph">You can just put the JavaScript inside a&nbsp;<a href="https://www.htmldog.com/references/html/tags/script/"><code>script</code></a>&nbsp;element:</p>
+
+
+
+<pre class="wp-block-code"><code lang="markup" class="language-markup">
+&lt;script&gt;
+    alert("Hello, world.");
+&lt;/script&gt;
+</code></pre>
+
+
+
+<p class="wp-block-paragraph"><a href="https://www.htmldog.com/examples/"><strong>New Examples Section!</strong>See all of this code stuff in action, and play around with it.</a></p>
+
+
+
+<h2 class="wp-block-heading">External</h2>
+
+
+
+<p class="wp-block-paragraph">An external JavaScript resource is a&nbsp;<strong>text file</strong>&nbsp;with a&nbsp;<strong>.js</strong>&nbsp;extension,&nbsp;<a href="https://www.htmldog.com/guides/css/beginner/applyingcss/">just like an external CSS resource with a&nbsp;<strong>.css</strong>&nbsp;extension</a>.</p>
+
+
+
+<p class="wp-block-paragraph">To add a JavaScript file to your page, you just need to use a script tag with a src attribute pointing to the file. So, if your file was called script.js and sat in the same directory as your HTML file, your&nbsp;<a href="https://www.htmldog.com/references/html/tags/script/"><code>script</code></a>&nbsp;element would look like this:</p>
+
+
+
+<pre class="wp-block-code"><code lang="markup" class="language-markup">
+&lt;script src="script.js"&gt;&lt;/script&gt;
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">You might also come across another way on your view-source travels: inline. This involves event attributes inside HTML tags that look something like&nbsp;<code>&lt;a href="somewhere.html" onclick="alert('Noooooo!');"&gt;Click me&lt;/a&gt;</code>. Just move along and pretend you haven&rsquo;t witnessed this aberration. We, really, really want to separate our technologies so it&rsquo;s preferable to avoid this approach.</p>
+
+
+
+<h2 class="wp-block-heading has-white-color has-vivid-cyan-blue-background-color has-text-color has-background has-link-color wp-elements-1">Console</h2>
+
+
+
+<p class="wp-block-paragraph">The last way is great for getting instant feedback, and it&rsquo;s recommended if you want to try a line out quickly.</p>
+
+
+
+<p class="wp-block-paragraph">In a modern browser you&rsquo;ll find some developer tools &ndash; often you can right click on a page, then click &ldquo;inspect element&rdquo; to bring them up. Find the console and type JavaScript, hit enter and have it run immediately.</p>
+
+
+
+<p class="wp-block-paragraph">Search the net if you can&rsquo;t find your dev tools or console &ndash; they&rsquo;re changing in browsers all the time.</p>
+
+
+
+<h2 class="wp-block-heading has-white-color has-vivid-cyan-blue-background-color has-text-color has-background has-link-color wp-elements-2">Let&rsquo;s go!</h2>
+
+
+
+<p class="wp-block-paragraph">The best way to get started is the internal method. You can modify the contents of the&nbsp;<a href="https://www.htmldog.com/references/html/tags/script/"><code>script</code></a>&nbsp;element and refresh the page just like you&rsquo;re used to &ndash; quick and easy.</p>
+
+
+
+<p class="wp-block-paragraph">Now it&rsquo;s time to learn some JavaScript. Good luck!</p>
+
+
+
+<h1 class="wp-block-heading has-pale-pink-background-color has-background">Variables and Data</h1>
+
+
+
+<p class="wp-block-paragraph">Storing data so we can use it later is one of the most important things when writing code. Fortunately, JavaScript can do this! If it couldn&rsquo;t, it&rsquo;d be pretty darn useless.</p>
+
+
+
+<p class="wp-block-paragraph">So let&rsquo;s ask the user (that&rsquo;s you) for their surname (check your driving license, or ask a friend).</p>
+
+
+
+<p class="wp-block-paragraph">By the way, this assumes you&rsquo;ve jumped into a browser and are typing into your console.</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+var surname = prompt('Greetings friend, may I enquire as to your surname?');
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">A little box will pop-up, asking (very courteously if I may say) for your surname. Type your surname in and hit &lsquo;OK&rsquo;.</p>
+
+
+
+<p class="wp-block-paragraph">The surname you entered is now saved, and it can be referred to as&nbsp;<var>surname</var>. You can return what you entered by typing&nbsp;<var>surname</var>&nbsp;into the console. You should see your surname appearing back to you underneath! Exciting!</p>
+
+
+
+<p class="wp-block-paragraph">You&rsquo;ve created a&nbsp;<em>variable</em>.</p>
+
+
+
+<p class="wp-block-paragraph"><a href="https://www.htmldog.com/examples/"><strong>New Examples Section!</strong>See all of this code stuff in action, and play around with it.</a></p>
+
+
+
+<h2 class="wp-block-heading has-white-color has-vivid-cyan-blue-background-color has-text-color has-background has-link-color wp-elements-3">Variables</h2>
+
+
+
+<p class="wp-block-paragraph">Think, if you will, of a variable as a shelf with a name so it&rsquo;s easy to get back to. You&rsquo;ve named a shelf&nbsp;<var>surname</var>.</p>
+
+
+
+<p class="wp-block-paragraph">You can name a variable anything you like, but it&rsquo;s best to name it in a way that tells what you&rsquo;ve stored there. For example,&nbsp;<var>surname</var>&nbsp;is better than&nbsp;<var>mything</var>&nbsp;or&nbsp;<var>s</var>.</p>
+
+
+
+<p class="wp-block-paragraph">When you type a variable name into the console, you are asking the browser, which looks after the shelves, to find the shelf and give what&rsquo;s on it to you. This is also known as the variable&rsquo;s&nbsp;value. The value can be almost anything &ndash; in&nbsp;a surname, you&rsquo;ve stored some letters, known as a&nbsp;string. You can also store numbers and a myriad of other kinds of data.</p>
+
+
+
+<p class="wp-block-paragraph">So, a variable has a&nbsp;<em>name</em>&nbsp;and a&nbsp;<em>value</em>.</p>
+
+
+
+<p class="wp-block-paragraph">They are how we store data, and you&rsquo;ll be using them often.</p>
+
+
+
+<p class="wp-block-paragraph">There are two parts to creating a variable:&nbsp;declaration&nbsp;and&nbsp;initialization. Once created, you can&nbsp;<em>assign</em>&nbsp;(or set) its value.</p>
+
+
+
+<h2 class="wp-block-heading has-white-color has-vivid-cyan-blue-background-color has-text-color has-background has-link-color wp-elements-4">Declaration</h2>
+
+
+
+<p class="wp-block-paragraph">Declaration is&nbsp;<em>declaring</em>&nbsp;a variable to&nbsp;<em>exist</em>. To return to the shelf metaphor, it&rsquo;s like picking an empty shelf in a massive warehouse and putting a name on it.</p>
+
+
+
+<p class="wp-block-paragraph">As above, to declare a variable, use the&nbsp;<code>var</code>&nbsp;keyword followed by the variable name, like this:</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+var surname;
+var age;
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">Notice those semicolons (&ldquo;;&rdquo;)? Almost every line in JavaScript ends in a semicolon &ndash; you&rsquo;ll use them often.</p>
+
+
+
+<h2 class="wp-block-heading has-white-color has-vivid-cyan-blue-background-color has-text-color has-background has-link-color wp-elements-5">Initialization</h2>
+
+
+
+<p class="wp-block-paragraph"><em>Initialization</em>&nbsp;is giving a variable its&nbsp;<em>value</em>&nbsp;for the&nbsp;<em>first time</em>. The value can change later, but it is only initialized once.</p>
+
+
+
+<p class="wp-block-paragraph">You initialize a variable using the equals sign (=). You can read it as &ldquo;the&nbsp;<em>value</em>&nbsp;of the variable on the left should be the data on the right&rdquo;:</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+var name = "Tom";
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">&ldquo;Tom&rdquo; is a&nbsp;<em>string</em>&nbsp;&ndash; a collection of letters. Single or double quote marks surround a string.</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+var age = 20;
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">20 is just a number &ndash; and numbers don&rsquo;t go in quotes.</p>
+
+
+
+<h1 class="wp-block-heading has-luminous-vivid-amber-background-color has-background">Assignment</h1>
+
+
+
+<p class="has-luminous-vivid-amber-background-color has-background wp-block-paragraph">As mentioned, you can set a variable&rsquo;s value as many times as you like. It&rsquo;s called&nbsp;<em>assignment</em>&nbsp;and it looks very similar to initialization. You again use the equals sign, but there&rsquo;s no need for the&nbsp;<code>var</code>&nbsp;keyword because we&rsquo;ve already declared the variable.</p>
+
+
+
+<p class="has-luminous-vivid-amber-background-color has-background wp-block-paragraph">It&rsquo;s like this, you:</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+name = "Andy";
+age = 43;
+</code></pre>
+
+
+
+<p class="wp-block-paragraph"><em>Only</em>&nbsp;do this if you&rsquo;ve declared the variable using the&nbsp;<code>var</code>&nbsp;keyword!</p>
+
+
+
+<h1 class="wp-block-heading has-white-color has-pale-pink-background-color has-text-color has-background has-link-color wp-elements-6">Doing Math</h1>
+
+
+
+<p class="wp-block-paragraph">Variables can be used to store strings and numbers (amongst other things), but here the focus is on numbers.</p>
+
+
+
+<h2 class="wp-block-heading has-white-color has-vivid-cyan-blue-background-color has-text-color has-background has-link-color wp-elements-7">How much fruit?</h2>
+
+
+
+<p class="wp-block-paragraph">In your console, let&rsquo;s create two variables. One will be the number of apples we have, the second will be the number of pears.</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+var apples = 5, pears = 10;
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">That creates two variables&hellip; but there&rsquo;s only one&nbsp;<code>var</code>&nbsp;keyword? Yup, it&rsquo;s a shorthand for declaring and initializing multiple variables at the same time. By using the&nbsp;<code>var</code>&nbsp;keyword once and separating the new variables with commas you can save yourself some work.</p>
+
+
+
+<p class="wp-block-paragraph">Now, use these two variables to figure out how many pieces of fruit there are in total.</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+var piecesOfFruit = apples + pears;
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">So that&rsquo;s new.</p>
+
+
+
+<p class="wp-block-paragraph">You&rsquo;re asking the browser to work out the sum on the right before assigning the result to&nbsp;<var>piecesOfFruit</var>&nbsp;&ndash; and you&rsquo;re not adding the variable names, you&rsquo;re adding the&nbsp;<em>values of the variables</em>. The browser knows that, when it sees a variable like this, you want to do something with the value. So it goes and gets each variable&rsquo;s value before doing the sum.</p>
+
+
+
+<p class="wp-block-paragraph">The sum is called&nbsp;<var>piecesOfFruit</var>, not&nbsp;<var>pieces of fruit</var>. This is because variable names cannot contain spaces! There&rsquo;s a set of rules somewhere about what you can and can&rsquo;t use, but for now just use letters with no spaces.</p>
+
+
+
+<p class="wp-block-paragraph">You may have also noticed that the uppercase &ldquo;O&rdquo; on &ldquo;Of&rdquo; and &ldquo;F&rdquo; on &ldquo;Fruit&rdquo;. This is a convention, called&nbsp;<em>camel casing</em>&nbsp;(cos of the humps), that makes the variable name easier to read. You can call a variable anything you want, but&nbsp;<var>pIeCEsOFfRuiT</var>&nbsp;is pretty hard to read, no?</p>
+
+
+
+<p class="wp-block-paragraph">Here&rsquo;s a tip for you: code is read many, many more times that it is written. So it&rsquo;s really, really important to make sure your code is easy to read. Really important.</p>
+
+
+
+<h2 class="wp-block-heading has-white-color has-vivid-cyan-blue-background-color has-text-color has-background has-link-color wp-elements-8">Splitting the fruit</h2>
+
+
+
+<p class="wp-block-paragraph">Let&rsquo;s say you want to split your fruit between 3 people. How much fruit does each person get?</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+var piecesForEachPerson = piecesOfFruit / 3;
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">Thank goodness we have this JavaScript thing, otherwise you&rsquo;d need a calculator for that one&hellip;</p>
+
+
+
+<p class="wp-block-paragraph">You&rsquo;re using a forward slash (&ldquo; / &rdquo;) to indicate division: divide the thing on the left by the thing on the right.</p>
+
+
+
+<h2 class="wp-block-heading has-white-color has-vivid-cyan-blue-background-color has-text-color has-background has-link-color wp-elements-9">Precedence &amp; operators</h2>
+
+
+
+<p class="wp-block-paragraph">For doing sums you can use various symbols: add (&ldquo; + &rdquo;), subtract (&ldquo; &ndash; &rdquo;), divide (&ldquo; / &rdquo;) and multiply (&ldquo; * &rdquo;).</p>
+
+
+
+<p class="wp-block-paragraph">Mathematical symbols are called&nbsp;<em>operators</em>; that is, they&nbsp;<em>operate</em>&nbsp;on some data. We&rsquo;ll meet even more operators later on, but you should know that, like on a calculator, the symbols are worked out in a particular order, called&nbsp;<em>operator precedence</em>. Things in parentheses &ndash; that&rsquo;s these: &ldquo; ( &rdquo; and &ldquo; ) &rdquo; &ndash; are done first, then multiplication and division, then addition and subtraction.</p>
+
+
+
+<p class="wp-block-paragraph">Here&rsquo;s an example, stepping through how the browser runs it:</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+(10 + 2) / 2 + 4 * 2
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">The part in brackets is worked out first. So this becomes&hellip;</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+12 / 2 + 4 * 2
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">&hellip;which works out to&hellip;</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+6 + 4 * 2
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">Then things are done in operator precedence order. If multiple sums are of the same precedence then they are evaluated left to right.</p>
+
+
+
+<p class="wp-block-paragraph">The multiplication is higher precedence so is done first, which works out to&hellip;</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+6 + 8
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">This is used to work out the final value:</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+14
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">Whew!</p>
+
+
+
+<h1 class="wp-block-heading has-white-color has-pale-pink-background-color has-text-color has-background has-link-color wp-elements-10">Logic</h1>
+
+
+
+<p class="wp-block-paragraph">A really important part of programming is being able to compare values in order to make decisions in code. When a comparison is made the outcome is either true or false; a special kind a of data called a&nbsp;<em>boolean</em>. This is&nbsp;<em>logic</em>.</p>
+
+
+
+<p class="wp-block-paragraph">Like when doing math, there&rsquo;s a set of operators that work on booleans. They are used to compare two values, on the left and right of the operator, to produce a boolean value.</p>
+
+
+
+<p class="wp-block-paragraph">The following comparisons are made in the console. The result we get from each line (shown underneath) will be&nbsp;<code>true</code>&nbsp;or&nbsp;<code>false</code>; these are booleans.</p>
+
+
+
+<h2 class="wp-block-heading has-pale-cyan-blue-background-color has-background">Equality</h2>
+
+
+
+<p class="wp-block-paragraph">To find out when two values are equal, use the&nbsp;<em>triple equals</em>&nbsp;operator (&ldquo;===&rdquo;).</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+15.234 === 15.234
+</code></pre>
+
+
+
+<p class="wp-block-paragraph"><samp>true</samp></p>
+
+
+
+<p class="wp-block-paragraph">We can also determine if two values are not equal using the&nbsp;<em>triple not equal</em>&nbsp;operator (&ldquo;!==&rdquo;).</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+15.234 !== 18.4545
+</code></pre>
+
+
+
+<p class="wp-block-paragraph"><samp>true</samp></p>
+
+
+
+<p class="wp-block-paragraph">It&rsquo;s important to know that strings containing a number and an actual number are&nbsp;<em>not equal</em>.</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+'10' === 10
+</code></pre>
+
+
+
+<p class="wp-block-paragraph"><samp>false</samp></p>
+
+
+
+<h2 class="wp-block-heading has-pale-cyan-blue-background-color has-background">Greater than and less than</h2>
+
+
+
+<p class="wp-block-paragraph">For example, comparing two numbers is useful to determine which of two is larger or smaller. This first example is a comparison of 10 and 5 to see if 10 is larger, using the&nbsp;<em>greater than</em>&nbsp;operator (&ldquo;&gt;&rdquo;).</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+10 &gt; 5
+</code></pre>
+
+
+
+<p class="wp-block-paragraph"><samp>true</samp></p>
+
+
+
+<p class="wp-block-paragraph">Next we use the&nbsp;<em>less than</em>&nbsp;operator (&ldquo;&lt;&rdquo;) to determine if the left value is smaller.</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+20.4 &lt; 20.2
+</code></pre>
+
+
+
+<p class="wp-block-paragraph"><samp>false</samp></p>
+
+
+
+<p class="wp-block-paragraph">That example gives back (or&nbsp;<em>returns</em>) false, because 20.4 is not a smaller number than 20.2.</p>
+
+
+
+<h2 class="wp-block-heading has-pale-cyan-blue-background-color has-background">Combined comparisons</h2>
+
+
+
+<p class="wp-block-paragraph">Combining a comparison of equality and size can be done with the&nbsp;<em>greater than or equal to</em>&nbsp;and&nbsp;<em>less than or equal to</em>&nbsp;operators (&ldquo;&gt;=&rdquo; and &ldquo;&lt;=&rdquo; respectively).</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+10 &gt;= 10
+</code></pre>
+
+
+
+<p class="wp-block-paragraph"><samp>true</samp></p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+10 &lt;= 5
+</code></pre>
+
+
+
+<p class="wp-block-paragraph"><samp>false</samp></p>
+
+
+
+<h1 class="wp-block-heading has-white-color has-pale-pink-background-color has-text-color has-background has-link-color wp-elements-11">Conditional</h1>
+
+
+
+<p class="wp-block-paragraph">Logic is used to make decisions in code; choosing to run one piece of code or another depending on the comparisons made. This requires use of something called a&nbsp;<em>conditional</em>. There are a few different conditionals that you might want to use, but we&rsquo;ll focus the one used most commonly:&nbsp;<code>if</code>.</p>
+
+
+
+<h2 class="wp-block-heading has-pale-cyan-blue-background-color has-background">If</h2>
+
+
+
+<p class="wp-block-paragraph">It&rsquo;s very simple: if some logic (the&nbsp;<em>condition</em>) is true, run a&nbsp;<em>block</em>&nbsp;of code. You can also supply more code to be run if the condition is not true, and supply additional conditions and blocks of code to optionally be run. These forms are called&nbsp;<em>if-else</em>, as you&rsquo;ll see below.</p>
+
+
+
+<p class="wp-block-paragraph">The most simple&nbsp;<code>if</code>&nbsp;statement looks something like this:</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+if (10 &gt; 5) {
+    // Run the code in here
+}
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">The code between the braces &ndash; &ldquo;{&rdquo; and &ldquo;}&rdquo; &ndash; is called a&nbsp;<em>block</em>, and this one is linked to the&nbsp;<code>if</code>&nbsp;statement. It&rsquo;s only run if the&nbsp;<em>conditional</em>&nbsp;(between the parentheses) is&nbsp;<em>true</em>.</p>
+
+
+
+<p class="wp-block-paragraph">10 is indeed greater than 5, so the code in the block would run.</p>
+
+
+
+<p class="wp-block-paragraph">Oh, and the line starting &ldquo;//&rdquo;? The double slashes indicate comment, which means that everything after the slashes until the end of the line is ignored by the browser.</p>
+
+
+
+<p class="wp-block-paragraph"><a href="https://www.htmldog.com/examples/"><strong>New Examples Section!</strong>See all of this code stuff in action, and play around with it.</a></p>
+
+
+
+<h2 class="wp-block-heading has-pale-cyan-blue-background-color has-background">If-else</h2>
+
+
+
+<p class="wp-block-paragraph">The if-else form of an&nbsp;<code>if</code>&nbsp;statement is used to run an alternative piece of code if the conditional is not true. The code in the&nbsp;<code>if</code>&nbsp;block below will be ignored, for example &ndash; only the code in the&nbsp;<code>else</code>&nbsp;block will be run.</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+if (43 &lt; 2) {
+    // Run the code in here
+} else {
+    // Run a different bit of code
+}</code></pre>
+
+
+
+<h1 class="wp-block-heading has-white-color has-pale-pink-background-color has-text-color has-background has-link-color wp-elements-12">Looping</h1>
+
+
+
+<p class="wp-block-paragraph"><em>Loops</em>&nbsp;are a way of repeating the same block of code over and over. They&rsquo;re incredibly useful, and are used, for example, to carry out an action on every item in an array (<a href="https://www.htmldog.com/guides/javascript/beginner/arrays/">we will come to arrays later</a>) or in searching.</p>
+
+
+
+<p class="wp-block-paragraph">Two of the most common loops are&nbsp;<em>while</em>&nbsp;loops and&nbsp;<em>for</em>&nbsp;loops. They combine a conditional and a block, running the block over and over until the logic of the conditional is no longer true, or until you force them to stop.</p>
+
+
+
+<h2 class="wp-block-heading has-pale-cyan-blue-background-color has-background">While</h2>
+
+
+
+<p class="wp-block-paragraph">A&nbsp;<code>while</code>&nbsp;loop repeats a block of code&nbsp;<em>while</em>&nbsp;a&nbsp;<em>condition is true</em>. Like an&nbsp;<code>if</code>&nbsp;statement, the condition is found in parentheses.</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+var i = 1;
+while (i &lt; 10) {
+    alert(i);
+    i = i + 1;
+}
+// i is now 10
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">After looping has finished the code carries on running from just after the closing brace (&ldquo;}&rdquo;) of the loop&rsquo;s block.</p>
+
+
+
+<p class="wp-block-paragraph"><a href="https://www.htmldog.com/examples/"><strong>New Examples Section!</strong>See all of this code stuff in action, and play around with it.</a></p>
+
+
+
+<h2 class="wp-block-heading has-pale-cyan-blue-background-color has-background">For</h2>
+
+
+
+<p class="wp-block-paragraph">A&nbsp;<code>for</code>&nbsp;loop is similar to an&nbsp;<code>if</code>&nbsp;statement, but it combines three semicolon-separated pieces information between the parentheses:&nbsp;<em>initialization</em>,&nbsp;<em>condition</em>&nbsp;and a final&nbsp;<em>expression</em>.</p>
+
+
+
+<p class="wp-block-paragraph">The&nbsp;<em>initialization</em>&nbsp;part is for creating a variable to let you track how far through the loop you are &ndash; like&nbsp;<var>i</var>&nbsp;in the&nbsp;<code>while</code>&nbsp;example; the&nbsp;<em>condition</em>&nbsp;is where the looping&nbsp;<em>logic</em>&nbsp;goes &ndash; the same as the&nbsp;<em>condition</em>&nbsp;in the while example; and the final&nbsp;<em>expression</em>&nbsp;is run at the&nbsp;<em>end of every loop</em>.</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+for (var i = 1; i &lt; 10; i++) {
+    alert(i);
+}
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">This gives us alert boxes containing the numbers 1 to 10 in order.</p>
+
+
+
+<p class="wp-block-paragraph">By the way,&nbsp;<code>i++</code>&nbsp;is equivalent to&nbsp;<code>i = i + 1</code>.</p>
+
+
+
+<h1 class="wp-block-heading has-white-color has-pale-pink-background-color has-text-color has-background has-link-color wp-elements-13">Functions</h1>
+
+
+
+<p class="wp-block-paragraph">Functions are reusable blocks of code that carry out a specific task. To&nbsp;<em>execute</em>&nbsp;the code in a function you&nbsp;<em>call</em>&nbsp;it. A function can be passed&nbsp;<em>arguments</em>&nbsp;to use, and a function may&nbsp;<em>return</em>&nbsp;a value to whatever called it.</p>
+
+
+
+<p class="wp-block-paragraph">You can save functions as the value of a variable, and you call a function using this variable and a pair of parentheses. This is also called&nbsp;<em>invoking</em>&nbsp;the function.</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+doSomething();
+findAnInterestingThing();
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">To create a function, use the&nbsp;<code>function</code>&nbsp;keyword. You then list the arguments in parentheses and then supply a block that contains the function&rsquo;s code. Here&rsquo;s a function that adds two numbers:</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+var add = function (a, b) {
+    return a + b;
+};
+</code></pre>
+
+
+
+<p class="wp-block-paragraph"><a href="https://www.htmldog.com/linkto/"><strong>Link To Us!</strong>If you&rsquo;ve found HTML Dog useful, please consider linking to us.</a></p>
+
+
+
+<p class="wp-block-paragraph"><em>a</em>&nbsp;and&nbsp;<em>b</em>&nbsp;are the function&rsquo;s parameters, and the value it returns is signified by the&nbsp;<code>return</code>&nbsp;keyword. The&nbsp;<code>return</code>&nbsp;keyword also stops execution of the code in the function; nothing after it will be run.</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+var result = add(1, 2); // result is now 3
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">This calls add with the arguments&nbsp;<em>1</em>&nbsp;and&nbsp;<em>2</em>, which, inside add, will be saved in the variables&nbsp;<var>a</var>&nbsp;and&nbsp;<var>b</var>.</p>
+
+
+
+<h1 class="wp-block-heading has-white-color has-pale-pink-background-color has-text-color has-background has-link-color wp-elements-14">Objects</h1>
+
+
+
+<p class="wp-block-paragraph">JavaScript objects are like a real life objects; they have properties and abilities. A JavaScript object is, in that sense, a collection of named&nbsp;<em>properties</em>&nbsp;and&nbsp;<em>methods</em>&nbsp;&ndash; a function. An object can be stored in a variable, and the properties and methods accessed using the&nbsp;<em>dot syntax</em>.</p>
+
+
+
+<p class="wp-block-paragraph">A human, for example, has a name and an age, and could talk, move or learn JavaScript. Name and age are&nbsp;<em>properties</em>&nbsp;of the human, and are essentially pieces of data. Talking, moving and learning are more like functions &ndash; there&rsquo;s some complex behavior involved. When a JavaScript object has such an ability, it is called a&nbsp;<em>method</em>.</p>
+
+
+
+<p class="wp-block-paragraph">Variables can hold objects, and creating an object is done using a special syntax signified by braces:</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+var jedi = {
+    name: "Yoda",
+    age: 899,
+    talk: function () { alert("another... Sky... walk..."); }
+};
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">The Jedi&rsquo;s&nbsp;<var>name</var>&nbsp;and&nbsp;<var>age</var>&nbsp;are properties &ndash; they are essentially variables within the object and can store anything a variable can.&nbsp;<var>talk</var>&nbsp;is a property that holds a function &ndash; a method.</p>
+
+
+
+<p class="wp-block-paragraph">You can get data back out of an object using the&nbsp;<em>dot syntax</em>:</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+jedi.name;
+</code></pre>
+
+
+
+<p class="wp-block-paragraph"><samp>Yoda</samp></p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+jedi.age;
+</code></pre>
+
+
+
+<p class="wp-block-paragraph"><samp>899</samp></p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+jedi.talk();
+</code></pre>
+
+
+
+<p class="wp-block-paragraph"><samp>//produces an alert box</samp></p>
+
+
+
+<p class="wp-block-paragraph"><a href="https://www.htmldog.com/examples/"><strong>New Examples Section!</strong>See all of this code stuff in action, and play around with it.</a></p>
+
+
+
+<p class="wp-block-paragraph">You can also reassign properties of an object:</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+jedi.name = "Mace Windu";
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">And add new ones on the fly:</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+jedi.lightsaber = "purple";
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">Properties can be any kind of data including objects and arrays. Adding an object as a property of another object creates a&nbsp;<em>nested object</em>:</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+var person = {
+    age: 122
+};
+
+person.name = {
+    first: "Jeanne",
+    last: "Calment"
+};
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">Creating an empty object and adding properties and methods to it is possible too:</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+var dog = {};
+
+dog.bark = function () { alert("Woof!"); };</code></pre>
+
+
+
+<h1 class="wp-block-heading has-pale-cyan-blue-background-color has-background">Arrays</h1>
+
+
+
+<p class="wp-block-paragraph"><strong>Arrays</strong>&nbsp;are lists of any kind of data, including other arrays. Each item in the array has an&nbsp;<strong>index</strong>&nbsp;&mdash; a number &mdash; which can be used to retrieve an&nbsp;<strong>element</strong>&nbsp;from the array.</p>
+
+
+
+<p class="wp-block-paragraph">The indices start at 0; that is, the first element in the array has the index&nbsp;<em>0</em>, and subsequent elements have incrementally increasing indices, so the last element in the array has an index one less than the length of the array.</p>
+
+
+
+<p class="wp-block-paragraph">In JavaScript, you create an array using the&nbsp;<em>array-literal syntax</em>:</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+var emptyArray = [];
+
+var shoppingList = ['Milk', 'Bread', 'Beans'];
+</code></pre>
+
+
+
+<p class="wp-block-paragraph">You retrieve a specific element from an array using&nbsp;<em>square bracket</em>&nbsp;syntax:</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+shoppingList[0];
+</code></pre>
+
+
+
+<p class="wp-block-paragraph"><samp>Milk</samp></p>
+
+
+
+<p class="wp-block-paragraph">It&rsquo;s also possible to set the value at a particular index, again using the square bracket syntax:</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+shoppingList[1] = 'Cookies';
+</code></pre>
+
+
+
+<p class="wp-block-paragraph"><samp>// shoppingList is now [&lsquo;Milk&rsquo;, &lsquo;Cookies&rsquo;, &lsquo;Beans&rsquo;]</samp></p>
+
+
+
+<p class="wp-block-paragraph">You can find the number of elements in the array using its&nbsp;<code>length</code>&nbsp;property:</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+shoppingList.length;
+</code></pre>
+
+
+
+<p class="wp-block-paragraph"><samp>3</samp></p>
+
+
+
+<p class="wp-block-paragraph">You can use&nbsp;<code>push</code>&nbsp;and&nbsp;<code>pop</code>&nbsp;methods to add and remove elements from the end of the array:</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+shoppingList.push('A new car');
+</code></pre>
+
+
+
+<p class="wp-block-paragraph"><samp>// shoppingList is now [&lsquo;Milk&rsquo;, &lsquo;Bread&rsquo;, &lsquo;Beans&rsquo;, &lsquo;A new car&rsquo;]</samp></p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+shoppingList.pop();
+</code></pre>
+
+
+
+<p class="wp-block-paragraph"><samp>// shoppingList is back to [&lsquo;Milk&rsquo;, &lsquo;Bread&rsquo;, &lsquo;Beans&rsquo;]</samp></p>
+
+
+
+<p class="wp-block-paragraph">Here&rsquo;s an example that creates, pushes, pops and iterates over an array, passing each name to a function called&nbsp;<var>helloFrom</var>.&nbsp;<var>helloFrom</var>&nbsp;returns a string with a greeting: &ldquo;Hello from &rdquo; and then the person&rsquo;s name. After the pushing and popping, the final list of people is: &ldquo;Tom&rdquo;, &ldquo;Yoda&rdquo;, &ldquo;Ron&rdquo; and &ldquo;Bob&rdquo;.</p>
+
+
+
+<pre class="wp-block-code"><code lang="javascript" class="language-javascript line-numbers">
+var helloFrom = function (personName) {
+    return "Hello from " + personName;
+}
+
+var people = ['Tom', 'Yoda', 'Ron'];
+
+people.push('Bob');
+people.push('Dr Evil');
+
+people.pop();
+
+for (var i=0; i &lt; people.length; i++) {
+    var greeting = helloFrom(people[i]);
+    alert(greeting);
+}</code></pre>
+
+
+
+<h2 class="wp-block-heading"></h2>
+</div><p class="post-nav-links">Pages: <a href="/nuggetofjoystatic/javascript-beginner-tutorial/" class="post-page-numbers">1</a> <span class="post-page-numbers current" aria-current="page">2</span></p></article></div></main><footer class="noj-footer"><div class="noj-wrap noj-footer-inner">
+<a class="noj-brand" href="/nuggetofjoystatic/"><span class="noj-brand-orange">nugget</span><span class="noj-brand-blue">of joy</span></a>
+<p>Communication, Art, Design &amp; Instruction</p>
+<p>&copy; 2026 Communication, Art, Design &amp; Instruction</p>
+</div></footer><script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/nuggetofjoy-home-theme-v6-fixed/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id="codepen-embed-script-js" src="https://cpwebassets.codepen.io/assets/embed/ei.js?ver=1.0.1"></script>
+<script id="mkaz-code-syntax-prism-js-js-extra">
+var prism_settings = {"pluginUrl":"/wp-content/plugins/code-syntax-block/"};
+//# sourceURL=mkaz-code-syntax-prism-js-js-extra
+</script>
+<script id="mkaz-code-syntax-prism-js-js" src="/nuggetofjoystatic/wp-content/plugins/code-syntax-block/assets/prism/prism.js?ver=1720452604"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"/wp-includes/js/wp-emoji-release.min.js?ver=7.1.3"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=/wp-includes/js/wp-emoji-loader.min.js
+</script>
+</body></html>
+<!-- Powered by Staatic (https://staatic.com/) -->

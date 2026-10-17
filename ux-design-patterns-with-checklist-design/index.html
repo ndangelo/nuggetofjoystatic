@@ -1,0 +1,2577 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>UX Design Patterns with Checklist Design &ndash; Communication, Art, Design &amp; Instruction</title>
+<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="//cpwebassets.codepen.io">
+<link rel="alternate" type="application/rss+xml" title="Communication, Art, Design &amp; Instruction &raquo; Feed" href="/nuggetofjoystatic/feed/">
+<link rel="alternate" type="application/rss+xml" title="Communication, Art, Design &amp; Instruction &raquo; Comments Feed" href="/nuggetofjoystatic/comments/feed/">
+		
+	<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<link rel="stylesheet" id="embedpress-css-css" href="/nuggetofjoystatic/wp-content/plugins/embedpress/assets/css/embedpress.css?ver=1790948058" media="all">
+<link rel="stylesheet" id="embedpress-blocks-style-css" href="/nuggetofjoystatic/wp-content/plugins/embedpress/assets/css/blocks.build.css?ver=1790948058" media="all">
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="wp-block-heading-inline-css">
+h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-background,h3:where(.wp-block-heading).has-background,h4:where(.wp-block-heading).has-background,h5:where(.wp-block-heading).has-background,h6:where(.wp-block-heading).has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+/*# sourceURL=/wp-includes/blocks/heading/style.min.css */
+</style>
+<style id="wp-block-image-inline-css">
+.wp-block-image>a,.wp-block-image>figure>a{display:inline-block}.wp-block-image img{box-sizing:border-box;height:auto;max-width:100%;vertical-align:bottom}@media not (prefers-reduced-motion){.wp-block-image img.hide{visibility:hidden}.wp-block-image img.show{animation:show-content-image .4s}}.wp-block-image[style*=border-radius] img,.wp-block-image[style*=border-radius]>a{border-radius:inherit}.wp-block-image.has-custom-border img{box-sizing:border-box}.wp-block-image.aligncenter{text-align:center}.wp-block-image.alignfull>a,.wp-block-image.alignwide>a{width:100%}.wp-block-image.alignfull img,.wp-block-image.alignwide img{height:auto;width:100%}.wp-block-image .aligncenter,.wp-block-image .alignleft,.wp-block-image .alignright,.wp-block-image.aligncenter,.wp-block-image.alignleft,.wp-block-image.alignright{display:table}.wp-block-image .aligncenter>figcaption,.wp-block-image .alignleft>figcaption,.wp-block-image .alignright>figcaption,.wp-block-image.aligncenter>figcaption,.wp-block-image.alignleft>figcaption,.wp-block-image.alignright>figcaption{caption-side:bottom;display:table-caption}.wp-block-image .alignleft{float:left;margin:.5em 1em .5em 0}.wp-block-image .alignright{float:right;margin:.5em 0 .5em 1em}.wp-block-image .aligncenter{margin-left:auto;margin-right:auto}.wp-block-image :where(figcaption){margin-bottom:1em;margin-top:.5em}.wp-block-image.is-style-circle-mask img{border-radius:9999px}@supports ((-webkit-mask-image:none) or (mask-image:none)) or (-webkit-mask-image:none){.wp-block-image.is-style-circle-mask img{border-radius:0;-webkit-mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/>');mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/>');mask-mode:alpha;-webkit-mask-position:center;mask-position:center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain}}:root :where(.wp-block-image.is-style-rounded img,.wp-block-image .is-style-rounded img){border-radius:9999px}.wp-block-image figure{margin:0}.wp-lightbox-container{display:flex;flex-direction:column;position:relative}.wp-lightbox-container img{cursor:zoom-in}.wp-lightbox-container img:hover+button{opacity:1}.wp-lightbox-container button{align-items:center;backdrop-filter:blur(16px) saturate(180%);background-color:rgba(90,90,90,.25);border:none;border-radius:4px;cursor:zoom-in;display:flex;height:20px;justify-content:center;opacity:0;padding:0;position:absolute;right:16px;text-align:center;top:16px;width:20px;z-index:100}@media not (prefers-reduced-motion){.wp-lightbox-container button{transition:opacity .2s ease}}.wp-lightbox-container button:focus-visible{outline:3px auto rgba(90,90,90,.25);outline:3px auto -webkit-focus-ring-color;outline-offset:3px}.wp-lightbox-container button:hover{cursor:pointer;opacity:1}.wp-lightbox-container button:focus{opacity:1}.wp-lightbox-container button:focus,.wp-lightbox-container button:hover,.wp-lightbox-container button:not(:hover):not(:active):not(.has-background){background-color:rgba(90,90,90,.25);border:none}.wp-lightbox-overlay{box-sizing:border-box;cursor:zoom-out;height:100vh;left:0;overflow:hidden;position:fixed;top:0;visibility:hidden;width:100%;z-index:100000}.wp-lightbox-overlay .wp-lightbox-close-button{align-items:center;cursor:pointer;display:flex;font-family:inherit;gap:8px;justify-content:center;line-height:1;min-height:40px;min-width:40px;padding:0 4px;position:absolute;right:calc(env(safe-area-inset-right) + 16px);top:calc(env(safe-area-inset-top) + 16px);z-index:5000000}.wp-lightbox-overlay .wp-lightbox-close-button:focus,.wp-lightbox-overlay .wp-lightbox-close-button:hover,.wp-lightbox-overlay .wp-lightbox-close-button:not(:hover):not(:active):not(.has-background){background:none;border:none}.wp-lightbox-overlay .wp-lightbox-close-button:has(.wp-lightbox-close-text:not([hidden])) .wp-lightbox-close-icon svg{height:1em;width:1em}.wp-lightbox-overlay .wp-lightbox-close-icon svg{display:block}.wp-lightbox-overlay .wp-lightbox-navigation-button-next,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev{align-items:center;bottom:16px;cursor:pointer;display:flex;font-family:inherit;gap:4px;justify-content:center;line-height:1;min-height:40px;min-width:40px;padding:0 8px;position:absolute;z-index:2000002}.wp-lightbox-overlay .wp-lightbox-navigation-button-next[hidden],.wp-lightbox-overlay .wp-lightbox-navigation-button-prev[hidden]{display:none}@media (min-width:960px){.wp-lightbox-overlay .wp-lightbox-navigation-button-next,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev{bottom:50%;transform:translateY(-50%)}}.wp-lightbox-overlay .wp-lightbox-navigation-button-next:focus,.wp-lightbox-overlay .wp-lightbox-navigation-button-next:hover,.wp-lightbox-overlay .wp-lightbox-navigation-button-next:not(:hover):not(:active):not(.has-background),.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:focus,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:hover,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:not(:hover):not(:active):not(.has-background){background:none;border:none;padding:0 8px}.wp-lightbox-overlay .wp-lightbox-navigation-button-next:has(.wp-lightbox-navigation-text:not([hidden])) .wp-lightbox-navigation-icon svg,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:has(.wp-lightbox-navigation-text:not([hidden])) .wp-lightbox-navigation-icon svg{display:block;height:1.5em;width:1.5em}.wp-lightbox-overlay .wp-lightbox-navigation-button-prev{left:calc(env(safe-area-inset-left) + 16px)}.wp-lightbox-overlay .wp-lightbox-navigation-button-next{right:calc(env(safe-area-inset-right) + 16px)}.wp-lightbox-overlay .wp-lightbox-navigation-icon svg{vertical-align:middle}.wp-lightbox-overlay .lightbox-image-container{height:var(--wp--lightbox-container-height);left:50%;overflow:hidden;position:absolute;top:50%;transform:translate(-50%,-50%);transform-origin:top left;width:var(--wp--lightbox-container-width);z-index:2000001}.wp-lightbox-overlay .wp-block-image{align-items:center;box-sizing:border-box;display:flex;height:100%;justify-content:center;margin:0;position:relative;transform-origin:0 0;width:100%;z-index:3000000}.wp-lightbox-overlay .wp-block-image img{height:var(--wp--lightbox-image-height);min-height:var(--wp--lightbox-image-height);min-width:var(--wp--lightbox-image-width);width:var(--wp--lightbox-image-width)}.wp-lightbox-overlay .wp-block-image figcaption{display:none}.wp-lightbox-overlay button{background:none;border:none}.wp-lightbox-overlay .scrim{background-color:#fff;height:100%;opacity:.9;position:absolute;width:100%;z-index:2000000}.wp-lightbox-overlay.active{visibility:visible}@media not (prefers-reduced-motion){.wp-lightbox-overlay.active{animation:turn-on-visibility .25s both}.wp-lightbox-overlay.active img{animation:turn-on-visibility .35s both}.wp-lightbox-overlay.show-closing-animation:not(.active){animation:turn-off-visibility .35s both}.wp-lightbox-overlay.show-closing-animation:not(.active) img{animation:turn-off-visibility .25s both}.wp-lightbox-overlay.zoom.active{animation:none;opacity:1;visibility:visible}.wp-lightbox-overlay.zoom.active .lightbox-image-container{animation:lightbox-zoom-in .4s}.wp-lightbox-overlay.zoom.active .lightbox-image-container img{animation:none}.wp-lightbox-overlay.zoom.active .scrim{animation:turn-on-visibility .4s forwards}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active){animation:none}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .lightbox-image-container{animation:lightbox-zoom-out .4s}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .lightbox-image-container img{animation:none}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .scrim{animation:turn-off-visibility .4s forwards}}@keyframes show-content-image{0%{visibility:hidden}99%{visibility:hidden}to{visibility:visible}}@keyframes turn-on-visibility{0%{opacity:0}to{opacity:1}}@keyframes turn-off-visibility{0%{opacity:1;visibility:visible}99%{opacity:0;visibility:visible}to{opacity:0;visibility:hidden}}@keyframes lightbox-zoom-in{0%{transform:translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)),calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale))}to{transform:translate(-50%,-50%) scale(1)}}@keyframes lightbox-zoom-out{0%{transform:translate(-50%,-50%) scale(1);visibility:visible}99%{visibility:visible}to{transform:translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)),calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale));visibility:hidden}}
+/*# sourceURL=/wp-includes/blocks/image/style.min.css */
+</style>
+<style id="wp-block-list-inline-css">
+ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:1.25em 2.375em}
+/*# sourceURL=/wp-includes/blocks/list/style.min.css */
+</style>
+<style id="wp-block-paragraph-inline-css">
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+/*# sourceURL=/wp-includes/blocks/paragraph/style.min.css */
+</style>
+<style id="wp-block-embed-inline-css">
+.wp-block-embed.alignleft,.wp-block-embed.alignright,.wp-block[data-align=left]>[data-type="core/embed"],.wp-block[data-align=right]>[data-type="core/embed"]{max-width:360px;width:100%}.wp-block-embed.alignleft .wp-block-embed__wrapper,.wp-block-embed.alignright .wp-block-embed__wrapper,.wp-block[data-align=left]>[data-type="core/embed"] .wp-block-embed__wrapper,.wp-block[data-align=right]>[data-type="core/embed"] .wp-block-embed__wrapper{min-width:280px}.wp-block-cover .wp-block-embed{min-height:240px;min-width:320px}.wp-block-group.is-layout-flex .wp-block-embed{flex:1 1 0%;min-width:0}.wp-block-embed{overflow-wrap:break-word}.wp-block-embed :where(figcaption){margin-bottom:1em;margin-top:.5em}.wp-block-embed iframe{max-width:100%}.wp-block-embed__wrapper{position:relative}.wp-embed-responsive .wp-has-aspect-ratio .wp-block-embed__wrapper:before{content:"";display:block;padding-top:50%}.wp-embed-responsive .wp-has-aspect-ratio iframe{bottom:0;height:100%;left:0;position:absolute;right:0;top:0;width:100%}.wp-embed-responsive .wp-embed-aspect-21-9 .wp-block-embed__wrapper:before{padding-top:42.85%}.wp-embed-responsive .wp-embed-aspect-18-9 .wp-block-embed__wrapper:before{padding-top:50%}.wp-embed-responsive .wp-embed-aspect-16-9 .wp-block-embed__wrapper:before{padding-top:56.25%}.wp-embed-responsive .wp-embed-aspect-4-3 .wp-block-embed__wrapper:before{padding-top:75%}.wp-embed-responsive .wp-embed-aspect-1-1 .wp-block-embed__wrapper:before{padding-top:100%}.wp-embed-responsive .wp-embed-aspect-9-16 .wp-block-embed__wrapper:before{padding-top:177.77%}.wp-embed-responsive .wp-embed-aspect-1-2 .wp-block-embed__wrapper:before{padding-top:200%}
+/*# sourceURL=/wp-includes/blocks/embed/style.min.css */
+</style>
+
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel="stylesheet" id="nuggetofjoy-archive-style-css" href="/nuggetofjoystatic/wp-content/themes/nuggetofjoy-home-theme-v6-fixed/style.css?ver=6.0.0" media="all">
+<link rel="stylesheet" id="wp-paginate-css" href="/nuggetofjoystatic/wp-content/plugins/wp-paginate/css/wp-paginate.css?ver=2.2.6" media="screen">
+<link rel="https://api.w.org/" href="/nuggetofjoystatic/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="/nuggetofjoystatic/wp-json/wp/v2/posts/67047"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="/nuggetofjoystatic/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 7.1.3">
+<link rel="canonical" href="/nuggetofjoystatic/ux-design-patterns-with-checklist-design/">
+<link rel="shortlink" href="/nuggetofjoystatic/?p=67047">
+<link rel="icon" href="https://image-control-storage.s3.amazonaws.com/blog-images/2017/09/27184050/cropped-favicon.jpg" sizes="32x32">
+<link rel="icon" href="https://image-control-storage.s3.amazonaws.com/blog-images/2017/09/27184050/cropped-favicon.jpg" sizes="192x192">
+<link rel="apple-touch-icon" href="https://image-control-storage.s3.amazonaws.com/blog-images/2017/09/27184050/cropped-favicon.jpg">
+<meta name="msapplication-TileImage" content="https://image-control-storage.s3.amazonaws.com/blog-images/2017/09/27184050/cropped-favicon.jpg">
+	<!-- Fonts Plugin CSS - https://fontsplugin.com/ -->
+	<style>
+			</style>
+	<!-- Fonts Plugin CSS -->
+	</head>
+<body class="wp-singular post-template-default single single-post postid-67047 single-format-standard wp-embed-responsive wp-theme-nuggetofjoy-home-theme-v6-fixed"><a class="noj-skip" href="#main">Skip to content</a>
+<header class="noj-header"><div class="noj-wrap noj-header-inner">
+<a class="noj-brand" href="/nuggetofjoystatic/"><span class="noj-brand-orange">nugget</span><span class="noj-brand-blue">of joy</span></a>
+<nav class="noj-nav" aria-label="Main navigation">
+<ul id="menu-main-2" class="noj-menu"><li id="menu-item-68087" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-68087"><a href="/nuggetofjoystatic/category/ui-ux/">UI/UX</a></li>
+<li id="menu-item-68088" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-68088"><a href="/nuggetofjoystatic/category/ia/">IA</a></li>
+<li id="menu-item-68089" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68089"><a href="/nuggetofjoystatic/category/dmet-155-introduction-to-web-design/">DMET 155 Introduction to Web Design</a></li>
+<li id="menu-item-68090" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68090"><a href="/nuggetofjoystatic/category/interactive-social-media/">Interactive and Social Media</a></li>
+<li id="menu-item-68091" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68091"><a href="/nuggetofjoystatic/category/dmet-375-imaging-technology/">DMET 375 IMAGING TECHNOLOGY</a></li>
+<li id="menu-item-68092" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68092"><a href="/nuggetofjoystatic/category/social-design/">Social Design</a></li>
+<li id="menu-item-68093" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68093"><a href="/nuggetofjoystatic/category/dmet-350-media-graphics-and-design/">DMET 350 MEDIA GRAPHICS AND DESIGN</a></li>
+<li id="menu-item-68094" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68094"><a href="/nuggetofjoystatic/category/dmet-355-advanced-web-design/">DMET 355 ADVANCED WEB DESIGN</a></li>
+<li id="menu-item-68095" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68095"><a href="/nuggetofjoystatic/category/color-theory/">Color Theory</a></li>
+<li id="menu-item-68096" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68096"><a href="/nuggetofjoystatic/category/social_media/">Social Media</a></li>
+<li id="menu-item-68097" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68097"><a href="/nuggetofjoystatic/category/visual-information-theory/">Visual Information Theory</a></li>
+<li id="menu-item-68098" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68098"><a href="/nuggetofjoystatic/category/media-graphics-design-assignments/">Media Graphics &amp; Design Assignments</a></li>
+<li id="menu-item-68099" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-68099"><a href="/nuggetofjoystatic/category/gestalt-principles/">Gestalt Principles</a></li>
+</ul></nav>
+<form class="noj-search" role="search" method="get" action="/nuggetofjoystatic/"><label class="screen-reader-text" for="noja-search-header">Search all content</label><input id="noja-search-header" type="search" name="s" value="" placeholder="Search the archive&hellip;"><button type="submit">Search</button></form></div></header>
+<main id="main" class="noj-search-results"><div class="noj-wrap"><article class="noj-entry post-67047 post type-post status-publish format-standard hentry category-ia category-projects category-ui-ux"><p class="noj-kicker">Post &middot; January 6, 2025</p><h1>UX Design Patterns with Checklist Design</h1><div class="noj-entry-content">
+<p class="has-small-font-size wp-block-paragraph">Source: The best way to learn UX/UI design. (n.d.). Retrieved from https://app.uxcel.com/courses/flows-by-checklist-design</p>
+
+
+
+<h1 class="wp-block-heading">Submitting a Form</h1>
+
+
+
+<p class="wp-block-paragraph">Ensure a seamless user experience by learning how to optimize your form design</p>
+
+
+
+<p class="wp-block-paragraph">Interaction Design</p>
+
+
+
+<p class="wp-block-paragraph">5 exercises</p>
+
+
+
+<p class="wp-block-paragraph">Start&nbsp;<strong>+250px</strong></p>
+
+
+
+<p class="wp-block-paragraph">Forms exist to help users achieve anything from creating an account to subscribing to a newsletter. They are often the last step before users achieve their goal, so they should be quick and easy to complete. When forms consume too much time, use complicated language, or ask too personal questions, users tend to leave.</p>
+
+
+
+<p class="wp-block-paragraph">Multiple factors like alignment, structure, spacing, the design of&nbsp;<a href="https://app.uxcel.com/glossary/buttons" target="_blank" rel="noreferrer noopener">buttons</a>&nbsp;and&nbsp;<a href="https://app.uxcel.com/glossary/inputs" target="_blank" rel="noreferrer noopener">inputs</a>, and&nbsp;<a href="https://app.uxcel.com/glossary/typography" target="_blank" rel="noreferrer noopener">typography</a>&nbsp;can make or break the overall experience your users have when trying to complete a form. eBay increased its annual income by 500 million dollars after it redesigned just one button on one of the mobile form screens. If you want to convert more leads and create a good impression as a user-friendly product, consider form design with great attention and respect.</p>
+
+
+
+<h2 class="wp-block-heading">Show a button to submit</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/show-button-to-submit-1640343908053/b-1682058071630.jpg" alt="Show a button to submit Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/show-button-to-submit-1640343908053/b-1682058071630-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/show-button-to-submit-1640343908053/a-1682058071622.jpg" alt="Show a button to submit Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/show-button-to-submit-1640343908053/a-1682058071622-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">The primary action button allowing users to submit information should always be in sight. The most intuitive placement is below the form fields or in the upper right corner. On mobile, if the form is long and users need to scroll, fix the button position so it won&rsquo;t disappear.</p>
+
+
+
+<p class="wp-block-paragraph">The button&rsquo;s <a href="https://app.uxcel.com/glossary/labels" target="_blank" rel="noreferrer noopener">label</a> should be straightforward and on-point. Users should immediately understand what happens after they press it. You can change the copy to fit the form, e.g., the button can say &ldquo;Subscribe&rdquo; if someone is providing their <a href="https://app.uxcel.com/glossary/email" target="_blank" rel="noreferrer noopener">email</a> address to receive emails.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Show loading state after submission</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/show-loading-state-after-submission-1640344243520/a-1682058132854.jpg" alt="Show loading state after submission"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/show-loading-state-after-submission-1640344243520/a-1682058132854-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">The <a href="https://app.uxcel.com/glossary/loading" target="_blank" rel="noreferrer noopener">loading</a> state helps users see the form is in the process of being submitted. According to the first of Jakob Nielsen&rsquo;s&nbsp;10 Heuristics<em>, </em>visibility of system status is crucial &mdash; the system should always keep users informed about what is happening right now and provide clear and on-time feedback. This makes users feel in control of the system, so they know how to act to reach their goal. Showing the button&rsquo;s state also increases user trust in the <a href="https://app.uxcel.com/glossary/branding" target="_blank" rel="noreferrer noopener">brand</a>.<sup><a href="https://app.uxcel.com/#anchor-1">[1]</a></sup></p>
+
+
+
+<p class="wp-block-paragraph"><strong>Pro Tip!</strong> Make sure you also added a hover state that arises when users are about to press the button.&nbsp;SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Show success message when it submits</h2>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/show-success-message-when-it-submits-1640344519945/b-1682063423864-2x.mp4" rel="noreferrer noopener"></a><a target="_blank" href="https://img.uxcel.com/practices/show-success-message-when-it-submits-1640344519945/b-1682063423864-2x.mp4" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/show-success-message-when-it-submits-1640344519945/a-1682063423856-2x.mp4" rel="noreferrer noopener"></a><a target="_blank" href="https://img.uxcel.com/practices/show-success-message-when-it-submits-1640344519945/a-1682063423856-2x.mp4" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">Once the form is submitted, communicate that back to users with a clear success message. First, showing a success message follows Nielsen&rsquo;s <a href="https://app.uxcel.com/glossary/heuristics" target="_blank" rel="noreferrer noopener">Heuristics</a> about the visibility of the system status. Second, it increases user satisfaction when they achieve one of their goals.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Pro Tip!</strong> Don&rsquo;t overdo it. Show success messages only when necessary and make them disappear automatically after a while.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Show an error message if necessary</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/if-it-doesnt-show-an-error-message-1640344642547/b-1682058286249.jpg" alt="Show an error message if necessary Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/if-it-doesnt-show-an-error-message-1640344642547/b-1682058286249-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/if-it-doesnt-show-an-error-message-1640344642547/a-1682058286247.jpg" alt="Show an error message if necessary Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/if-it-doesnt-show-an-error-message-1640344642547/a-1682058286247-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">Sometimes, things don&rsquo;t work out. If the form can&rsquo;t be submitted due to invalid information or another <a href="https://app.uxcel.com/glossary/errors" target="_blank" rel="noreferrer noopener">error</a>, let users know about it.</p>
+
+
+
+<p class="wp-block-paragraph">When users see that something went wrong, they may feel disappointed, irritated, and stressed. A formal, ambiguous, robotic message is the last thing they need to see. Good error messages should be polite, clear, and informative. Clearly explain to users what happened and provide advice on what they should do next.<sup><a href="https://app.uxcel.com/#anchor-2">[2]</a></sup></p>
+
+
+
+<p class="wp-block-paragraph">However, providing specific error details (e.g., whether the username or <a href="https://app.uxcel.com/glossary/password" target="_blank" rel="noreferrer noopener">password</a> is incorrect) can be a security risk. Display error messages like &ldquo;Invalid username or password&rdquo; to prevent revealing information that could aid attackers.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Pro Tip!</strong> Avoid using technical terms to explain what caused an error. Act like a human and use simple words that users can relate to.&nbsp;SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">An error may occur because of incorrect data</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/an-error-may-occur-because-of-wrong-information-1640344785343/a-1682058317210.jpg" alt="An error may occur because of incorrect data"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/an-error-may-occur-because-of-wrong-information-1640344785343/a-1682058317210-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">As humans, we all make mistakes, and sometimes, users provide incorrect data that doesn&rsquo;t meet input criteria, preventing the system from submitting the form. To value users&rsquo; time, it is important to inform them about these errors promptly, instead of waiting until they hit the Submit button. Therefore, it is recommended to validate each input after users fill in the information and move the focus away from the input.</p>
+
+
+
+<p class="wp-block-paragraph">To provide effective feedback, the error message should be concise yet precise, clearly indicating what went wrong and how users can fix the problem to continue with their task.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Pro Tip!</strong> Avoid validating each input while users are typing. It annoys people and creates mistrust of the product.&nbsp;</p>
+
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<h1 class="wp-block-heading">Making a Payment</h1>
+
+
+
+<p class="wp-block-paragraph">Explore best practices for designing a smooth and secure checkout experience</p>
+
+
+
+<p class="wp-block-paragraph">Interaction Design</p>
+
+
+
+<p class="wp-block-paragraph">6 exercises</p>
+
+
+
+<p class="wp-block-paragraph">Start&nbsp;<strong>+250px</strong></p>
+
+
+
+<p class="wp-block-paragraph">If you&rsquo;re running an online business, the&nbsp;<a href="https://app.uxcel.com/glossary/checkout" target="_blank" rel="noreferrer noopener">checkout</a>&nbsp;process is the desired destination of the selling journey. You&rsquo;ve come a long way driving users from their first acquaintance with the product to the final stage of making a purchase. But don&rsquo;t relax just yet! You have to ensure that the checkout process, especially the part of providing payment details, is smooth, secure, and painless, making users feel confident that they made the right choice coming to your website.</p>
+
+
+
+<p class="wp-block-paragraph">You should consider adding multiple payment options, provide enough feedback when users submit their confidential data, and clearly outline what&rsquo;s coming next after they make a payment. It&rsquo;ll be disappointing to lose a customer at the final stages, so take this task seriously and try to minimize any risk of confusion or uncertainty.</p>
+
+
+
+<h2 class="wp-block-heading">Offer payment methods</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/offer-payment-methods-1640345459453/b-1682058374242.jpg" alt="Offer payment methods Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/offer-payment-methods-1640345459453/b-1682058374242-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/offer-payment-methods-1640345459453/a-1682058374242.jpg" alt="Offer payment methods Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/offer-payment-methods-1640345459453/a-1682058374242-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">According to studies by the Baymard Institute, your website or mobile app should provide as many payment methods as you can if you sell internationally and don&rsquo;t want your users to have any trouble paying for your product/service.<sup><a href="https://app.uxcel.com/#anchor-1">[1]</a></sup> However, it&rsquo;s true that seeing too many unnecessary payment options confuses users and causes choice paralysis. So what&rsquo;s the best solution?</p>
+
+
+
+<p class="wp-block-paragraph">Learn your audience and provide a range of payment options that are relevant to them. For example, credit cards are becoming less dominant in many countries like Germany, Russia, and China. If you don&rsquo;t sell to the UK, there&rsquo;s no point in offering BACS Direct Debit payment options.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Request payment details</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/request-payment-details-1640345569026/b-1682058422276.jpg" alt="Request payment details Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/request-payment-details-1640345569026/b-1682058422276-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/request-payment-details-1640345569026/a-1682058422275.jpg" alt="Request payment details Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/request-payment-details-1640345569026/a-1682058422275-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">When requesting payment information from users, it&rsquo;s important to ensure that all relevant text <a href="https://app.uxcel.com/glossary/inputs" target="_blank" rel="noreferrer noopener">inputs</a> are provided and that their size is appropriate for the details being entered. Some inputs may require users to provide unfamiliar or unclear information, in which case it&rsquo;s helpful to offer a brief but informative explanation. One effective way to do this is to include an information <a href="https://app.uxcel.com/glossary/icons" target="_blank" rel="noreferrer noopener">icon</a> that users can click for more details.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Pro Tip!</strong> In a product where users may make repeat purchases and saved payment methods are available, consider a flow that allows users to add/remove payment methods.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Validate payment details</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/submit-payment-with-card-details-entered-1640345644982/b-1682058452332.jpg" alt="Validate payment details Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/submit-payment-with-card-details-entered-1640345644982/b-1682058452332-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/submit-payment-with-card-details-entered-1640345644982/a-1682058452331.jpg" alt="Validate payment details Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/submit-payment-with-card-details-entered-1640345644982/a-1682058452331-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">Users are humans, and they make mistakes, especially when entering payment details on mobile and using one hand. It&rsquo;s vital to consider adding validation before users submit their payment details. Users mistype numbers, or the card may have expired &mdash; so make sure to address these numerous error states.</p>
+
+
+
+<p class="wp-block-paragraph">To make users&rsquo; lives a bit easier, consider adding&nbsp;input masks<em> &mdash;</em> i.e.,&nbsp;constraints on the input text. Masks help ensure that numbers or strings meet the expected format, prevent any unnecessary <a href="https://app.uxcel.com/glossary/errors" target="_blank" rel="noreferrer noopener">errors</a>, and reduce friction prior to system validation.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Show payment processing</h2>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/show-payment-processing-1640345891749/a-1682063457235-2x.mp4" rel="noreferrer noopener"></a><a target="_blank" href="https://img.uxcel.com/practices/show-payment-processing-1640345891749/a-1682063457235-2x.mp4" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">Payments may not be processed instantly and can take a few seconds or even a few minutes. Therefore, it&rsquo;s crucial to add a <a href="https://app.uxcel.com/glossary/loading" target="_blank" rel="noreferrer noopener">loading</a> <a href="https://app.uxcel.com/glossary/pages" target="_blank" rel="noreferrer noopener">page</a> to reassure users and alleviate any concerns they may have about their payment. By displaying the current status of the system, users are more likely to trust the payment process and feel in control of the transaction. This can help increase credibility and improve the overall <a href="https://app.uxcel.com/glossary/user-experience" target="_blank" rel="noreferrer noopener">user experience</a>.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Confirmation of payment processed successfully</h2>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/confirmation-of-payment-processed-successfully-1640345991957/a-1682063476732-2x.mp4" rel="noreferrer noopener"></a><a target="_blank" href="https://img.uxcel.com/practices/confirmation-of-payment-processed-successfully-1640345991957/a-1682063476732-2x.mp4" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">Once users have submitted their payment, a success message should appear, confirming that the payment has been processed and the funds have been received. This provides a sense of satisfaction and completion to users. To ensure that the success <a href="https://app.uxcel.com/glossary/notifications" target="_blank" rel="noreferrer noopener">notification</a> is effective, it should be clearly visible and given enough time to be read by users.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Outline next steps</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/outline-next-steps-1640346083467/b-1682058516773.jpg" alt="Outline next steps Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/outline-next-steps-1640346083467/b-1682058516773-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/outline-next-steps-1640346083467/a-1682058516773.jpg" alt="Outline next steps Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/outline-next-steps-1640346083467/a-1682058516773-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">After users have made a payment, it&rsquo;s important not to give the impression that your job is done. Instead, take the opportunity to express gratitude and offer information about the next steps if needed. For example, if they have purchased a product, thank them for choosing your <a href="https://app.uxcel.com/glossary/branding" target="_blank" rel="noreferrer noopener">brand</a> and provide them with shipping updates. If users have signed up for a <a href="https://app.uxcel.com/glossary/subscription" target="_blank" rel="noreferrer noopener">subscription</a>, provide them with a <a href="https://app.uxcel.com/glossary/hyperlink" target="_blank" rel="noreferrer noopener">link</a> to start using the product or suggest that they check their <a href="https://app.uxcel.com/glossary/email" target="_blank" rel="noreferrer noopener">email</a> to activate the subscription.</p>
+
+
+
+<p class="wp-block-paragraph">This helps build a positive relationship with users and ensures that they are fully informed about their purchase.</p>
+
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<h1 class="wp-block-heading">Contact Support</h1>
+
+
+
+<p class="wp-block-paragraph">Learn how to offer clear and accessible communication channels to address user needs</p>
+
+
+
+<p class="wp-block-paragraph">Interaction Design</p>
+
+
+
+<p class="wp-block-paragraph">7 exercises</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/lessons/contact-support-1705606372284-2x.svg" alt="Contact Support Lesson"></figure>
+
+
+
+<p class="wp-block-paragraph">Start&nbsp;<strong>+250px</strong></p>
+
+
+
+<p class="wp-block-paragraph">The best way to improve&nbsp;<a href="https://app.uxcel.com/glossary/support" target="_blank" rel="noreferrer noopener">customer support</a>&nbsp;is to eliminate the need for it. However, the nature of&nbsp;<a href="https://app.uxcel.com/glossary/user-experience" target="_blank" rel="noreferrer noopener">UX</a>&nbsp;is such that we don&rsquo;t understand how successful a design is until it goes live. To make sure that users don&rsquo;t abandon their tasks, offer them clear ways of communication with your company.</p>
+
+
+
+<p class="wp-block-paragraph">To provide the best support possible, you need to understand why, when, and where users need it. This will help you offer the most suitable communication methods &mdash; live&nbsp;<a href="https://app.uxcel.com/glossary/chats" target="_blank" rel="noreferrer noopener">chat</a>, phone call, or a&nbsp;<a href="https://app.uxcel.com/glossary/hyperlink" target="_blank" rel="noreferrer noopener">link</a>&nbsp;to F.A.Q. &mdash; in places where users expect to find them.</p>
+
+
+
+<p class="wp-block-paragraph">Collecting feedback on these&nbsp;<a href="https://app.uxcel.com/glossary/interaction" target="_blank" rel="noreferrer noopener">interactions</a>&nbsp;will give you invaluable insights into UX failures. Implementing this knowledge to improve your product can eventually reduce the need for customer support.</p>
+
+
+
+<h2 class="wp-block-heading">Why users contact support</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/why-users-contact-support-1640346344177/a-1682058600190.jpg" alt="Why users contact support"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/why-users-contact-support-1640346344177/a-1682058600190-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">To provide the best customer support, you need to understand why users need it. <strong>According to the Nielsen Norman Group, users contact customer support in the 4 cases mentioned below in order of their frequency:</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li>The information they&rsquo;re looking for is missing or isn&rsquo;t clear enough. For example, a user might contact support if they don&rsquo;t understand the difference between the two products offered.</li>
+
+
+
+<li>There&rsquo;s a service problem. For example, a payment failed or the product arrived damaged.</li>
+
+
+
+<li>Users encounter roadblocks and can&rsquo;t finish the task. For example, users can&rsquo;t modify their order and must contact the representative to make changes.</li>
+
+
+
+<li>The task seems too complex. For example, if getting an insurance quote online looks too difficult, users can contact an agent instead.</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">In 64% of cases, the need to contact support results from a UX failure.<sup><a href="https://app.uxcel.com/#anchor-1">[1]</a></sup> But before these shortcomings can be fixed, you need to ensure that customers have all the necessary methods to get in touch with the company and finish their journey.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Show methods of contact</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/show-methods-of-contact-1640346434485/b-1682058631983.jpg" alt="Show methods of contact Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/show-methods-of-contact-1640346434485/b-1682058631983-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/show-methods-of-contact-1640346434485/a-1682058631981.jpg" alt="Show methods of contact Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/show-methods-of-contact-1640346434485/a-1682058631981-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">According to <a href="https://app.uxcel.com/glossary/research-knowledge" target="_blank" rel="noreferrer noopener">research</a> by the Nielsen Norman Group, the most common method of contacting customer service is by phone, followed by <a href="https://app.uxcel.com/glossary/email" target="_blank" rel="noreferrer noopener">email</a>, online chat, and social media.<sup><a href="https://app.uxcel.com/#anchor-2">[2]</a></sup> However, not all issues require human contact, and many common problems can be resolved through a well-designed F.A.Q. section.</p>
+
+
+
+<p class="wp-block-paragraph">The order in which you display contact methods should consider not only user preferences but also your available resources. Providing a F.A.Q. section as the first option can be beneficial since it allows users to find answers to their questions without waiting for a response.</p>
+
+
+
+<p class="wp-block-paragraph">Online chat and telephone support are ideal for specific, complex issues that require an immediate response. While these options may be more convenient for users, they can be challenging to support, particularly for smaller teams or businesses operating in different countries and time zones. You can prioritize these options by placing them lower on the list of contact methods.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Pro Tip!</strong> Make sure all contact options are visible and clearly indicate what they are. Some of the most frustrated users in the aforementioned study were those who needed to contact an organization and could not do so.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Make the support page easy to access</h2>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/where-to-show-contact-links-1640346615301/a-1682063527795-2x.mp4" rel="noreferrer noopener"></a><a target="_blank" href="https://img.uxcel.com/practices/where-to-show-contact-links-1640346615301/a-1682063527795-2x.mp4" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">Make customer support easily accessible. As it&rsquo;s impossible to always predict when users will need to contact the company, offer fixed <a href="https://app.uxcel.com/glossary/links" target="_blank" rel="noreferrer noopener">links</a> that they can easily find on every <a href="https://app.uxcel.com/glossary/pages" target="_blank" rel="noreferrer noopener">page</a>. The most common places for the<strong> </strong>support page link are the <a href="https://app.uxcel.com/glossary/footers" target="_blank" rel="noreferrer noopener">footer</a> on websites and the <a href="https://app.uxcel.com/glossary/settings" target="_blank" rel="noreferrer noopener">settings</a> page in mobile apps.</p>
+
+
+
+<p class="wp-block-paragraph"><a href="https://app.uxcel.com/glossary/errors" target="_blank" rel="noreferrer noopener">Error</a> pages are places where you can predict the need for customer support. Offering assistance at the point of error can ensure that users complete their tasks successfully.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Pro Tip!</strong> The documentation or F.A.Q. page shouldn&rsquo;t contain any obvious information. If users come to this page, they will want to know more details.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Be specific about the waiting time and the method of communication</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/represent-how-to-communicate-and-what-is-expected-1640346683586/b-1682058708229.jpg" alt="Be specific about the waiting time and the method of communication Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/represent-how-to-communicate-and-what-is-expected-1640346683586/b-1682058708229-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/represent-how-to-communicate-and-what-is-expected-1640346683586/a-1682058708228.jpg" alt="Be specific about the waiting time and the method of communication Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/represent-how-to-communicate-and-what-is-expected-1640346683586/a-1682058708228-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">If users select a method implying communication &mdash; for example, phone call, chat, or email &mdash; make it clear how the process goes. There&rsquo;s nothing worse than clicking the <a href="https://app.uxcel.com/glossary/buttons" target="_blank" rel="noreferrer noopener">button</a> that says &ldquo;Contact us&rdquo; and finding yourself in an unexpected video call.</p>
+
+
+
+<p class="wp-block-paragraph">Offer the response time estimate and say what information users will need to provide. Most often, it&rsquo;s their name, email, what their issue is, etc. If communications are recorded (like phone calls), inform users about the reason for doing so in advance.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Offering support at the point of error</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/offering-support-at-the-point-of-error-1640346791723/b-1682058739640.jpg" alt="Offering support at the point of error Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/offering-support-at-the-point-of-error-1640346791723/b-1682058739640-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/offering-support-at-the-point-of-error-1640346791723/a-1682058739640.jpg" alt="Offering support at the point of error Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/offering-support-at-the-point-of-error-1640346791723/a-1682058739640-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">A good error message identifies the problem, explains the possible causes, and offers a solution. For some issues, that solution can be contact support. The contact method, in this case, depends on the type of error.</p>
+
+
+
+<p class="wp-block-paragraph">For example, if a customer can&rsquo;t connect a device to an app, you can link to the F.A.Q. or a help article about connecting devices. If the function isn&rsquo;t supported online, allow users to talk to a representative or offer another alternative. When creating error messages, ask yourself what the next step users can take is and how you can make it easier.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Pro Tip!</strong> Sometimes, adding tooltips to prevent input errors will eliminate the need for error messages altogether.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Offering chat support from every page</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/offering-chat-support-from-every-page-1640346930034/b-1682058774039.jpg" alt="Offering chat support from every page Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/offering-chat-support-from-every-page-1640346930034/b-1682058774039-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/offering-chat-support-from-every-page-1640346930034/a-1682058774038.jpg" alt="Offering chat support from every page Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/offering-chat-support-from-every-page-1640346930034/a-1682058774038-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">&#1057;hats are becoming a more convenient and less personal alternative to phone calls for customer support. Users expect to find the chat on the Help or Contact Us pages, so play to their expectations. Label it clearly as Chat or Live Chat &mdash; other <a href="https://app.uxcel.com/glossary/labels" target="_blank" rel="noreferrer noopener">labels</a> will confuse users.</p>
+
+
+
+<p class="wp-block-paragraph">A common practice is to use a <a href="https://app.uxcel.com/glossary/chatbot" target="_blank" rel="noreferrer noopener">chatbot</a> to get user information and identify the issue, and then redirect users to a real person. Make it clear that you&rsquo;re using a chatbot from the beginning &mdash; it will help users adjust their language and expectations.</p>
+
+
+
+<p class="wp-block-paragraph">If live support isn&rsquo;t available at the moment, let users know and offer them other means of support &mdash; for example, visiting the F.A.Q. section or sending an email.<sup><a href="https://app.uxcel.com/#anchor-3">[3]</a></sup>SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Conclude a support request</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/conclude-a-support-request-1640347031836/b-1682058808382.jpg" alt="Conclude a support request Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/conclude-a-support-request-1640347031836/b-1682058808382-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/conclude-a-support-request-1640347031836/a-1682058808381.jpg" alt="Conclude a support request Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/conclude-a-support-request-1640347031836/a-1682058808381-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">Customer feedback is the cornerstone of improving the support provided. It also helps ensure that users complete their tasks successfully.</p>
+
+
+
+<p class="wp-block-paragraph">After providing help, send a follow-up email to ask if the customer&rsquo;s issue has been resolved. For live chat requests, include the chat transcript so that users can review them as needed. Timing is crucial in this matter. Send the email with the feedback form after the customer&rsquo;s issue has been resolved but while the support experience is still fresh in their mind.<sup><a href="https://app.uxcel.com/#anchor-4">[4]</a></sup></p>
+
+
+
+<p class="wp-block-paragraph"><strong>Pro Tip!</strong> Explain why you&rsquo;re asking for feedback. Users give feedback more readily when they know that it&rsquo;s going to be put to productive use.</p>
+
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<h1 class="wp-block-heading">Deleting Account</h1>
+
+
+
+<p class="wp-block-paragraph">Explore how to handle user departures in a respectful and professional manner</p>
+
+
+
+<p class="wp-block-paragraph">Interaction Design</p>
+
+
+
+<p class="wp-block-paragraph">8 exercises</p>
+
+
+
+<p class="wp-block-paragraph">Start&nbsp;<strong>+250px</strong></p>
+
+
+
+<p class="wp-block-paragraph">Sometimes, users decide they don&rsquo;t want to use your product or service &mdash; and that&rsquo;s okay. Users come and go, and it&rsquo;s important to understand that your product can&rsquo;t serve all users&rsquo; needs and solve all users&rsquo; problems. Some companies combine two methods of exit &mdash; deactivating an account and permanently deleting it. Deactivating allows users to restore their accounts during a certain period (a week or 30 days) and permanently deletes them after this period ends.</p>
+
+
+
+<p class="wp-block-paragraph">For those users who want to leave, make it as simple as possible. You can try to understand why they&rsquo;re leaving, but don&rsquo;t be clingy. Whatever you do, avoid being passive-aggressive or guilt-tripping. It&rsquo;s unprofessional and makes you look desperate. Plus, users will remember this and may share their experience with others who will reconsider your product.</p>
+
+
+
+<h2 class="wp-block-heading">Show a link to delete the account</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/show-a-link-to-delete-the-account-1640347176519/b-1682058864493.jpg" alt="Show a link to delete the account Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/show-a-link-to-delete-the-account-1640347176519/b-1682058864493-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/show-a-link-to-delete-the-account-1640347176519/a-1682058864493.jpg" alt="Show a link to delete the account Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/show-a-link-to-delete-the-account-1640347176519/a-1682058864493-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">Making it difficult for users to delete their account by hiding the &ldquo;Delete Account&rdquo; <a href="https://app.uxcel.com/glossary/hyperlink" target="_blank" rel="noreferrer noopener">link</a> creates a negative impression that may limit users&rsquo; trust in your product and harm your reputation. Therefore, the <a href="https://app.uxcel.com/glossary/links" target="_blank" rel="noreferrer noopener">link</a> or <a href="https://app.uxcel.com/glossary/buttons" target="_blank" rel="noreferrer noopener">button</a> to delete the account should be visible and easily accessible on the profile, <a href="https://app.uxcel.com/glossary/settings" target="_blank" rel="noreferrer noopener">settings</a> <a href="https://app.uxcel.com/glossary/pages" target="_blank" rel="noreferrer noopener">page</a>, or even in the support area. By doing so, users feel in control of their data, which can increase their confidence and trust in your product.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Pro Tip!</strong> However, you shouldn&rsquo;t encourage destructive actions. Place the Delete Account link in a safe area where users can find it but not click it accidentally.&nbsp;SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Preserve goodwill</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/preserve-goodwill-1640347249212/b-1682058897120.jpg" alt="Preserve goodwill Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/preserve-goodwill-1640347249212/b-1682058897120-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/preserve-goodwill-1640347249212/a-1682058897119.jpg" alt="Preserve goodwill Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/preserve-goodwill-1640347249212/a-1682058897119-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">People don&rsquo;t always delete accounts because they&rsquo;re unhappy. Sometimes they just no longer need the service because they completed their task or found what they needed. Preserving goodwill and avoiding a blaming tone is the best policy to save your product&rsquo;s reputation. It also means loyalty &mdash; users are more likely to give positive referrals in the future or come back to the product later on.</p>
+
+
+
+<p class="wp-block-paragraph">Hiding the Unsubscribe or Delete Account buttons or using other <a href="https://app.uxcel.com/glossary/dark-pattern" target="_blank" rel="noreferrer noopener">dark patterns</a> to retain users at any cost never helps. If users want to leave, they will leave eventually. Your task is to create a good impression and demonstrate decent behavior while allowing them to do so.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Politely ask for feedback</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/politely-ask-for-feedback-1640347366644/b-1682058980545.jpg" alt="Politely ask for feedback Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/politely-ask-for-feedback-1640347366644/b-1682058980545-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/politely-ask-for-feedback-1640347366644/a-1682058980544.jpg" alt="Politely ask for feedback Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/politely-ask-for-feedback-1640347366644/a-1682058980544-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">It&rsquo;s good to know why somebody decides to leave. Offboarding provides an excellent opportunity to improve <a href="https://app.uxcel.com/glossary/user-experience" target="_blank" rel="noreferrer noopener">user experience</a> and understand what users lack in your product. Avoid being pushy by making the feedback page mandatory. Instead, make users feel their feedback is valuable to you and that you respect their choice.</p>
+
+
+
+<p class="wp-block-paragraph">You can provide possible reasons for leaving and offer an empty <a href="https://app.uxcel.com/glossary/inputs" target="_blank" rel="noreferrer noopener">input</a> for those users who would like to share their thoughts on how the product can be improved or what they didn&rsquo;t like while using it.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Reiterate the value proposition</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/reiterate-the-value-proposition-1640347430412/b-1682059025919.jpg" alt="Reiterate the value proposition Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/reiterate-the-value-proposition-1640347430412/b-1682059025919-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/reiterate-the-value-proposition-1640347430412/a-1682059025918.jpg" alt="Reiterate the value proposition Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/reiterate-the-value-proposition-1640347430412/a-1682059025918-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">When users decide to leave, they&rsquo;re likely to leave. However, it&rsquo;s never too late to remind them what they stand to lose if they delete their account or unsubscribe and the benefits they will retain if they decide to stay.</p>
+
+
+
+<p class="wp-block-paragraph">When showing the benefits and consequences of leaving, be brief but informative. You may even offer users to change their membership plan if the one they&rsquo;re using isn&rsquo;t satisfying. If done correctly, users may reconsider their decision and, instead of deleting their account, pause it temporarily.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Pro Tip!</strong> Avoid distracting users from the cancellation process by hiding the Delete Account/Unsubscribe button.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Explain the consequences</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/explain-what-it-means-to-delete-the-account-before-confirming-1640347530041/b-1682059063942.jpg" alt="Explain the consequences Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/explain-what-it-means-to-delete-the-account-before-confirming-1640347530041/b-1682059063942-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/explain-what-it-means-to-delete-the-account-before-confirming-1640347530041/a-1682059063941.jpg" alt="Explain the consequences Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/explain-what-it-means-to-delete-the-account-before-confirming-1640347530041/a-1682059063941-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">Once users confirm they are sure they want to leave, be clear with what happens to the account and all the information once the account is deleted. Is all their data permanently deleted? Can they come back and restore their account? Is the deletion immediate, or can they use their account until a specific date?</p>
+
+
+
+<p class="wp-block-paragraph">This is the right time to offer an option to pause their membership so that users can come back later and won&rsquo;t lose their data. You can also shortly explain the benefits of membership, which might stop users from permanently removing their accounts.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Typing confirmation vs. clicking a button</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/typing-confirmation-vs-clicking-a-button-1640347594751/b-1682059122897.jpg" alt="Typing confirmation vs. clicking a button Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/typing-confirmation-vs-clicking-a-button-1640347594751/b-1682059122897-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/typing-confirmation-vs-clicking-a-button-1640347594751/a-1682059122896.jpg" alt="Typing confirmation vs. clicking a button Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/typing-confirmation-vs-clicking-a-button-1640347594751/a-1682059122896-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">Sometimes, account removal or deletion may have serious repercussions, like the permanent loss of data or access to important documents. It&rsquo;s your job to ensure that users make the decision intentionally and fully understand what it will cost them.</p>
+
+
+
+<p class="wp-block-paragraph">The best way to prevent users from accidentally clicking on the Delete button is to ask them to take additional steps, such as manually typing &ldquo;delete&rdquo; or re-entering their <a href="https://app.uxcel.com/glossary/password" target="_blank" rel="noreferrer noopener">passwords</a>. This intentional roadblock in the flow offers users a chance to reconsider their decision or give it more thought before clicking the confirmation button for good.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Offer alternatives</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/offer-alternatives-1640347693991/b-1682059150964.jpg" alt="Offer alternatives Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/offer-alternatives-1640347693991/b-1682059150964-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/offer-alternatives-1640347693991/a-1682059150963.jpg" alt="Offer alternatives Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/offer-alternatives-1640347693991/a-1682059150963-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">Understanding your users&rsquo; needs and why they started using your product in the first place can help you be more flexible and provide alternatives. For example, if your product is for students, they may not need it on holidays and definitely won&rsquo;t want to be charged for these months.</p>
+
+
+
+<p class="wp-block-paragraph">Offer them options to pause their account or temporarily deactivate it rather than permanently deleting it. Make sure each option has an exhaustive and straightforward explanation of what it implies. Users should understand the consequences of deleting their account or deactivating it temporarily.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Put yourself in your users&rsquo; shoes and consider the potential risks of each option. Ask and answer questions like:</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li>&ldquo;Can I restart my membership and keep my preferences and data in the future if I deactivate my account?&rdquo;</li>
+
+
+
+<li>&ldquo;Will I have access to my data if I unsubscribe?&rdquo;</li>
+
+
+
+<li>&ldquo;Will my profile stay visible to the public if I deactivate it?&rdquo;</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Confirm account deletion</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/confirm-account-has-been-deleted-1640347789878/b-1682059175556.jpg" alt="Confirm account deletion Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/confirm-account-has-been-deleted-1640347789878/b-1682059175556-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/confirm-account-has-been-deleted-1640347789878/a-1682059175556.jpg" alt="Confirm account deletion Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/confirm-account-has-been-deleted-1640347789878/a-1682059175556-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">Once a user has deleted their account, it&rsquo;s important to acknowledge and respect their decision. Instead of making them feel bad or guilty, embrace the opportunity to show kindness and gratitude for their past use of your product. Confirm the account deletion with a friendly and reassuring message, and express your appreciation for their membership.</p>
+
+
+
+<p class="wp-block-paragraph">Additionally, let them know they are always welcome to rejoin if they choose to do so. This approach leaves a positive impression and increases the likelihood of future engagement with your product.</p>
+
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<h1 class="wp-block-heading">Showing Progress</h1>
+
+
+
+<p class="wp-block-paragraph">Learn how to correctly use progress trackers to enhance user experience</p>
+
+
+
+<p class="wp-block-paragraph">Interaction Design</p>
+
+
+
+<p class="wp-block-paragraph">6 exercises</p>
+
+
+
+<p class="wp-block-paragraph">Start&nbsp;<strong>+250px</strong></p>
+
+
+
+<p class="wp-block-paragraph"><a href="https://app.uxcel.com/glossary/progress-trackers" target="_blank" rel="noreferrer noopener">Progress trackers</a>&nbsp;are determinate indicators used to represent where users are in a journey. They inform them what they have completed, where they are currently, and what&rsquo;s left to complete. &ldquo;Visibility of system status&rdquo; is one of the most important&nbsp;<a href="https://app.uxcel.com/glossary/usability-heuristics" target="_blank" rel="noreferrer noopener">usability heuristics</a>, which helps reduce users&rsquo; tension and uncertainty.</p>
+
+
+
+<p class="wp-block-paragraph">The power of showing progress is that it provides ongoing feedback to users. It also carves a clear path to completion for them, which increases the likelihood of them making it to the end of the journey.</p>
+
+
+
+<h2 class="wp-block-heading">When to use progress trackers</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/when-to-use-progress-trackers-1640347941319/a-1682059234280.jpg" alt="When to use progress trackers"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/when-to-use-progress-trackers-1640347941319/a-1682059234280-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">Progress trackers are a valuable feature that can improve the <a href="https://app.uxcel.com/glossary/user-experience" target="_blank" rel="noreferrer noopener">user experience</a> by breaking a long form into logical and numbered steps, allowing users to track their progress. They can be especially helpful in minimizing user abandonment rates and motivating users to move forward and complete a task. By providing a clear sense of progress, progress trackers can satisfy the basic psychological need for closure and increase user satisfaction when a form is completed successfully.</p>
+
+
+
+<p class="wp-block-paragraph">On the other hand, ambiguous and confusing forms can create roadblocks, impede progress, and cause frustration for users. Therefore, using progress trackers can improve the user experience and increase the likelihood of successful form completion.<sup><a href="https://app.uxcel.com/#anchor-1">[1]</a></sup></p>
+
+
+
+<p class="wp-block-paragraph">In addition to tracking progress, progress trackers provide users with information about how many steps they have completed, their current position, and the remaining steps. However, it&rsquo;s important to note that not all forms require progress trackers. Overcomplicating the flow of a form can be counterproductive, and progress trackers should only be used when the process is long and takes more than three steps.</p>
+
+
+
+<p class="wp-block-paragraph">Forms such as <a href="https://app.uxcel.com/glossary/checkout" target="_blank" rel="noreferrer noopener">checkout</a> processes, tax forms, flight bookings, scholarship applications, and other complex forms that require multiple steps can benefit from progress trackers. By providing users with a clear sense of their progress, progress trackers can encourage users to continue and ultimately lead to a more positive user experience.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Determine your progress tracker type</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/determine-your-type-of-progress-tracker-1640348037073/b-1682059277404.jpg" alt="Determine your progress tracker type Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/determine-your-type-of-progress-tracker-1640348037073/b-1682059277404-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/determine-your-type-of-progress-tracker-1640348037073/a-1682059277403.jpg" alt="Determine your progress tracker type Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/determine-your-type-of-progress-tracker-1640348037073/a-1682059277403-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">The tracker can exist as determinate progress bars or numbered steps. Their main goal is to show users the current progress, how many steps are ahead, and how many have been completed. Progress trackers help encourage users to keep going and complete a specific task.</p>
+
+
+
+<p class="wp-block-paragraph">When the form is large and includes at least 3 stages, numbered steps are more helpful for setting milestones. Simply seeing the last step can motivate users to go through each step and complete a form. When the journey isn&rsquo;t long, like in the case of a <a href="https://app.uxcel.com/glossary/signup" target="_blank" rel="noreferrer noopener">signup</a> form, it can be enough to show the incremental filling of a bar as users progress.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Pro Tip!</strong> You can encounter progress trackers when purchasing online, filling in a multistep form (like booking a flight), or taking an onboarding tour.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">The importance of providing feedback to users</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/the-importance-of-providing-feedback-to-users-1640348167197/a-1682059326121.jpg" alt="The importance of providing feedback to users"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/the-importance-of-providing-feedback-to-users-1640348167197/a-1682059326121-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">One of the primary goals of using progress trackers is to notify users about what is happening in the system when they fill in a form. Users may get distracted, leave the window, and get back to the form later. They should immediately understand what they&rsquo;re doing, their current status, how many steps they&rsquo;ve already gone through, and how many steps are waiting for them ahead.</p>
+
+
+
+<p class="wp-block-paragraph">Progress trackers support Nielsen&rsquo;s &ldquo;visibility of system status&rdquo; <a href="https://app.uxcel.com/glossary/heuristics" target="_blank" rel="noreferrer noopener">heuristic</a>. When users know what&rsquo;s going on in the system, they feel in control and don&rsquo;t experience any fear of the unknown.<sup><a href="https://app.uxcel.com/#anchor-2">[2]</a></sup>&nbsp;Plus, people will be more likely to complete the process if they know what&rsquo;s ahead of them and have a sense of completion along the way.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Create your states</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/create-your-states-1640348408841/b-1682059352143.jpg" alt="Create your states Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/create-your-states-1640348408841/b-1682059352143-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/create-your-states-1640348408841/a-1682059352143.jpg" alt="Create your states Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/create-your-states-1640348408841/a-1682059352143-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph"><strong>A progress tracker with milestones should always show 3 states:</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li>Steps that have been completed</li>
+
+
+
+<li>Current steps</li>
+
+
+
+<li>Steps that haven&rsquo;t been completed yet</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">You can use <a href="https://app.uxcel.com/glossary/color" target="_blank" rel="noreferrer noopener">color</a> and unfilled circles to indicate steps that users haven&rsquo;t reached yet and checkmarks to signify completion.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Saving progress</h2>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/saving-progress-1640348501334/b-1684761293218-2x.mp4" rel="noreferrer noopener"></a><a target="_blank" href="https://img.uxcel.com/practices/saving-progress-1640348501334/b-1684761293218-2x.mp4" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/saving-progress-1640348501334/a-1684761293210-2x.mp4" rel="noreferrer noopener"></a><a target="_blank" href="https://img.uxcel.com/practices/saving-progress-1640348501334/a-1684761293210-2x.mp4" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">Unfortunately, if the form is long, progress trackers can&rsquo;t make it shorter. They only simplify the journey and keep users motivated. Allowing users to save their progress and get back to the task later is the right thing to do when the form may take more than a couple of minutes.</p>
+
+
+
+<p class="wp-block-paragraph">Another option is to autosave users&rsquo; progress, so even if they navigate away from a <a href="https://app.uxcel.com/glossary/pages" target="_blank" rel="noreferrer noopener">page</a> or close the window, they are able to return to the last step they were on without losing the data they&rsquo;ve already entered.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Pick a progress tracker that fits your needs</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/pick-a-progress-tracker-that-fits-your-needs-1640348640654/b-1682059483972.jpg" alt="Pick a progress tracker that fits your needs Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/pick-a-progress-tracker-that-fits-your-needs-1640348640654/b-1682059483972-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/pick-a-progress-tracker-that-fits-your-needs-1640348640654/a-1682059483970.jpg" alt="Pick a progress tracker that fits your needs Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/pick-a-progress-tracker-that-fits-your-needs-1640348640654/a-1682059483970-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">As a final touch, you should decide how to <a href="https://app.uxcel.com/glossary/labels" target="_blank" rel="noreferrer noopener">label</a> each milestone &mdash; by numbers, percentages, or titles. Titles add to scannability, helping users understand what they are expected to do here. Numbers and percentages motivate users to keep going, informing them about their current status and how many steps are to follow.</p>
+
+
+
+<p class="wp-block-paragraph">Depending on the complexity of your form, decide which progress tracker better fits your needs. More complex forms may benefit from being tracked with percentages &mdash; the progress indicator will move as users complete each section or subsection.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Pro Tip!</strong> In right-to-left languages, progress trackers should go from right to left instead of the standard left to right.</p>
+
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<h1 class="wp-block-heading">Resetting Password</h1>
+
+
+
+<p class="wp-block-paragraph">Explore techniques to streamline the password reset flow and minimize user effort</p>
+
+
+
+<p class="wp-block-paragraph">Start&nbsp;<strong>+250px</strong></p>
+
+
+
+<p class="wp-block-paragraph">On average, people use 4-5 passwords per day. Due to hard security rules, users keep forgetting their passwords to log back in.<sup><a href="https://app.uxcel.com/#anchor-1">[1]</a></sup>&nbsp;In these moments, users may experience disappointment, annoyance, or even guilt. In fact, 75% of online customers won&rsquo;t complete their purchase if they fail to recover a&nbsp;<a href="https://app.uxcel.com/glossary/password" target="_blank" rel="noreferrer noopener">password</a>&nbsp;while checking out.<sup><a href="https://app.uxcel.com/#anchor-2">[2]</a></sup></p>
+
+
+
+<p class="wp-block-paragraph">To ease their pain, the process of password recovery should be smooth and fast without holding back users from completing their tasks.</p>
+
+
+
+<h2 class="wp-block-heading">Place reset link close to the password field</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/place-reset-link-close-to-the-password-field-1640348779225/b-1682059534911.jpg" alt="Place reset link close to the password field Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/place-reset-link-close-to-the-password-field-1640348779225/b-1682059534911-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/place-reset-link-close-to-the-password-field-1640348779225/a-1682059534911.jpg" alt="Place reset link close to the password field Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/place-reset-link-close-to-the-password-field-1640348779225/a-1682059534911-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">Providing users a&nbsp;Reset Password <a href="https://app.uxcel.com/glossary/hyperlink" target="_blank" rel="noreferrer noopener">link</a>&nbsp;works like an &ldquo;emergency exit,&rdquo; supporting Nielsen&rsquo;s <a href="https://app.uxcel.com/glossary/heuristics" target="_blank" rel="noreferrer noopener">heuristic</a> about user control and freedom. The heuristic advocates users&rsquo; rights to make mistakes and states that a system should allow<em>&nbsp;</em>users<em>&nbsp;</em>to get out of trouble without much effort.<sup><a href="https://app.uxcel.com/#anchor-3">[3]</a></sup></p>
+
+
+
+<p class="wp-block-paragraph">The Reset Password <a href="https://app.uxcel.com/glossary/links" target="_blank" rel="noreferrer noopener">link</a> gives users an opportunity to recover from an undesirable situation and makes them feel more relaxed and comfortable.&nbsp;</p>
+
+
+
+<p class="wp-block-paragraph">Although the Reset Password link isn&rsquo;t the primary action on a <a href="https://app.uxcel.com/glossary/pages" target="_blank" rel="noreferrer noopener">page</a>, it should still be visible. Place it below the password <a href="https://app.uxcel.com/glossary/inputs" target="_blank" rel="noreferrer noopener">input</a> where users expect to see it, show its clickability, and provide a straightforward <a href="https://app.uxcel.com/glossary/labels" target="_blank" rel="noreferrer noopener">label</a> that eliminates any doubts about what happens when users click it.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Ask for account details to verify</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/ask-for-account-details-to-verify-1640348853463/b-1682059568458.jpg" alt="Ask for account details to verify Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/ask-for-account-details-to-verify-1640348853463/b-1682059568458-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/ask-for-account-details-to-verify-1640348853463/a-1682059568458.jpg" alt="Ask for account details to verify Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/ask-for-account-details-to-verify-1640348853463/a-1682059568458-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">Commonly, systems ask for an <a href="https://app.uxcel.com/glossary/email" target="_blank" rel="noreferrer noopener">email</a> to send users a link or a phone number to send a code to recover the password. This data is usually enough to identify a person and help them restore their <a href="https://app.uxcel.com/glossary/login" target="_blank" rel="noreferrer noopener">login</a> information securely.</p>
+
+
+
+<p class="wp-block-paragraph">The process should be quick and painless, so avoid asking unnecessary questions and making them fill more than 1-2 fields. Otherwise, users may feel insecure or simply abandon the product.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Pro Tip!</strong> If users have already entered their email address or phone number on the previous login page, prefill this data on the reset password page to speed up the flow.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Show the confirmation page</h2>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/show-information-has-been-sent-1640349040756/a-1684336537183-2x.mp4" rel="noreferrer noopener"></a><a target="_blank" href="https://img.uxcel.com/practices/show-information-has-been-sent-1640349040756/a-1684336537183-2x.mp4" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">Once users provide their email or mobile phone, show them a page explaining what happens next. If you ask for an email, inform users to check their inboxes for an email with a password recovery link. If you ask for a mobile number, notify users that they will shortly receive a code or link on their phones.</p>
+
+
+
+<p class="wp-block-paragraph">Keeping users up to date makes them feel confident that everything will be okay and they will recover their account in a short time.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Explain next steps</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/the-message-sent-explains-next-steps-1640349148463/b-1682059627524.jpg" alt="Explain next steps Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/the-message-sent-explains-next-steps-1640349148463/b-1682059627524-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/the-message-sent-explains-next-steps-1640349148463/a-1682059627524.jpg" alt="Explain next steps Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/the-message-sent-explains-next-steps-1640349148463/a-1682059627524-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">After you send users a password recovery link to their emails or phones, your job isn&rsquo;t done. The email or text should contain clear and straightforward instructions on what to do next.</p>
+
+
+
+<p class="wp-block-paragraph">Avoid including too much text &mdash; a prominent link to the reset page or a code that allows users to reset their password should be included.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Reset the password</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/reset-the-password-1640349228468/b-1682059656058.jpg" alt="Reset the password Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/reset-the-password-1640349228468/b-1682059656058-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/reset-the-password-1640349228468/a-1682059656057.jpg" alt="Reset the password Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/reset-the-password-1640349228468/a-1682059656057-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">Whether it&rsquo;s a verification code or a link to click, the next page should include a clear input to enter the new password. Don&rsquo;t forget to include password requirements and make sure users can see them the entire time while typing. If there are more than a couple of password requirements, consider adding bullet points to make the instructions scannable.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Pro Tip!</strong> Never insert password requirements inside the field label or placeholder.&nbsp;SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Password successfully reset</h2>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/password-successfully-reset-1640349379539/b-1682063697216-2x.mp4" rel="noreferrer noopener"></a><a target="_blank" href="https://img.uxcel.com/practices/password-successfully-reset-1640349379539/b-1682063697216-2x.mp4" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">After users successfully reset their password, it&rsquo;s a good idea to congratulate them. Resetting a password can be a frustrating experience, so acknowledging their success can create a positive <a href="https://app.uxcel.com/glossary/user-experience" target="_blank" rel="noreferrer noopener">user experience</a>. Once users have reset their password, redirect them to their intended destination &mdash; the login page.</p>
+
+
+
+<h1 class="wp-block-heading has-luminous-vivid-amber-background-color has-background">Assignment</h1>
+
+
+
+<figure class="wp-block-embed is-type-wp-embed is-provider-communication-art-design-amp-instruction wp-block-embed-communication-art-design-amp-instruction"><div class="wp-block-embed__wrapper">
+<blockquote class="wp-embedded-content" data-secret="QUJbAlcQUg"><a href="/nuggetofjoystatic/reset-password-design-for-mobile-app-design-brief/">Reset Password Design for Mobile App: Design Brief</a></blockquote><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" style="position: absolute; visibility: hidden;" title="&ldquo;Reset Password Design for Mobile App: Design Brief&rdquo; &mdash; Communication, Art, Design &amp; Instruction" src="/nuggetofjoystatic/reset-password-design-for-mobile-app-design-brief/embed/#?secret=B6GuojHoYX%23?secret=QUJbAlcQUg" data-secret="QUJbAlcQUg" width="500" height="282" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</div></figure>
+
+
+
+<h1 class="wp-block-heading has-pale-pink-background-color has-background">Showing Input Error</h1>
+
+
+
+<p class="wp-block-paragraph">Delve into the principles of providing clear and informative input error messages that guide users toward resolving the issue</p>
+
+
+
+<p class="wp-block-paragraph">Interaction Design</p>
+
+
+
+<p class="wp-block-paragraph">7 exercises</p>
+
+
+
+<p class="wp-block-paragraph">Start&nbsp;<strong>+250px</strong></p>
+
+
+
+<p class="wp-block-paragraph">Users mistype all the time &mdash; whether it&rsquo;s a finger slipping or rushing through letters,&nbsp;<a href="https://app.uxcel.com/glossary/errors" target="_blank" rel="noreferrer noopener">errors</a>&nbsp;happen. Since it is an everyday occurrence, solving an error should be obvious and seamless.</p>
+
+
+
+<p class="wp-block-paragraph">One of Nielsen&rsquo;s&nbsp;<a href="https://app.uxcel.com/glossary/heuristics" target="_blank" rel="noreferrer noopener">heuristics</a>&nbsp;states that a good system should help users recognize and recover from errors. What can designers do to enforce this?</p>
+
+
+
+<ul class="wp-block-list">
+<li>Provide strong visuals to indicate the problem clearly.</li>
+
+
+
+<li>Use simple and straightforward language to explain the cause of the problem and guide further steps.</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<p class="wp-block-paragraph">Good error messages shouldn&rsquo;t just inform users of a problem. They should make it clear how to fix the issue and move forward effectively.</p>
+
+
+
+<h2 class="wp-block-heading">Prevent errors from the start</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/prevent-errors-from-the-start-1640349671250/b-1682059711440.jpg" alt="Prevent errors from the start Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/prevent-errors-from-the-start-1640349671250/b-1682059711440-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/prevent-errors-from-the-start-1640349671250/a-1682059711439.jpg" alt="Prevent errors from the start Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/prevent-errors-from-the-start-1640349671250/a-1682059711439-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">In the ideal world, users never make mistakes and complete tasks successfully every time. Unfortunately, in the real world, systems can be confusing, users may get distracted or lose attention, and errors happen.</p>
+
+
+
+<p class="wp-block-paragraph">Error-prevention strategies for <a href="https://app.uxcel.com/glossary/inputs" target="_blank" rel="noreferrer noopener">inputs</a> include:</p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Using constraints: </strong>Constraints prevent users from typing a wrong input by setting boundaries. For example, inputs asking for users&rsquo; phone numbers or banking card numbers should show a numeric keyboard only.</li>
+
+
+
+<li><strong>Using forgiving formats: </strong>Rather than forcing users to type in a format desired for your system, allow them to type in a way that&rsquo;s convenient to them. Then, format their input while users are typing and add necessary spaces, parentheses, or hyphens, removing letters if it&rsquo;s a phone number input, for example.</li>
+
+
+
+<li><strong>Reducing cognitive load: </strong>Don&rsquo;t force users to keep too many things in mind. For example, it&rsquo;s a good practice to detect the SMS passcode from their messages and display it above the keyboard. This way, users don&rsquo;t need to switch between screens and strain their memory.<sup><a href="https://app.uxcel.com/#anchor-1">[1]</a></sup></li>
+
+
+
+<li><strong>Providing clear instructions: </strong>Users don&rsquo;t like reading and prefer skimming information. So make sure <a href="https://app.uxcel.com/glossary/labels" target="_blank" rel="noreferrer noopener">labels</a>, <a href="https://app.uxcel.com/glossary/tooltips" target="_blank" rel="noreferrer noopener">tooltips</a>, and form instructions are concise and straight to the point.</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Keep the input in default state</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/keep-the-input-in-default-state-1640349769344/a-1716796065051.jpg" alt="Keep the input in default state"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/keep-the-input-in-default-state-1640349769344/a-1716796065051-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">Error inputs should be easy to notice &mdash; this supports Nielsen&rsquo;s &ldquo;visibility of system status&rdquo; heuristic. However, users should notice them only after they enter any data. Ideally, input validation should happen inline. It means the input should be checked for errors only after users enter information and can afford to focus away from the input.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Pro Tip!</strong> Use inline validation to indicate successful entries. It&rsquo;ll remove any second-guessing that users may have to do when filling in a complex form with multiple inputs.&nbsp;SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Allow users to enter information</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/allow-users-to-enter-information-1640349873098/a-1682059792952.jpg" alt="Allow users to enter information"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/allow-users-to-enter-information-1640349873098/a-1682059792952-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">While users are filling out a form, they may want to edit some information and go back to previous fields. Let them type without interruption and don&rsquo;t check for errors until users finish making changes and shift their focus from the input. Otherwise, you might distract users and make them doubt whether they&rsquo;ve already made a mistake.</p>
+
+
+
+<p class="wp-block-paragraph">Inline validation makes sense for complex inputs such as new <a href="https://app.uxcel.com/glossary/password" target="_blank" rel="noreferrer noopener">passwords</a>, as it helps prevent guessing or double-checking whether the information they entered meets the requirements..<sup><a href="https://app.uxcel.com/#anchor-2">[2]</a></sup>&nbsp;SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Provide input masks to avoid errors</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/provide-input-masks-to-avoid-errors-1640350127584/b-1682059823905.jpg" alt="Provide input masks to avoid errors Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/provide-input-masks-to-avoid-errors-1640350127584/b-1682059823905-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/provide-input-masks-to-avoid-errors-1640350127584/a-1682059823905.jpg" alt="Provide input masks to avoid errors Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/provide-input-masks-to-avoid-errors-1640350127584/a-1682059823905-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">Placeholders are supposed to clarify what information users need to enter and increase the form completion speed. Unfortunately, many people confuse placeholders with real data filled in by default.</p>
+
+
+
+<p class="wp-block-paragraph">Plus, if placeholders substitute labels, they disappear after users place the <a href="https://app.uxcel.com/glossary/cursors" target="_blank" rel="noreferrer noopener">cursor</a> in the input. If they get distracted at this time, they will need to shift their focus away from the input to display the <a href="https://app.uxcel.com/glossary/placeholder" target="_blank" rel="noreferrer noopener">placeholder</a> text again.<sup><a href="https://app.uxcel.com/#anchor-3">[3]</a></sup> If placeholders are so tricky, how can we use them to help users prevent errors?</p>
+
+
+
+<p class="wp-block-paragraph">Input masks are an excellent solution when formatting matters (for things like phone numbers or dates). Besides displaying the desired input format, they also automatically apply it to users&rsquo; input as they type. This tool reduces <a href="https://app.uxcel.com/glossary/cognitiveload" target="_blank" rel="noreferrer noopener">cognitive load</a> and confusion, so users don&rsquo;t need to worry and double-check if they have typed everything correctly.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Signal error after loss of focus</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/signal-error-after-loss-of-focus-1640350177598/b-1682059857107.jpg" alt="Signal error after loss of focus Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/signal-error-after-loss-of-focus-1640350177598/b-1682059857107-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/signal-error-after-loss-of-focus-1640350177598/a-1682059857107.jpg" alt="Signal error after loss of focus Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/signal-error-after-loss-of-focus-1640350177598/a-1682059857107-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">Once users move away from the input field by selecting another element or removing the cursor, the system can begin validating the input. In case an error occurs, display a message next to the input and explain how users can correct it. Make sure the message is clear and polite and provides straightforward instructions using plain language.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Pro Tip!</strong> From an accessibility viewpoint, it&rsquo;s important to accompany the error message with an icon indicating an error.&nbsp;SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Meaningful error messages</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/meaningful-error-messages-1640350276461/b-1682059898723.jpg" alt="Meaningful error messages Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/meaningful-error-messages-1640350276461/b-1682059898723-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/meaningful-error-messages-1640350276461/a-1682059898723.jpg" alt="Meaningful error messages Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/meaningful-error-messages-1640350276461/a-1682059898723-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">Even if you take all measures to prevent input errors, users will make them anyway. Providing meaningful error messages reassures users that mistakes happen and that it isn&rsquo;t the end of the world.</p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Use plain language: </strong>Get rid of technical jargon and passive voices, which may confuse users.</li>
+
+
+
+<li><strong>Keep the message short: </strong>Users don&rsquo;t like to read, and in the face of a stressful environment, they are even less likely to read something longer than 1-2 sentences. A study by the American Press Institute shows that users are more likely to understand the whole piece of information only if the sentence contains no more than 8 words.<sup><a href="https://app.uxcel.com/#anchor-4">[4]</a></sup></li>
+
+
+
+<li><strong>Be precise: </strong>Avoid ambiguous phrases like &ldquo;an error occurred,&rdquo; as they don&rsquo;t help users identify the root cause. Tell them which input contains the error and what they are expected to enter in order to solve it.</li>
+
+
+
+<li><strong>Be polite: </strong>Avoid blaming users or making them feel stupid. Focus on fixing the problem and building trust and loyalty.</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Keep the error state visible till fixed</h2>
+
+
+
+<p class="wp-block-paragraph">Keeping the error state visible while the user is making corrections is important because:</p>
+
+
+
+<ul class="wp-block-list">
+<li>It maintains context about what needs to be fixed</li>
+
+
+
+<li>Users don&rsquo;t have to remember what the error was</li>
+
+
+
+<li>It provides immediate feedback as they work toward a solution</li>
+
+
+
+<li>It prevents confusion about whether the error has actually been resolved</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">The field should only return to its default or success state when the input actually becomes valid, not just when the user starts typing again. For example, if a password is too short, the error state and message should persist until the password reaches the minimum length requirement.</p>
+
+
+
+<p class="wp-block-paragraph">The only visual change during user input should be real-time validation feedback, like checkmarks appearing next to requirements as they&rsquo;re met.</p>
+
+
+
+<h1 class="wp-block-heading">Showing Input Error</h1>
+
+
+
+<p class="wp-block-paragraph">Delve into the principles of providing clear and informative input error messages that guide users toward resolving the issue</p>
+
+
+
+<p class="wp-block-paragraph">Interaction Design</p>
+
+
+
+<p class="wp-block-paragraph">7 exercises</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/lessons/showing-input-error-1705606432252-2x.svg" alt="Showing Input Error Lesson"></figure>
+
+
+
+<p class="wp-block-paragraph">Start&nbsp;<strong>+250px</strong></p>
+
+
+
+<p class="wp-block-paragraph">Users mistype all the time &mdash; whether it&rsquo;s a finger slipping or rushing through letters,&nbsp;<a href="https://app.uxcel.com/glossary/errors" target="_blank" rel="noreferrer noopener">errors</a>&nbsp;happen. Since it is an everyday occurrence, solving an error should be obvious and seamless.</p>
+
+
+
+<p class="wp-block-paragraph">One of Nielsen&rsquo;s&nbsp;<a href="https://app.uxcel.com/glossary/heuristics" target="_blank" rel="noreferrer noopener">heuristics</a>&nbsp;states that a good system should help users recognize and recover from errors. What can designers do to enforce this?</p>
+
+
+
+<ul class="wp-block-list">
+<li>Provide strong visuals to indicate the problem clearly.</li>
+
+
+
+<li>Use simple and straightforward language to explain the cause of the problem and guide further steps.</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<p class="wp-block-paragraph">Good error messages shouldn&rsquo;t just inform users of a problem. They should make it clear how to fix the issue and move forward effectively.</p>
+
+
+
+<h2 class="wp-block-heading">Prevent errors from the start</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/prevent-errors-from-the-start-1640349671250/b-1682059711440.jpg" alt="Prevent errors from the start Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/prevent-errors-from-the-start-1640349671250/b-1682059711440-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/prevent-errors-from-the-start-1640349671250/a-1682059711439.jpg" alt="Prevent errors from the start Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/prevent-errors-from-the-start-1640349671250/a-1682059711439-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">In the ideal world, users never make mistakes and complete tasks successfully every time. Unfortunately, in the real world, systems can be confusing, users may get distracted or lose attention, and errors happen.</p>
+
+
+
+<p class="wp-block-paragraph">Error-prevention strategies for <a href="https://app.uxcel.com/glossary/inputs" target="_blank" rel="noreferrer noopener">inputs</a> include:</p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Using constraints: </strong>Constraints prevent users from typing a wrong input by setting boundaries. For example, inputs asking for users&rsquo; phone numbers or banking card numbers should show a numeric keyboard only.</li>
+
+
+
+<li><strong>Using forgiving formats: </strong>Rather than forcing users to type in a format desired for your system, allow them to type in a way that&rsquo;s convenient to them. Then, format their input while users are typing and add necessary spaces, parentheses, or hyphens, removing letters if it&rsquo;s a phone number input, for example.</li>
+
+
+
+<li><strong>Reducing cognitive load: </strong>Don&rsquo;t force users to keep too many things in mind. For example, it&rsquo;s a good practice to detect the SMS passcode from their messages and display it above the keyboard. This way, users don&rsquo;t need to switch between screens and strain their memory.<sup><a href="https://app.uxcel.com/#anchor-1">[1]</a></sup></li>
+
+
+
+<li><strong>Providing clear instructions: </strong>Users don&rsquo;t like reading and prefer skimming information. So make sure <a href="https://app.uxcel.com/glossary/labels" target="_blank" rel="noreferrer noopener">labels</a>, <a href="https://app.uxcel.com/glossary/tooltips" target="_blank" rel="noreferrer noopener">tooltips</a>, and form instructions are concise and straight to the point.</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Keep the input in default state</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/keep-the-input-in-default-state-1640349769344/a-1716796065051.jpg" alt="Keep the input in default state"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/keep-the-input-in-default-state-1640349769344/a-1716796065051-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">Error inputs should be easy to notice &mdash; this supports Nielsen&rsquo;s &ldquo;visibility of system status&rdquo; heuristic. However, users should notice them only after they enter any data. Ideally, input validation should happen inline. It means the input should be checked for errors only after users enter information and can afford to focus away from the input.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Pro Tip!</strong> Use inline validation to indicate successful entries. It&rsquo;ll remove any second-guessing that users may have to do when filling in a complex form with multiple inputs.&nbsp;SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Allow users to enter information</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/allow-users-to-enter-information-1640349873098/a-1682059792952.jpg" alt="Allow users to enter information"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/allow-users-to-enter-information-1640349873098/a-1682059792952-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">While users are filling out a form, they may want to edit some information and go back to previous fields. Let them type without interruption and don&rsquo;t check for errors until users finish making changes and shift their focus from the input. Otherwise, you might distract users and make them doubt whether they&rsquo;ve already made a mistake.</p>
+
+
+
+<p class="wp-block-paragraph">Inline validation makes sense for complex inputs such as new <a href="https://app.uxcel.com/glossary/password" target="_blank" rel="noreferrer noopener">passwords</a>, as it helps prevent guessing or double-checking whether the information they entered meets the requirements..<sup><a href="https://app.uxcel.com/#anchor-2">[2]</a></sup>&nbsp;SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Provide input masks to avoid errors</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/provide-input-masks-to-avoid-errors-1640350127584/b-1682059823905.jpg" alt="Provide input masks to avoid errors Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/provide-input-masks-to-avoid-errors-1640350127584/b-1682059823905-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/provide-input-masks-to-avoid-errors-1640350127584/a-1682059823905.jpg" alt="Provide input masks to avoid errors Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/provide-input-masks-to-avoid-errors-1640350127584/a-1682059823905-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">Placeholders are supposed to clarify what information users need to enter and increase the form completion speed. Unfortunately, many people confuse placeholders with real data filled in by default.</p>
+
+
+
+<p class="wp-block-paragraph">Plus, if placeholders substitute labels, they disappear after users place the <a href="https://app.uxcel.com/glossary/cursors" target="_blank" rel="noreferrer noopener">cursor</a> in the input. If they get distracted at this time, they will need to shift their focus away from the input to display the <a href="https://app.uxcel.com/glossary/placeholder" target="_blank" rel="noreferrer noopener">placeholder</a> text again.<sup><a href="https://app.uxcel.com/#anchor-3">[3]</a></sup> If placeholders are so tricky, how can we use them to help users prevent errors?</p>
+
+
+
+<p class="wp-block-paragraph">Input masks are an excellent solution when formatting matters (for things like phone numbers or dates). Besides displaying the desired input format, they also automatically apply it to users&rsquo; input as they type. This tool reduces <a href="https://app.uxcel.com/glossary/cognitiveload" target="_blank" rel="noreferrer noopener">cognitive load</a> and confusion, so users don&rsquo;t need to worry and double-check if they have typed everything correctly.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Signal error after loss of focus</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/signal-error-after-loss-of-focus-1640350177598/b-1682059857107.jpg" alt="Signal error after loss of focus Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/signal-error-after-loss-of-focus-1640350177598/b-1682059857107-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/signal-error-after-loss-of-focus-1640350177598/a-1682059857107.jpg" alt="Signal error after loss of focus Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/signal-error-after-loss-of-focus-1640350177598/a-1682059857107-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">Once users move away from the input field by selecting another element or removing the cursor, the system can begin validating the input. In case an error occurs, display a message next to the input and explain how users can correct it. Make sure the message is clear and polite and provides straightforward instructions using plain language.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Pro Tip!</strong> From an accessibility viewpoint, it&rsquo;s important to accompany the error message with an icon indicating an error.&nbsp;SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Meaningful error messages</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/meaningful-error-messages-1640350276461/b-1682059898723.jpg" alt="Meaningful error messages Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/meaningful-error-messages-1640350276461/b-1682059898723-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/meaningful-error-messages-1640350276461/a-1682059898723.jpg" alt="Meaningful error messages Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/meaningful-error-messages-1640350276461/a-1682059898723-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">Even if you take all measures to prevent input errors, users will make them anyway. Providing meaningful error messages reassures users that mistakes happen and that it isn&rsquo;t the end of the world.</p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Use plain language: </strong>Get rid of technical jargon and passive voices, which may confuse users.</li>
+
+
+
+<li><strong>Keep the message short: </strong>Users don&rsquo;t like to read, and in the face of a stressful environment, they are even less likely to read something longer than 1-2 sentences. A study by the American Press Institute shows that users are more likely to understand the whole piece of information only if the sentence contains no more than 8 words.<sup><a href="https://app.uxcel.com/#anchor-4">[4]</a></sup></li>
+
+
+
+<li><strong>Be precise: </strong>Avoid ambiguous phrases like &ldquo;an error occurred,&rdquo; as they don&rsquo;t help users identify the root cause. Tell them which input contains the error and what they are expected to enter in order to solve it.</li>
+
+
+
+<li><strong>Be polite: </strong>Avoid blaming users or making them feel stupid. Focus on fixing the problem and building trust and loyalty.</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Keep the error state visible till fixed</h2>
+
+
+
+<p class="wp-block-paragraph">Keeping the error state visible while the user is making corrections is important because:</p>
+
+
+
+<ul class="wp-block-list">
+<li>It maintains context about what needs to be fixed</li>
+
+
+
+<li>Users don&rsquo;t have to remember what the error was</li>
+
+
+
+<li>It provides immediate feedback as they work toward a solution</li>
+
+
+
+<li>It prevents confusion about whether the error has actually been resolved</li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">The field should only return to its default or success state when the input actually becomes valid, not just when the user starts typing again. For example, if a password is too short, the error state and message should persist until the password reaches the minimum length requirement.</p>
+
+
+
+<p class="wp-block-paragraph">The only visual change during user input should be real-time validation feedback, like checkmarks appearing next to requirements as they&rsquo;re met.</p>
+
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<h1 class="wp-block-heading">Entering a Promo Code</h1>
+
+
+
+<p class="wp-block-paragraph">Explore the best practices for promoting and applying promo codes to create a seamless and enjoyable experience for users</p>
+
+
+
+<p class="wp-block-paragraph">Interaction Design</p>
+
+
+
+<p class="wp-block-paragraph">7 exercises</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/lessons/entering-a-promo-code-1705606447140-2x.svg" alt="Entering a Promo Code Lesson"></figure>
+
+
+
+<p class="wp-block-paragraph">Start&nbsp;<strong>+250px</strong></p>
+
+
+
+<p class="wp-block-paragraph">&zwj;Whether promo codes come from a seasonal sale or a coupon, who doesn&rsquo;t love getting a discount? However, if you want your users to genuinely enjoy this reward, you should provide a smooth experience of noticing promotions and applying them. To avoid confused customers, make sure they understand how to use the coupon and what is happening with it &mdash; whether it works, is expired, or isn&rsquo;t applicable.</p>
+
+
+
+<h2 class="wp-block-heading">Make promo code element visible</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/make-promo-code-input-field-visible-1640350466803/b-1687869729170.jpg" alt="Make promo code element visible Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/make-promo-code-input-field-visible-1640350466803/b-1687869729170-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/make-promo-code-input-field-visible-1640350466803/a-1687869729169.jpg" alt="Make promo code element visible Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/make-promo-code-input-field-visible-1640350466803/a-1687869729169-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">The cart or <a href="https://app.uxcel.com/glossary/checkout" target="_blank" rel="noreferrer noopener">checkout</a> pages are expected to have a&nbsp;promo code <a href="https://app.uxcel.com/glossary/inputs" target="_blank" rel="noreferrer noopener">input</a>.</p>
+
+
+
+<p class="wp-block-paragraph">A blank promo code/coupon box with a large Apply <a href="https://app.uxcel.com/glossary/buttons" target="_blank" rel="noreferrer noopener">button</a> can be quite confusing, making users wonder whether they should <a href="https://app.uxcel.com/glossary/search" target="_blank" rel="noreferrer noopener">search</a> for a code and potentially lead to lost conversions.<sup><a href="https://app.uxcel.com/#anchor-1">[1]</a></sup></p>
+
+
+
+<p class="wp-block-paragraph">However, users should notice this element without extra effort when scanning a <a href="https://app.uxcel.com/glossary/pages" target="_blank" rel="noreferrer noopener">page</a>. Displaying a noticeable <a href="https://app.uxcel.com/glossary/hyperlink" target="_blank" rel="noreferrer noopener">link</a> allows designers to kill two birds with one stone. Firstly, it&rsquo;s easy to spot. Secondly, it only expands into an input on click and doesn&rsquo;t distract users who don&rsquo;t have a code or aren&rsquo;t interested in promotions.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Allow promo codes to be applied with a click</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/allow-promo-codes-to-be-applied-with-a-click-1640350557180/b-1682061277383.jpg" alt="Allow promo codes to be applied with a click Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/allow-promo-codes-to-be-applied-with-a-click-1640350557180/b-1682061277383-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/allow-promo-codes-to-be-applied-with-a-click-1640350557180/a-1682061277382.jpg" alt="Allow promo codes to be applied with a click Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/allow-promo-codes-to-be-applied-with-a-click-1640350557180/a-1682061277382-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">When you offer users a promo code on a website or advertisements, allow them to apply the promo with a click rather than having to enter the code manually. It&rsquo;ll notably reduce user efforts, as they won&rsquo;t need to strain their memory to remember the code if it&rsquo;s embedded into an <a href="https://app.uxcel.com/glossary/images" target="_blank" rel="noreferrer noopener">image</a> that can&rsquo;t be copied.</p>
+
+
+
+<p class="wp-block-paragraph">Another option is to offer a selection of available promo codes during checkout. Once they find the right deal, users can click the code and apply it automatically to the order without unnecessary worries.<sup><a href="https://app.uxcel.com/#anchor-2">[2]</a></sup>SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Apply global promos automatically</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/apply-global-promos-automatically-1640350686244/b-1682061339515.jpg" alt="Apply global promos automatically Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/apply-global-promos-automatically-1640350686244/b-1682061339515-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/apply-global-promos-automatically-1640350686244/a-1682061339514.jpg" alt="Apply global promos automatically Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/apply-global-promos-automatically-1640350686244/a-1682061339514-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">Sometimes, websites can offer promo codes for certain actions such as <a href="https://app.uxcel.com/glossary/signup" target="_blank" rel="noreferrer noopener">signing up</a> for a mailing list or making an order for a specific <a href="https://app.uxcel.com/glossary/price" target="_blank" rel="noreferrer noopener">price</a> total. Don&rsquo;t ask users to make an extra effort &ndash; automatically apply such coupon codes to the <a href="https://app.uxcel.com/glossary/shopping-cart" target="_blank" rel="noreferrer noopener">shopping cart</a>.</p>
+
+
+
+<p class="wp-block-paragraph">You can also send users an <a href="https://app.uxcel.com/glossary/email" target="_blank" rel="noreferrer noopener">email</a> notifying them that they&rsquo;ve been granted a promo code. Make sure users can copy or apply the coupon directly from the email and are redirected to a page where the code is already applied to their order.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Promo code applied successfully</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/promo-code-applied-successfully-1640350740028/b-1682061373482.jpg" alt="Promo code applied successfully Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/promo-code-applied-successfully-1640350740028/b-1682061373482-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/promo-code-applied-successfully-1640350740028/a-1682061373481.jpg" alt="Promo code applied successfully Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/promo-code-applied-successfully-1640350740028/a-1682061373481-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">When a user successfully applies a promo code, it&rsquo;s important to confirm it immediately. This can be achieved by using success state <a href="https://app.uxcel.com/glossary/color" target="_blank" rel="noreferrer noopener">colors</a> (such as green), an <a href="https://app.uxcel.com/glossary/icons" target="_blank" rel="noreferrer noopener">icon</a>, or explanatory text. These visual cues will help users feel assured that their coupon is valid and that a discount will be applied to their order.</p>
+
+
+
+<p class="wp-block-paragraph">By keeping users informed throughout the process, you can enhance their confidence in your website or app, and make them more likely to complete their purchase.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Reflect the discount in the total</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/reflect-promo-code-is-applied-1640350805501/b-1682061446938.jpg" alt="Reflect the discount in the total Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/reflect-promo-code-is-applied-1640350805501/b-1682061446938-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/reflect-promo-code-is-applied-1640350805501/a-1682061446937.jpg" alt="Reflect the discount in the total Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/reflect-promo-code-is-applied-1640350805501/a-1682061446937-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">There&rsquo;s no point in promo codes if users don&rsquo;t see the discount applied and the price reduced. Before users proceed with the checkout, make sure the system applied the coupons, registered the discount, and recalculated the total correctly. It&rsquo;s important to also show the discount near the total at checkout.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Promo code error</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/promo-code-error-1640350878565/b-1682061493506.jpg" alt="Promo code error Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/promo-code-error-1640350878565/b-1682061493506-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/promo-code-error-1640350878565/a-1682061493505.jpg" alt="Promo code error Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/promo-code-error-1640350878565/a-1682061493505-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">In some cases, the promo code may not be applicable. In other cases, it could have expired or have been entered incorrectly. Let users know about it by providing an explicit <a href="https://app.uxcel.com/glossary/errors" target="_blank" rel="noreferrer noopener">error</a> message, including constructive advice on what users can do about it. If the promo code has expired, you can provide a link where users can browse through the list of other available coupons. If the promo code contains an error, suggest that users check and reapply it.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Remove promo code</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/remove-promo-code-1640350969155/b-1689585856831.jpg" alt="Remove promo code Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/remove-promo-code-1640350969155/b-1689585856831-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/remove-promo-code-1640350969155/a-1689585856823.jpg" alt="Remove promo code Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/remove-promo-code-1640350969155/a-1689585856823-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">In some cases, users might not like the discount offered. They may prefer the original sale price of an item or could have found a better promo code to use. When they remove a code from the input, provide a concise message informing users about it. It will eliminate any confusion regarding whether or not the total includes any discounts.</p>
+
+
+
+<h1 class="wp-block-heading">Saving Changes</h1>
+
+
+
+<p class="wp-block-paragraph">Learn about different methods and techniques for conveying system feedback to users</p>
+
+
+
+<p class="wp-block-paragraph">Interaction Design</p>
+
+
+
+<p class="wp-block-paragraph">7 exercises</p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/lessons/saving-changes-1705606465135-2x.svg" alt="Saving Changes Lesson"></figure>
+
+
+
+<p class="wp-block-paragraph">Start&nbsp;<strong>+250px</strong></p>
+
+
+
+<p class="wp-block-paragraph">Users often need to change their details, either to update their&nbsp;<a href="https://app.uxcel.com/glossary/email" target="_blank" rel="noreferrer noopener">email</a>&nbsp;address, fix a typo in their name, or add a payment method. It&rsquo;s important to let them know what&rsquo;s going on at any point in their&nbsp;<a href="https://app.uxcel.com/glossary/interaction" target="_blank" rel="noreferrer noopener">interaction</a>&nbsp;with the system while they do so. Showing system feedback informs users that their work is saved and makes them feel in control. Seeing that changes have been accepted also gives them a sense of accomplishment.</p>
+
+
+
+<p class="wp-block-paragraph">Methods you use to inform users about what&rsquo;s happening in the system can depend on the stage of the process. The action&nbsp;<a href="https://app.uxcel.com/glossary/buttons" target="_blank" rel="noreferrer noopener">button</a>&nbsp;states,&nbsp;<a href="https://app.uxcel.com/glossary/loaders" target="_blank" rel="noreferrer noopener">loaders</a>,&nbsp;<a href="https://app.uxcel.com/glossary/toasts" target="_blank" rel="noreferrer noopener">toast</a>&nbsp;<a href="https://app.uxcel.com/glossary/notifications" target="_blank" rel="noreferrer noopener">notifications</a>, and&nbsp;<a href="https://app.uxcel.com/glossary/banners" target="_blank" rel="noreferrer noopener">banners</a>&nbsp;are the most common ways to do that.</p>
+
+
+
+<h2 class="wp-block-heading">Show the action to save changes</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/show-the-action-to-save-changes-1640351415530/b-1682061624995.jpg" alt="Show the action to save changes Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/show-the-action-to-save-changes-1640351415530/b-1682061624995-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/show-the-action-to-save-changes-1640351415530/a-1682061624995.jpg" alt="Show the action to save changes Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/show-the-action-to-save-changes-1640351415530/a-1682061624995-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">Buttons are the most common tool to confirm and save changes. Make sure they&rsquo;re highly visible.</p>
+
+
+
+<p class="wp-block-paragraph">Where should the Save Changes button be placed? As users scan the <a href="https://app.uxcel.com/glossary/content" target="_blank" rel="noreferrer noopener">content</a>, their eyes move from the top half of the screen toward the bottom. When the content ends, they look for a call to action &mdash; so place the <a href="https://app.uxcel.com/glossary/call-to-action" target="_blank" rel="noreferrer noopener">CTA</a> button at the end of the content.</p>
+
+
+
+<p class="wp-block-paragraph">For browsers, make sure that the button is above the fold. Another option is to place the button right below the end of all the editable content. In apps, you can make the button stick to the bottom of the screen so that it&rsquo;s always visible.<sup><a href="https://app.uxcel.com/#anchor-1">[1]</a></sup>SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Switch to active state once a change is made</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/state-changes-to-active-once-a-change-is-made-1640351516728/b-1682061715097.jpg" alt="Switch to active state once a change is made Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/state-changes-to-active-once-a-change-is-made-1640351516728/b-1682061715097-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/state-changes-to-active-once-a-change-is-made-1640351516728/a-1682061715097.jpg" alt="Switch to active state once a change is made Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/state-changes-to-active-once-a-change-is-made-1640351516728/a-1682061715097-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">Users who understand what&rsquo;s going on in the system feel more confident and trust it more.<sup><a href="https://app.uxcel.com/#anchor-2">[2]</a></sup> This is especially important while they&rsquo;re making changes.</p>
+
+
+
+<p class="wp-block-paragraph">The state of the Save Changes button is a good way to communicate system feedback. Display the button as disabled before changes are applied. When information is modified, change the button state to active in order to bring it to users&rsquo; attention. This will communicate to them that changes have been made and are waiting to be saved.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Action changes to loading state when pressed</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/action-changes-to-loading-state-when-pressed-1640351624582/a-1682062164439.jpg" alt="Action changes to loading state when pressed"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/action-changes-to-loading-state-when-pressed-1640351624582/a-1682062164439-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">Keep users in the loop about what&rsquo;s going on in the system. After users change their information and press the Save Changes button, show that saving is in progress. This communicates that the interaction was successful, and users didn&rsquo;t waste their time.</p>
+
+
+
+<p class="wp-block-paragraph">A common way to show that changes are being saved is by using a loader &mdash; either as a CTA button state or a full-screen one. If the process takes a while, add a message stating so or some tips and fun facts to make the wait less boring.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Notify that changes have been saved</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/notify-changes-have-been-saved-1640351849289/b-1682062372877.jpg" alt="Notify that changes have been saved Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/notify-changes-have-been-saved-1640351849289/b-1682062372877-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/notify-changes-have-been-saved-1640351849289/a-1682062372876.jpg" alt="Notify that changes have been saved Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/notify-changes-have-been-saved-1640351849289/a-1682062372876-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">Once the system has saved the changes, the <a href="https://app.uxcel.com/glossary/pages" target="_blank" rel="noreferrer noopener">page</a> will reload or update. Informing users about this ensures that they know their work wasn&rsquo;t lost. Use a success toast notification or banner that disappears after a while to inform users that changes have been saved. These can include an Undo functionality which is great for reversible actions or actions with minor consequences.<sup><a href="https://app.uxcel.com/#anchor-3">[3]</a></sup></p>
+
+
+
+<p class="wp-block-paragraph">Success messages should be visible but not intrusive. In the message, be sure to include a short description of what has happened.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Add two-step verification when changing sensitive information</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/add-two-step-verification-when-changing-sensitive-information-1640351932288/b-1682062407014.jpg" alt="Add two-step verification when changing sensitive information Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/add-two-step-verification-when-changing-sensitive-information-1640351932288/b-1682062407014-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/add-two-step-verification-when-changing-sensitive-information-1640351932288/a-1682062407013.jpg" alt="Add two-step verification when changing sensitive information Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/add-two-step-verification-when-changing-sensitive-information-1640351932288/a-1682062407013-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">If your product requires users to share sensitive information &mdash; like their credit card details &mdash; it most likely already has two-factor authentication. <strong>It&rsquo;s a security process in which users need to verify themselves twice, most commonly with:</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li>A <a href="https://app.uxcel.com/glossary/login" target="_blank" rel="noreferrer noopener">login</a> and <a href="https://app.uxcel.com/glossary/password" target="_blank" rel="noreferrer noopener">password</a></li>
+
+
+
+<li>A security token (e.g., one-time passwords)</li>
+
+
+
+<li>A biometric factor (a fingerprint or facial scan)<sup><a href="https://app.uxcel.com/#anchor-4">[4]</a></sup></li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">Consider adding two-factor verification when changing important information, such as an email address, billing info, etc. This will ensure that users can avoid any unauthorized or accidental changes.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">When to autosave</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/when-to-autosave-1640352077866/a-1682062429726.jpg" alt="When to autosave"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/when-to-autosave-1640352077866/a-1682062429726-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">Autosave is becoming more of a common practice within applications. If done correctly, it can improve the <a href="https://app.uxcel.com/glossary/user-experience" target="_blank" rel="noreferrer noopener">user experience</a>.</p>
+
+
+
+<p class="wp-block-paragraph">The most common <a href="https://app.uxcel.com/glossary/use-case" target="_blank" rel="noreferrer noopener">use cases</a> for this are <a href="https://app.uxcel.com/glossary/settings" target="_blank" rel="noreferrer noopener">settings</a> that are easy to revert, such as toggles and <a href="https://app.uxcel.com/glossary/checkboxes" target="_blank" rel="noreferrer noopener">checkboxes</a>. This way, users can just change one setting without reviewing all of them. It also feels intuitive &mdash; we expect the setting to work as soon as we flick the switch, the same as when we turn on a light. Even if you enable autosave, allow users to also save changes manually with the Save Changes button.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Pro Tip!</strong> When considering autosave, analyze the platform your target audience uses. For example, macOS users are used to autosaving while Windows users aren&rsquo;t.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Canceling or reverting changes</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/canceling-or-reverting-changes-1640353027131/b-1682062459749.jpg" alt="Canceling or reverting changes Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/canceling-or-reverting-changes-1640353027131/b-1682062459749-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/canceling-or-reverting-changes-1640353027131/a-1682062459748.jpg" alt="Canceling or reverting changes Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/canceling-or-reverting-changes-1640353027131/a-1682062459748-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">Allow users to leave without making changes. Most users expect the changes not to be saved when they close the window or press the Back button, so avoid tying autosaving to these functions.</p>
+
+
+
+<p class="wp-block-paragraph">You can use a confirmation dialogue when users modify important information such as an email address or phone number without saving it. Make sure that the dialogue is short and straightforward. The headline should ask, or inform, about one main action we&rsquo;d like to reconfirm. Avoid generic headlines for confirmation dialogues like &ldquo;Warning&rdquo; or &ldquo;Are you sure.&rdquo;</p>
+
+
+
+<p class="wp-block-paragraph">Use unambiguous CTA buttons. The word Cancel isn&rsquo;t great when related to deleting or removing, as it&rsquo;s not clear what is canceled &mdash; the action or the cancellation of the action. Better options include Back, Stay, No, Leave, Quit, or any other action word that is instinctively clear in context.</p>
+
+
+
+<p class="wp-block-paragraph"></p>
+
+
+
+<h1 class="wp-block-heading">Canceling Subscription</h1>
+
+
+
+<p class="wp-block-paragraph">Explore the importance of providing a graceful exit for users who decide to cancel their accounts or stop using your product or service</p>
+
+
+
+<p class="wp-block-paragraph">Abreakup is never something you look forward to or enjoy. Similar to closing an account, users can decide to end their experience and stop paying for your product. Well, users leave, but it&rsquo;s not a tragedy, and it doesn&rsquo;t mean you can&rsquo;t give them a graceful exit. It&rsquo;s important to make a cancellation obvious to find and easy to travel through. Remember, a decent and polite goodbye can set the stage for users to come back in the future.</p>
+
+
+
+<p class="wp-block-paragraph">Besides, it&rsquo;s a great opportunity to receive users&rsquo; feedback and use it for product improvement.</p>
+
+
+
+<h2 class="wp-block-heading">Make the Unsubscribe button easy to locate</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/show-a-link-in-account-details-1640352216474/b-1690359673703.jpg" alt="Make the Unsubscribe button easy to locate Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/show-a-link-in-account-details-1640352216474/b-1690359673703-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/show-a-link-in-account-details-1640352216474/a-1690359673694.jpg" alt="Make the Unsubscribe button easy to locate Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/show-a-link-in-account-details-1640352216474/a-1690359673694-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">When users decide to cancel their membership, they should know where to find the right <a href="https://app.uxcel.com/glossary/hyperlink" target="_blank" rel="noreferrer noopener">link</a> or <a href="https://app.uxcel.com/glossary/buttons" target="_blank" rel="noreferrer noopener">button</a> without having to do extra guesswork. Usually, designers place it in the account&rsquo;s <a href="https://app.uxcel.com/glossary/settings" target="_blank" rel="noreferrer noopener">settings</a> or billing sections.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Users have expectations of how this link or section should look, so make sure:</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li>It&rsquo;s easy to notice</li>
+
+
+
+<li>It looks clickable/tappable</li>
+
+
+
+<li>Use the appropriate <a href="https://app.uxcel.com/glossary/labels" target="_blank" rel="noreferrer noopener">labels</a> like Unsubscribe or Cancel/Manage <a href="https://app.uxcel.com/glossary/subscription" target="_blank" rel="noreferrer noopener">Subscription</a></li>
+</ul>
+
+
+
+<p class="wp-block-paragraph">Hiding the Unsubscribe button can lead to low loyalty and <a href="https://app.uxcel.com/glossary/branding" target="_blank" rel="noreferrer noopener">brand</a> mistrust. Be honest and respectful, allowing users to decide for themselves whether they want to use your product or want to stop using it forever or temporarily.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Confirm intent to cancel</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/confirm-intent-to-cancel-1640352290826/a-1682062566543.jpg" alt="Confirm intent to cancel"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/confirm-intent-to-cancel-1640352290826/a-1682062566543-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">Sometimes, users may accidentally click the destructive button that triggers the removal of an account or subscription. So prevent irretrievable actions by asking users to confirm their choice. Plus, it&rsquo;s an additional opportunity to try and reel users back by pointing out what they&rsquo;ll lose when they cancel the subscription. For example, if users can access the product only with a subscription, you can remind them of the product&rsquo;s value.</p>
+
+
+
+<p class="wp-block-paragraph">Conversely, if the product can be accessed in a free version, you can remind users of some specific subscription benefits. The golden rule here is to avoid using language that begs for sympathy or exploits tools of pressure or manipulation.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Request a reason for canceling</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/request-a-reason-for-canceling-1640352364553/a-1682062586982.jpg" alt="Request a reason for canceling"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/request-a-reason-for-canceling-1640352364553/a-1682062586982-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">When users decide to cancel their subscription, it&rsquo;s a great opportunity to receive feedback and learn what can be improved. Was the product too expensive? Did users prefer a competitor? Did they get what they needed and no longer need the service?</p>
+
+
+
+<p class="wp-block-paragraph">Don&rsquo;t make this question mandatory and avoid pressing users to provide a detailed answer. Be polite and provide possible options for why users may want to leave. Additionally, include a section labeled &ldquo;Other&rdquo; that allows users to provide their own reasons for leaving in an open-ended format.</p>
+
+
+
+<p class="wp-block-paragraph"><strong>Pro Tip!</strong> If users abandon your product for the same reason, you should reconsider your pricing plans, user experience in general, or whatever most commonly makes them leave.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Offer incentives for continuing</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/offer-incentives-for-continuing-1640352411309/b-1682062610982.jpg" alt="Offer incentives for continuing Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/offer-incentives-for-continuing-1640352411309/b-1682062610982-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/offer-incentives-for-continuing-1640352411309/a-1682062610982.jpg" alt="Offer incentives for continuing Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/offer-incentives-for-continuing-1640352411309/a-1682062610982-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">Sometimes, even loyal users want to leave. Don&rsquo;t let them go by offering attractive incentives that might make users reconsider their decision to cancel. It could be a temporary discount or a free upgrade to their current plan.</p>
+
+
+
+<p class="wp-block-paragraph">If you figure that users may have some financial issues, it&rsquo;s worth mentioning that they could opt to downgrade a subscription instead of canceling it entirely. Be friendly, polite, and don&rsquo;t pressure users to stay, no matter what. Your task is just to make sure they&rsquo;ve considered all options.SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Confirm cancellation of subscription</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/confirm-subscription-has-been-canceled-1640352493099/b-1682062641064.jpg" alt="Confirm cancellation of subscription  Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/confirm-subscription-has-been-canceled-1640352493099/b-1682062641064-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/confirm-subscription-has-been-canceled-1640352493099/a-1682062641063.jpg" alt="Confirm cancellation of subscription  Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/confirm-subscription-has-been-canceled-1640352493099/a-1682062641063-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">Once users cancel their subscription, they may still want to continue using it until it&rsquo;s active. The confirmation <a href="https://app.uxcel.com/glossary/pages" target="_blank" rel="noreferrer noopener">page</a> is an excellent opportunity to explain how long users can use the membership after cancellation and what they can do if they decide to renew it in the future.&nbsp;SaveShare</p>
+
+
+
+<h2 class="wp-block-heading">Follow-up via email</h2>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/follow-up-via-email-1640352544364/b-1682062665032.jpg" alt="Follow-up via email Bad Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/follow-up-via-email-1640352544364/b-1682062665032-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<figure class="wp-block-image"><img decoding="async" src="https://img.uxcel.com/practices/follow-up-via-email-1640352544364/a-1682062665031.jpg" alt="Follow-up via email Best Practice"></figure>
+
+
+
+<p class="wp-block-paragraph"><a target="_blank" href="https://img.uxcel.com/practices/follow-up-via-email-1640352544364/a-1682062665031-2x.jpg" rel="noreferrer noopener"></a></p>
+
+
+
+<p class="wp-block-paragraph">Mistakes happen, and users may accidentally click the Cancel button. Or, they may consciously cancel their subscription and then simply change their mind. Having an &ldquo;emergency exit&rdquo; and the undo option makes users feel in control of the system, fostering a sense of freedom and confidence.<sup><a href="https://app.uxcel.com/#anchor-1">[1]</a></sup></p>
+
+
+
+<p class="wp-block-paragraph">Make sure users always have a chance to revert changes and keep their membership. First, show a confirmation <a href="https://app.uxcel.com/glossary/dialogs" target="_blank" rel="noreferrer noopener">dialog</a> asking users to confirm that they want to cancel the subscription permanently. Second, send them a<strong> </strong>follow-up <a href="https://app.uxcel.com/glossary/email" target="_blank" rel="noreferrer noopener">email</a> with a reactivation link after the cancellation. Some users will be grateful for this opportunity to undo the destructive action.</p>
+</div></article></div></main><footer class="noj-footer"><div class="noj-wrap noj-footer-inner">
+<a class="noj-brand" href="/nuggetofjoystatic/"><span class="noj-brand-orange">nugget</span><span class="noj-brand-blue">of joy</span></a>
+<p>Communication, Art, Design &amp; Instruction</p>
+<p>&copy; 2026 Communication, Art, Design &amp; Instruction</p>
+</div></footer><script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/nuggetofjoy-home-theme-v6-fixed/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id="codepen-embed-script-js" src="https://cpwebassets.codepen.io/assets/embed/ei.js?ver=1.0.1"></script>
+<script data-wp-strategy="defer" defer id="wp-embed-js" src="/nuggetofjoystatic/wp-includes/js/wp-embed.min.js?ver=7.1.3"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"/wp-includes/js/wp-emoji-release.min.js?ver=7.1.3"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=/wp-includes/js/wp-emoji-loader.min.js
+</script>
+</body></html>
+<!-- Powered by Staatic (https://staatic.com/) -->
